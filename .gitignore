@@ -1,0 +1,15 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# Compiled source #
+###################
+.sass-cache
+
+# Unwanted Theme Folders #
+##########################
+/twentyeleven/
+/twentythirteen/
+/twentytwelve/
+/index.php
