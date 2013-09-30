@@ -2,7 +2,7 @@
 News - Reviews - Passion
  ------------------------
 
-The txGarage website is an automotive blog focused on the Texas automotive consumer. 
+The [txGarage website](http://txgarage.com) is an automotive blog focused on the Texas automotive consumer. 
 
 ### Technology ###
 * WordPress
@@ -32,7 +32,7 @@ v.6 - Update full look and feel to be more modern and attractive.
 
 * * *
 
-*thanks for checking out my github repo's *  
+_thanks for checking out my github repo's_ 
 
 | [ampnet(media)](http://ampnetmedia.com/) | [@adamaoc](http://twitter.com/adamaoc/) | [team treehouse](http://teamtreehouse.com/adamaoc) | 
 
