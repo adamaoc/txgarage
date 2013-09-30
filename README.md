@@ -12,12 +12,12 @@ The [txGarage website](http://txgarage.com) is an automotive blog focused on the
 
 ### Versions ###
 
-v.5 - `(Feb. 1, 2012)` In verson 5 we completely redesigned the interface and introduced some new ideas in viewing news articles vs. reviews. We also introduced our first shot at adaptive design. 
+v.5.1 - `(Feb. 1, 2012)` In verson 5 we completely redesigned the interface and introduced some new ideas in viewing news articles vs. reviews. We also introduced our first shot at adaptive design. 
 
 * design techniques include using patterned backgrounds 
 
 ### Future Goals ###
-v.5.1 - Update current design using a more "flat" approach. Make site _FASTER_
+v.5.2 - Update current design using a more "flat" approach. Make site _FASTER_
 
 * Get rid of the patterns and extra background images that have to load.
 * use more modern technologies like SCSS for compiling css.
