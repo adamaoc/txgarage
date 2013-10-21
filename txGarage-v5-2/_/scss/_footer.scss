@@ -1,0 +1,34 @@
+/* ========= 
+	========= Footer  =====
+	======================= */
+
+#footer a { color: #888; }
+#footer a:hover { color: #FFA812; }
+#footer { background: url(../_/img/dark.png); box-shadow: -1px -1px 8px #333; min-width: 1070px; margin-top: 25px; padding-top: 20px; }
+.footer-inner { margin: 15px; }
+
+#footer .recent-posts { width: 320px; float: left; }
+
+#footer h3 { color: #fff; font-family: Times, sans-serif; font-style: italic; text-align: center; border-bottom: 1px solid #aaa; margin-bottom: 10px; }
+
+.footer-contact { width: 192px; float: left; margin-left: 61px; margin-right: 25px; }
+.footer-contact label { display: none; }
+.footer-contact input { margin: 5px 0; color: #999; background: #f1f1f1; }
+.footer-contact input.error { background: #960909; color: #fff;  }
+.footer-contact input:focus { color: #333; background: #f1f1f1; }
+.footer-contact p { color: #888; }
+
+.footer-contact textarea { margin: 5px 0; padding: 0; margin: 0; color: #999; background: #f1f1f1; }
+.footer-contact textarea.error { background: #960909; color: #fff; }
+.footer-contact textarea:focus { color: #333; background: #f1f1f1; }
+
+.error-text { color: #F54949; font-size: 10px; font-style: italic; }
+
+#footer h4 { color: #fff; font-weight: normal; text-align: center; }
+
+#footer .submit { background: url(../../_/img/body.png); color: #333; box-shadow: 1px 1px 1px #000; }
+#footer .submit:hover { background: url(../../_/img/content.png); }
+
+.footerNav { width: 150px; float: left; text-align: center; margin: 0 10px; }
+
+.footerSocial { width: 150px; float: left; text-align: center;  margin: 0 10px; }

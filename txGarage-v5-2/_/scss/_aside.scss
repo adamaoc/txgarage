@@ -1,0 +1,47 @@
+/* ========= 
+	========= Side BAR ====
+	======================= */
+	
+#extraside { float: left; width: 289px; padding: 1%; margin-left: 20px; }	
+
+.inner-gbl { }
+.inner-gbl h4 { color: #333d4e; font-family: Times, serif; text-align: left; font-size: 18px; padding: 15px 0 4px 15px; text-shadow: 1px 1px #fff; }	
+.inner-gbl h5 { color : #333d4e; font-family: Times, serif; font-size: 15px; letter-spacing: 1px; text-shadow: 1px 1px #fff; padding: 10px; }
+.inner-gbl li { list-style: disc; margin-left: 25px; font-size: 14px; font-style: italic; }
+	
+#sidebar { width: 289px; padding: 1%; float: left; margin-left: 20px; }
+#sidebar h2 { color: #333d4e; font-family: Times, serif; text-align: center; font-size: 18px; padding: 5px 0 4px; margin-bottom: 10px; }
+
+#sidebar h2.about { background: url(_/img/site-sprite.png) no-repeat -435px -273px; text-align: left; text-indent: 29px; }
+body #sidebar blockquote { color: #333; text-align: justify; background: url(_/img/quote.png) no-repeat; padding-bottom: 14px; text-indent: 29px; padding-top: 5px; margin-left: 0 !important; }
+
+#sidebar .twit-title { float: left; padding-top: 4px; padding-right: 3px; font-style: italic; }
+#sidebar .twit { color: #333; text-align: justify; padding-bottom: 14px; padding-top: 5px; }
+#sidebar .featured-reviews li { padding: 0 14px 5px; border-bottom: 1px solid #ccc; margin-bottom: 5px; font-style: italic; text-align: justify; }
+#sidebar .featured-reviews li { text-shadow: 1px 1px 1px #fff; }
+
+#sidebar .tawa-logo { background: url(_/img/site-sprite.png) no-repeat -367px -87px; padding-left: 93px; margin: 24px -5px; height: 47px; padding-top: 8px; }
+#sidebar .tawa-logo p { white-space: nowrap; }
+
+.msr-banner { margin-left: 11px; padding-bottom: 0; }
+.msr-banner a { display: block; width: 265px; height: 122px; background: url(_/img/site-sprite.png) no-repeat -189px -143px; text-indent: -9999px; box-shadow: 1px 2px 8px #333; opacity: 0.5; -webkit-transition: all ease-in-out .3s; }
+.msr-banner a:hover { opacity: 1; }
+
+.navgation { width: 100%; }
+.next-posts { float: left; width: 45%; }
+.prev-posts { float: right; width: 45%; text-align: right; }
+
+#sidebar .facebook-box { background: url(_/img/stripe.png); padding: 8px 0; width: 292px; }
+#sidebar .fb-like-box { background: url(_/img/body.png); padding: 0; }
+
+#searchform { padding: 8px; background: url(_/img/stripe.png); }
+#searchform label { display: none; }
+#s { width: 90%; -webkit-appearance: textfield; background-color: #f1f1f1; border: none; height: 18px; }
+#searchsubmit { display: none; }
+
+
+#menu-preferred_links li { margin: 4% 1%; width: 98%; }
+#menu-preferred_links li a { background: rgb(165,42,42); background: rgba(165,42,42,0.5); padding: 2% 1%; text-align: center; width: 98%; display:block; font-size: 14px; font-weight: bold; box-shadow: 1px 2px 8px #888; }
+#menu-preferred_links li a:hover { color: #fff; box-shadow: 1px 1px 4px #888; }
+#menu-preferred_links li#menu-item-3542 a { background: rgb(30,144,255); background: rgba(30,144,255,0.5); }
+#menu-preferred_links li#menu-item-3541 a { background: rgb(139,137,137); background: rgba(139,137,137,0.5); }

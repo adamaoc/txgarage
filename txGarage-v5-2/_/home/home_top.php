@@ -3,7 +3,7 @@
 ?>
 <div id="home-top-wrap">
 <div class="new-review">
-	<?php query_posts('cat=3&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php query_posts('category_name=news&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
   	<div class="img-crop">
   		<?php the_post_thumbnail('medium'); ?>
   	</div>
@@ -17,7 +17,7 @@
 </div>
 
 <div class="new-news">
-	<?php query_posts('cat=8&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php query_posts('category_name=car_reviews&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
   	<div class="img-crop">
   		<?php the_post_thumbnail('medium'); ?>
   	</div>
@@ -33,7 +33,7 @@
 <div class="clear"></div>
 
 <div class="new-video">
-	<?php query_posts('cat=12&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<?php query_posts('category_name=video&posts_per_page=1'); if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div class="img-crop">
   		<?php the_post_thumbnail('medium'); ?>
   	</div>

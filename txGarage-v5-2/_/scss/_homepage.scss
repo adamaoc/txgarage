@@ -1,0 +1,59 @@
+/* ========= 
+	========= HOME ========
+	======================= */
+	
+	/* -- home top wrap -- */
+	#home-top-wrap { width: 840px; margin: 25px auto; }
+	.new-review, .new-news { width: 390px; height: 180px; background: #fff; float: left; margin: 15px; overflow: hidden; position: relative; box-shadow: 1px 1px 8px #888; }
+	.new-video { position: relative; width: 248px; height: 110px;  background: #fff; float: left; margin: 0 15px; overflow: hidden; box-shadow: 1px 1px 8px #888;}
+	.home-social { width: 531px; height: 110px; background: url(_/img/dark.png); border-bottom: 1px solid #133783; float: left; margin: 0 15px;box-shadow: 1px 1px 8px #888; }
+	
+	.new-review .img-crop, .new-news .img-crop { width: 390px; height: 180px; overflow: hidden; position: relative; z-index: 1; }	
+	.new-review .img-crop, .new-news .img-crop img { width: 390px; }
+	/*ie*/ .ie .slide-box { background: url(_/img/transp-bg-blk.png) repeat; }
+	.new-review .slide-box, .new-news .slide-box { width: 100%; background: rgba(0, 0, 0, 0.5); margin-top: -58px; position: relative; z-index: 500; min-height: 100px; color: #fff; display: block; 
+			-webkit-transition: all ease-in-out .2s; }
+	.new-review .slide-box h2, .new-news .slide-box h2 { padding: 8px 15px; width: 345px; display: block; font-size: 15px; font-weight: 100; text-shadow: 0 1px #333; }
+	.new-review .slide-box span, .new-news .slide-box span { display: block; position: absolute; bottom: 15px; right: 10px; font-style: italic; }
+	.new-review:hover .slide-box, .new-news:hover .slide-box { margin-top: -95px; }
+	
+	/*ie*/ .ie .new-video .slide-box { background: url(_/img/transp-bg-blk.png) repeat; }
+	.new-video .slide-box { position: absolute; top: 0; left: 0; background: url(_/img/play_button.png) no-repeat 52px 0 rgba(0,0,0,0.6); display: block; width: 248px; height: 168px; text-indent: -9999px; -webkit-transition: all ease-in-out .2s; }
+	.new-video .slide-box:hover { background: url(_/img/play_button.png) no-repeat 52px 0 rgba(0,0,0,0.3); }
+	.new-video .slide-box h2	{ visibility: hidden; }
+	.new-video .slide-box span { visibility: hidden; }
+	
+	/*  HOME SOCIAL links */
+	.home-social li { float: left; }
+	.home-social li a { background: url(_/img/site-sprite.png) no-repeat; width: 75px; height: 73px; display: block; text-indent: -9999px; margin: 18px 5px 0; opacity: 0.2; -webkit-transition: all ease-in-out .2s; }
+	/*facebook*/
+	.home-social li#menu-item-3521 a { background-position: 0 0; margin-left: 15px; }
+	/*twitter*/
+	.home-social li#menu-item-3522 a { background-position: -77px 0; }
+	/*youtube*/
+	.home-social li#menu-item-3523 a { background-position: -156px 0; }
+	/*google+*/
+	.home-social li#menu-item-3524 a { background-position: -395px 0; }
+	/*flickr*/
+	.home-social li#menu-item-3525 a { background-position: -235px 0; }
+	/*rss*/
+	.home-social li#menu-item-3815 a { background-position: -313px 0; }
+	
+	.home-social li a:hover { opacity: 0.7; }
+	
+	/* -- home bottom wrap -- */
+	#home-bottom-wrap { min-width: 1069px; max-width: 1165px;  }
+	#home-main { min-width: 712px; float: right; margin-right: 20px; }
+	
+	.main-content { width: 300px; padding: 2%; float: right; margin-left: 23px; background: url(_/img/content.png); -webkit-box-shadow: 0 0 4px 0 #AAA; -moz-box-shadow: 0 0 4px 0 #aaaaaa; box-shadow: 0 0 4px 0 #AAA; }
+	.main-content h2 { text-align: center; font-size: 24px; color: #323D4E; font-family: Times; font-weight: 800; padding-bottom: 5px; font-style: italic; letter-spacing: 3px; margin-top: -11px;  }
+	.main-content .thumb-crop { background: url(_/img/stripe.png) repeat; padding: 8px 0; margin-bottom: 5px; }
+	.main-content .thumb-wrap { width: 300px; height: 160px; overflow: hidden; }
+	.main-content .thumb-wrap a img { height: auto !important; }
+	
+	.main-content h3 { min-height: 40px; }
+	.main-content h3 a { color: #323D4E; }
+	.main-content h3 a:hover { color: #FFA812; }
+	.main-content p { color: #777; font-family: Arial,Century gothic, sans-serif; padding-bottom: 15px; font-size: 11px; }
+	.main-content .info-box { border-bottom: 1px solid #f1f1f1; padding-bottom: 5px; margin-bottom: 5px; }
+	.main-content > a { text-align: right; padding-right: 10px; display: block; font-style: italic; font-size: 11px; }
