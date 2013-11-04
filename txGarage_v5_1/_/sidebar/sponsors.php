@@ -3,9 +3,9 @@
 ?>
 
 <?php // This is the campain for Silverado should only run through Dec. 2013 // ?>
-<a href="http://ad.doubleclick.net/clk;277266353;104524782;j">
+<a href="http://ad.doubleclick.net/clk;277266353;104524791;j">
 	<img src="http://txgarage.com/images/2013/11/2014_Silverado1500_strong_Static_US_ENG_v1_260x260.jpg" target="_blank" alt="2014 Chevrolet Silverado Strong as a Silverado">
-	<img src="http://ad.doubleclick.net/ad/N8334.127315.CENTRO/B7923611.16;sz=1x1;ord=[timestamp]?">
+	<img src="http://ad.doubleclick.net/ad/N8334.127315.CENTRO/B7923611.18;sz=1x1;ord=[timestamp]?">
 </a>
 
 <a href="http://www.mediatemple.net#a_aid=512fd1cf8a22a&amp;a_bid=f814c65b" target="_top" rel="nofollow" style="float: left; margin: 7px;">
