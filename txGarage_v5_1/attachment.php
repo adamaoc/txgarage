@@ -38,7 +38,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 	<?php endwhile; endif; ?>
 	</div><!-- off main content -->
 	
-	<div class="mobile-hide">
+	<div class="mobile-hide" style="width: 728px; margin: 0 auto; padding: 10px 0;">
 	    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- Photo-page-leaderboard -->
         <ins class="adsbygoogle"
