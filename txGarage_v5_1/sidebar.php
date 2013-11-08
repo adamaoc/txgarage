@@ -47,17 +47,15 @@
 			</p>
 		</div>
 	</div>	
-<div class="google_ad" style="width: 250px; margin: 0 auto;">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-7306302306923975";
-/* Sidebar Ad */
-google_ad_slot = "8455640306";
-google_ad_width = 250;
-google_ad_height = 250;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+<div class="google_ad" style="width: 300px; margin: 0 auto;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- New_Sidebar-300 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7306302306923975"
+     data-ad-slot="2616481100"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 </div>
 
