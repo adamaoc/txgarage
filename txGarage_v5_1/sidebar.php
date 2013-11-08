@@ -47,7 +47,7 @@
 			</p>
 		</div>
 	</div>	
-<div class="google_ad" style="width: 300px; margin: 0 auto;">
+<div class="google_ad" style="width: 300px; margin: 0 auto; padding-bottom: 10px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- New_Sidebar-300 -->
 <ins class="adsbygoogle"
