@@ -18,7 +18,7 @@
     </div>
 		<div class="clear"></div>
 		
-    <div class="sidebar-gplus">
+    <div class="sidebar-gplus" style="text-align: center; padding-top: 10px;">
     	<!-- Place this tag where you want the +1 button to render. -->
 	<div class="g-plusone"></div>
 	
