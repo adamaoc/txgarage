@@ -46,6 +46,8 @@
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
 		         wp_title(''); echo ' Archive - '; }
+		      elseif (is_front_page()) {
+		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
@@ -66,6 +68,8 @@
 		         single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
 		      elseif (is_archive()) {
 		         wp_title(''); echo ' Archive - '; }
+		      elseif (is_front_page()) {
+		         bloginfo('name'); echo ' - '; bloginfo('description'); }
 		      elseif (is_search()) {
 		         echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
 		      elseif (!(is_404()) && (is_single()) || (is_page())) {
@@ -84,7 +88,7 @@
 	<meta name="google-site-verification" content="snTnNu_9--HnI9ISHZ7j-Pa8X3LWQEPljfrUnpAVDn0" />
 	
 	<meta name="ampnetmedia" content="ampnetmedia - Dallas Web Design">
-	<meta name="Copyright" content="Copyright txGarage 2013. All Rights Reserved.">
+	<meta name="Copyright" content="Copyright txGarage <?php echo date("Y"); ?>. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="txGarage">
