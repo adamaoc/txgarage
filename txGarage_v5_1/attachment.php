@@ -21,6 +21,17 @@
 			</article>
 			
 			<div class="divider"></div>
+			<!-- Place this tag where you want the +1 button to render. -->
+			<div class="g-plusone"></div>
+			
+			<!-- Place this tag after the last +1 button tag. -->
+			<script type="text/javascript">
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/platform.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
 <div class="ad photo_gallery_ad google-ad mobile-show" style="width: 320px; margin: 0px auto;">
 <script type="text/javascript">
 <!--
