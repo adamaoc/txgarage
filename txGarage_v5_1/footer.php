@@ -9,7 +9,7 @@
 					foreach( $myposts as $post ) :	setup_postdata($post); ?>
 						<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
 					<?php endforeach; ?>
-					<li><a href="http://txgarage.com/feature/random-photos-from-txgarage/" title="txGarge car photography and random pictures">Random Automotive Photography by txGarage</a></li>
+					<li><a href="http://txgarage.com/feature/random-photos-from-txgarage/" title="txGarge car photography and random automotive pictures">Random Automotive Photography by txGarage</a></li>
 				</ul>
 				
 				<div class="footer-contact">
@@ -104,6 +104,7 @@
 
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
+<?php if(is_single()) { ?>
 <script>
 (function() {
 // special quote
@@ -138,32 +139,12 @@
  	}
 	
 	$('div.wp-caption').eq(0).addClass('first');
-	
-// sociable fix 
-	$('.sociable').first().addClass('socialble1');
 
-// tweetify function
-	$.fn.tweetify = function() {
-		this.each(function() {
-			$(this).html(
-				$(this).html()
-					.replace(/((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi,'<a href="$1" target="_blank">$1</a>')
-					.replace(/(^|\s)#(\w+)/g,'$1<a href="http://search.twitter.com/search?q=%23$2">#$2</a>')
-					.replace(/(^|\s)@(\w+)/g,'$1<a href="http://twitter.com/$2">@$2</a>')
-			);
-		});
-		return $(this);
-	} // end tweetify
-
-	// get twitter feed
-//	$.getJSON("http://twitter.com/statuses/user_timeline/txgarage.json?callback=?", function(data) {
-//	     $("#twitter").html(data[0].text);
-//	     $("#twitter").tweetify();
-//	});
-	// off get twitter feed
 })();
 </script>
-<!-- Don't forget analytics -->
+<?php } ?>
+
+<!-- analytics CODE -->
 	<script type="text/javascript">
 		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
