@@ -32,12 +32,9 @@
 <!--[if gt IE 9]><!--><html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <!-- the "no-js" class is for Modernizr. -->
 
-<head id="txgarage" data-template-set="txGarage news theme" profile="txgarage.com">
+<head id="txgarage" data-template-set="txGarage automotive new and reviews theme" profile="txgarage.com">
 
 	<meta charset="<?php bloginfo('charset'); ?>">
-	
-	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
 	<?php if (is_search()) { ?>
 	<meta name="robots" content="noindex, nofollow" /> 
@@ -87,7 +84,7 @@
 	<meta name="google-site-verification" content="snTnNu_9--HnI9ISHZ7j-Pa8X3LWQEPljfrUnpAVDn0" />
 	
 	<meta name="ampnetmedia" content="ampnetmedia - Dallas Web Design">
-	<meta name="Copyright" content="Copyright txGarage 2012. All Rights Reserved.">
+	<meta name="Copyright" content="Copyright txGarage 2013. All Rights Reserved.">
 
 	<!-- Dublin Core Metadata : http://dublincore.org/ -->
 	<meta name="DC.title" content="txGarage">
@@ -148,7 +145,7 @@
 	<div id="page-wrap">
 
 		<header id="header">
-			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><?php bloginfo('description'); ?></h1>
+			<h2><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a><?php bloginfo('description'); ?></h2>
 			
 		</header>
 		<nav>
