@@ -19,7 +19,7 @@
 		      </a>
 		    </h3>
 		    <p>
-		    	<?php echo limit_words(get_the_excerpt(), '125'); ?>â€¦<a href="<?php the_permalink(); ?>">read more</a>
+		    	<?php echo limit_words(get_the_excerpt(), '125'); ?> <a href="<?php the_permalink(); ?>">read more</a>
 		    </p>
 			</div>
 		<?php endwhile; endif; ?>
@@ -43,7 +43,7 @@
 		      </a>
 		    </h3>
 		    <p>
-		    	<?php echo limit_words(get_the_excerpt(), '125'); ?>â€¦<a href="<?php the_permalink(); ?>">read more</a>
+		    	<?php echo limit_words(get_the_excerpt(), '125'); ?> <a href="<?php the_permalink(); ?>">read more</a>
 		    </p>
 			</div>
 		<?php endwhile; endif; ?>
