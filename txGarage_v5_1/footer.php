@@ -105,6 +105,15 @@
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
 <?php if(is_single()) { ?>
+<script src="<?php bloginfo('template_directory'); ?>/_/js/share.min.js"></script>
+
+<script>
+$('.socialshare').share({
+  url: '<?php echo get_permalink(); ?>',
+  text: '<?php echo the_title(); ?> by @txGarage - '
+});
+</script>
+
 <script>
 (function() {
 // special quote
