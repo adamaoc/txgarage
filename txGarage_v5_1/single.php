@@ -25,6 +25,8 @@
 				
 					<?php the_content(); ?>
 
+					<div class="socialshare"></div>
+					
 					<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
 				
 					<p class="tags"><?php the_tags( 'Tags: ', ', ', ''); ?></p>
@@ -39,7 +41,7 @@
 			<div class="divider"></div>
 			<script>
 			$('.socialshare').share({
-			  url: '<?php echo get_permalink(); ?>',
+			  url: '<?php echo get_permalink(); ?>/?share=ss',
 			  text: '<?php echo the_title(); ?> by @txGarage - '
 			});
 			</script>
