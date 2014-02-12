@@ -543,7 +543,7 @@ ol.commentlist li.thread-odd {}
 /* ========= 
 	======= Share Button  =======
 	============================== */
-body .socialshare lable {
+body .socialshare label {
 	display: block;
 	width: 100%;
 	height: 50px;
@@ -558,6 +558,7 @@ body .socialshare label span {
 	color: #fff;
 	text-align: center;
 	line-height: 50px;
+	padding: 0;
 }
 body .socialshare [class*=entypo-]:before {
 	content: "";
