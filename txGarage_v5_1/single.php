@@ -42,8 +42,9 @@
 			<script src="<?php bloginfo('template_directory'); ?>/_/js/share.min.js"></script>
 			<script>
 			$('.socialshare').share({
-			  url: '<?php echo get_permalink(); ?>/?share=ss',
-			  text: '<?php echo the_title(); ?> by @txGarage - '
+			  url: '<?php echo get_permalink(); ?>?share=ss',
+			  text: '<?php echo the_title(); ?> by @txGarage - ',
+			  button_text: 'Share Post'
 			});
 			</script>
 	<?php endwhile; endif; ?>
