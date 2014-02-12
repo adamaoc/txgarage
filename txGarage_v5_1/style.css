@@ -545,7 +545,7 @@ ol.commentlist li.thread-odd {}
 	============================== */
 
 body .socialshare {
-	width: 100px;
+	width: 100%;
 	height: 50px;
 }
 
