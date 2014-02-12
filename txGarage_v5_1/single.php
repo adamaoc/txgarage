@@ -39,6 +39,7 @@
 			<p class="extra_tags">texas garage - </p>
 			<?php edit_post_link('Edit this entry','','.'); ?>
 			<div class="divider"></div>
+			<script src="<?php bloginfo('template_directory'); ?>/_/js/share.min.js"></script>
 			<script>
 			$('.socialshare').share({
 			  url: '<?php echo get_permalink(); ?>/?share=ss',

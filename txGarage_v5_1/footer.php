@@ -105,8 +105,6 @@
 <script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 
 <?php if(is_single()) { ?>
-<script src="<?php bloginfo('template_directory'); ?>/_/js/share.min.js"></script>
-
 <script>
 (function() {
 // special quote
