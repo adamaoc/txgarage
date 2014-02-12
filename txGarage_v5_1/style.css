@@ -558,7 +558,7 @@ body .socialshare label {
 	text-align: center;
 }
 
-body .socialshare label span {
+body .socialshare > label > span {
 	display: block;
 	width: 100%;
 	color: #fff;
@@ -566,7 +566,7 @@ body .socialshare label span {
 	line-height: 50px;
 	padding: 0;
 }
-body .socialshare [class*=entypo-]:before {
+body .socialshare > [class*=entypo-]:before {
 	content: "";
 }
 
