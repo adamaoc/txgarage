@@ -543,6 +543,12 @@ ol.commentlist li.thread-odd {}
 /* ========= 
 	======= Share Button  =======
 	============================== */
+
+body .socialshare {
+	width: 100px;
+	height: 50px;
+}
+
 body .socialshare label {
 	display: block;
 	width: 100%;
