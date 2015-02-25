@@ -5,3 +5,94 @@
   box-sizing: border-box; }
   *:before, *:after {
     box-sizing: border-box; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #ccc;
+  font-family: 'Raleway', sans-serif;
+  color: #565656; }
+
+article {
+  width: 90%;
+  margin: 2em auto; }
+
+.img-wrap {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  /* transition: all .3s ease; */
+  border-bottom: 5px solid #852729;
+  box-shadow: -2px -3px 8px #333; }
+  .img-wrap.news {
+    border-bottom: 5px solid #FFA500; }
+    .img-wrap.news .cat-tab {
+      background: #FFA500;
+      border-left: 5px solid #b37300; }
+  .img-wrap.car-reviews {
+    border-bottom: 5px solid #852729; }
+    .img-wrap.car-reviews .cat-tab {
+      background: #852729;
+      border-left: 5px solid #4a1617; }
+  @media all and (min-width: 520px) {
+    .img-wrap {
+      width: 50%; } }
+  @media all and (min-width: 880px) {
+    .img-wrap {
+      width: 70%; } }
+  .img-wrap .aspectbox {
+    padding-top: 55%; }
+  .img-wrap .cat-tab {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background: #852729;
+    color: #fff;
+    padding: .5em 1.5em;
+    border-left: 5px solid #4a1617; }
+
+.content-card {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background: #eee; }
+  @media all and (min-width: 520px) {
+    .content-card {
+      width: 50%; } }
+  @media all and (min-width: 880px) {
+    .content-card {
+      width: 30%; } }
+  .content-card .topbox {
+    background: white;
+    padding: .5em; }
+  .content-card h2 {
+    margin: 0;
+    padding-bottom: .5em; }
+
+.excerpt {
+  padding: 0.5em; }
+
+.readmorebtn {
+  display: inline-block;
+  background: #1E537B;
+  color: #fff;
+  text-decoration: none;
+  font-size: .9em;
+  padding: .5em 1.5em;
+  border-left: 5px solid #0a1c29; }
+
+.icon-bubble {
+  fill: white; }
+
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em; }
+
+.hero {
+  max-width: 1080px;
+  margin: 0 auto; }
