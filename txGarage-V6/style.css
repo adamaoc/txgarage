@@ -1,8 +1,20 @@
 /*
-Theme Name: txGarage v6
-Theme URI: http://ampnetmedia.com/work/txgarage/
-Description: This is a theme built for txGarage.com
-Author: Adam Moore and Justin Wegner
-Author URI: http://ampnetmedia.com
-Version: 1
+	Theme Name: TXGarage V6
+	Theme URI: http://txgarage.com
+	Description: Theme built for 
+	Version: 6.0.0
+	Author: Adam Moore / Justin Wegner
+	Author URI: http://ampnetmedia.com
+	Tags: txgarage, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/* 
+All styles are compiled using Gulp
+
+- run npm install
+- run gulp / or gulp watch for css build
+- compiled styles are linked up in assets/css/main.css
 */
