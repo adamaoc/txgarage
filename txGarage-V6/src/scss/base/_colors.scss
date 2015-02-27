@@ -1,0 +1,40 @@
+$blue: #1E537B;
+$orange: #FFA500;
+$red: #852729;
+$black: #333;
+$white: #fff;
+$gray: #ccc;
+
+$palette: (
+	blue: $blue,
+	orange: $orange,
+	red: $red
+);
+// remove these once colors are refactored //
+$pri-color: #852729;
+$sec-color: #1E537B;
+$bg-color: #ccc;
+
+$dark-blue: darken($blue, 10%);
+
+$profiles: (
+    bandcamp: #4e9bac,
+    delicious: #248cff,
+    facebook: #3b5998,
+    ficly: #b51c2c,
+    flickr: #0063db,
+    github: #4183c4,
+    googleplus: #dd4b39,
+    instagram: #517fa4,
+    kickstarter: #76cc1e,
+    lanyrd: #152e51,
+    lastfm: #d51007,
+    linkedin: #007bb6,
+    photodrop: #cdb6e3,
+    pinterest: #cb2027,
+    rdio: #0088da,
+    soundcloud: #f60,
+    twitter: #00aced,
+    vimeo: #aad450,
+    youtube: #b00
+);

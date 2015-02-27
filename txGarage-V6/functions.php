@@ -26,3 +26,15 @@ function catClass($data) {
 		}
 	}
 }
+
+
+// limit excerpt //
+	
+function limit_words($string, $word_limit) {
+
+	$words = explode(' ', $string);		
+	return implode(' ', array_slice($words, 0, $word_limit));
+}	
+
+// featured images size ---
+add_image_size( 'category-thumb', 400, 9999 ); //400 pixels wide (and unlimited height)

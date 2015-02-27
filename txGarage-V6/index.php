@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-	<section class="hero">
+	<div class="hero-wrap insta-box" data-insta>
 		<?php get_template_part('hero'); ?>
-	</section>
+	</div>
 
 	<?php // get_template_part('loop'); ?>
 

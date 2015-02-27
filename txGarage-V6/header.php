@@ -22,7 +22,7 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-
+	<?php require_once "assets/SVGSprite.php"; ?>
 	<header class="site-header">
 		<span class="logo">txGarage</span>
 		<nav class="site-nav">
