@@ -1,0 +1,63 @@
+.post-block {
+
+	width: 95%;
+	padding: 1em;
+
+	@include bp(sm) {
+		width: 50%;
+		float: left;
+	}
+	@include bp(md) {
+		width: 33.3%;
+
+	}
+
+	&--title {
+		background: white;
+		height: 80px;
+		padding: 1em;
+
+		h3 {
+			margin: 0;
+		}
+	}
+
+	&--hero {
+		height: 200px;
+		overflow: hidden;
+		position: relative;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		&.news {
+			border-bottom: 5px solid $orange;
+			span {
+				background: $orange;
+			}
+		}
+
+		&.car-reviews {
+			border-bottom: 5px solid $blue;
+			span {
+				background: $blue;
+			}
+		}
+
+		&.video {
+			border-bottom: 5px solid $black;
+			span {
+				background: $black;
+			}
+		}
+
+		span {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white;
+			padding: .3em 1em;
+		}
+
+	}
+}

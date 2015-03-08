@@ -380,7 +380,8 @@ body {
       width: 100%;
       line-height: 3em;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: center; }
 
 .hero {
   max-width: 1080px;
@@ -388,13 +389,12 @@ body {
   margin: 2em auto; }
 
 .img-wrap {
-  display: inline-block;
+  display: block;
   position: relative;
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  /* transition: all .3s ease; */
   border-bottom: 5px solid #852729;
   box-shadow: -2px -3px 8px #333; }
   .img-wrap.news {
@@ -407,10 +407,11 @@ body {
     .img-wrap.car-reviews .cat-tab {
       background: #852729;
       border-left: 5px solid #4a1617; }
-  @media all and (min-width: 520px) {
+  @media (min-width: 37.5em) {
     .img-wrap {
+      display: inline-block;
       width: 50%; } }
-  @media all and (min-width: 880px) {
+  @media (min-width: 50em) {
     .img-wrap {
       width: 70%; } }
   .img-wrap .aspectbox {
@@ -429,10 +430,10 @@ body {
   display: inline-block;
   width: 100%;
   background: #eee; }
-  @media all and (min-width: 520px) {
+  @media (min-width: 37.5em) {
     .content-card {
       width: 50%; } }
-  @media all and (min-width: 880px) {
+  @media (min-width: 50em) {
     .content-card {
       width: 30%; } }
   .content-card .topbox {
@@ -462,6 +463,63 @@ body {
   height: 1em;
   margin-top: .2em; }
 
+.post-block {
+  width: 95%;
+  padding: 1em; }
+  @media (min-width: 37.5em) {
+    .post-block {
+      width: 50%;
+      float: left; } }
+  @media (min-width: 50em) {
+    .post-block {
+      width: 33.3%; } }
+  .post-block--title {
+    background: white;
+    height: 80px;
+    padding: 1em; }
+    .post-block--title h3 {
+      margin: 0; }
+  .post-block--hero {
+    height: 200px;
+    overflow: hidden;
+    position: relative; }
+    .post-block--hero img {
+      width: 100%;
+      height: auto; }
+    .post-block--hero.news {
+      border-bottom: 5px solid #FFA500; }
+      .post-block--hero.news span {
+        background: #FFA500; }
+    .post-block--hero.car-reviews {
+      border-bottom: 5px solid #1E537B; }
+      .post-block--hero.car-reviews span {
+        background: #1E537B; }
+    .post-block--hero.video {
+      border-bottom: 5px solid #333; }
+      .post-block--hero.video span {
+        background: #333; }
+    .post-block--hero span {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      padding: .3em 1em; }
+
 .hero-wrap {
   background: #1E537B;
   padding: 5em 0; }
+
+.post-list {
+  overflow: hidden;
+  max-width: 1080px;
+  width: 90%;
+  margin: 2em auto; }
+  .post-list h2 {
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 2em;
+    padding: 1em 0; }
+    .post-list h2 span {
+      display: block; }

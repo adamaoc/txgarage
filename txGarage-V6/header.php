@@ -24,15 +24,9 @@
 	<body <?php body_class(); ?>>
 	<?php require_once "assets/SVGSprite.php"; ?>
 	<header class="site-header">
-		<span class="logo">txGarage</span>
+        <span class="logo"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span>
 		<nav class="site-nav">
-			<ul>
-				<li><a href="/categories/reviews/">Reviews</a></li>
-				<li><a href="/categories/reviews/">News</a></li>
-				<li><a href="/categories/reviews/">QuickDrive</a></li>
-				<li><a href="/categories/reviews/">Video</a></li>
-				<li><a href="/categories/reviews/">Events</a></li>
-			</ul>
+            <?php wp_nav_menu( array('menu' => 'main-menu')); ?>
 		</nav>
 	</header>
 

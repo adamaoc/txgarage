@@ -38,3 +38,9 @@ function limit_words($string, $word_limit) {
 
 // featured images size ---
 add_image_size( 'category-thumb', 400, 9999 ); //400 pixels wide (and unlimited height)
+
+// register menu //
+register_nav_menus( array(
+    'main-nav' => 'Main navigation menu',
+    'footer_menu' => 'My Custom Footer Menu',
+) );

@@ -21,37 +21,41 @@
 			border-left: 5px solid darken($review-color, 15%);
   		}
 	}
-	display: inline-block;
+	display: block;
 	position: relative;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	background-position: center center;
 
-	/* transition: all .3s ease; */
-
 	border-bottom: 5px solid $pri-color;
 	box-shadow: -2px -3px 8px #333;
 
-
-	@media all and (min-width: 520px) {
-	width: 50%;
-	}
-	@media all and (min-width: 880px) {
-	width: 70%;
-	}
+  @include bp(sm) {
+    display: inline-block;
+    width: 50%;
+  }
+  @include bp(md) {
+    width: 70%;
+  }
+	// @media all and (min-width: 520px) {
+	// width: 50%;
+	// }
+	// @media all and (min-width: 880px) {
+	// width: 70%;
+	// }
 
 	.aspectbox {
-	padding-top: 55%;
+    	padding-top: 55%;
 	}
 	.cat-tab {
-	position: absolute;
-	bottom: -5px;
-	left: 0;
-	background: $pri-color;
-	color: #fff;
-	padding: .5em 1.5em;
-	border-left: 5px solid darken($pri-color, 15%);
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background: $pri-color;
+        color: #fff;
+        padding: .5em 1.5em;
+        border-left: 5px solid darken($pri-color, 15%);
 	}
 }
 
@@ -61,13 +65,18 @@
   width: 100%;
   background: #eee;
   
-  
-  @media all and (min-width: 520px) {
+  @include bp(sm) {
     width: 50%;
   }
-  @media all and (min-width: 880px) {
+  @include bp(md) {
     width: 30%;
   }
+  // @media all and (min-width: 520px) {
+  //   width: 50%;
+  // }
+  // @media all and (min-width: 880px) {
+  //   width: 30%;
+  // }
   
   .topbox {
     background: white;

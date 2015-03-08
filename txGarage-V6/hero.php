@@ -31,7 +31,7 @@ $category = catClass($catList);
         by <?php the_author(); ?></div>
     </div>
     <div class="excerpt">
-      <p><?php echo limit_words(get_the_excerpt(), '120'); ?></p>
+      <p><?php echo limit_words(get_the_excerpt(), '35'); ?></p>
       <a href="<?php the_permalink() ?>" rel="bookmark" class="readmorebtn" title="Permanent Link to <?php the_title_attribute(); ?>">Read More</a>
     </div>
   </div>

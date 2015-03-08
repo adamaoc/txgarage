@@ -3,8 +3,10 @@
 	<div class="hero-wrap insta-box" data-insta>
 		<?php get_template_part('hero'); ?>
 	</div>
-
-	<?php // get_template_part('loop'); ?>
+	<section class="post-list">
+		<h2><?php bloginfo('description'); ?><span>For the Texas Automotive Consumer</span></h2>
+		<?php get_template_part('query_offset'); ?>
+	</section>
 
 	<?php //get_template_part('pagination'); ?>
 
