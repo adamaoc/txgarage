@@ -1,6 +1,10 @@
 .hero-wrap {
 	background: $blue;
-	padding: 5em 0;
+	padding: 1em 0;
+
+	@include bp(sm) {
+		padding: 5em 0;
+	}
 }
 
 .post-list {

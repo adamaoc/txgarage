@@ -15,4 +15,7 @@
      @media (max-width: 37.5em)  { @content; }
 
   }
+  @else if $point == wpadminbar {
+    @media (min-width: 787px) { @content; }
+  }
 }

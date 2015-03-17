@@ -18,6 +18,9 @@
 		<?php wp_footer(); ?>
 
 		<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+		
+		<!-- refactor out extra js files -->
+		<script src="<?php bloginfo('template_directory'); ?>/src/js/navigation.js"></script>
 		<!-- analytics -->
 		<script>
 		// (function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){

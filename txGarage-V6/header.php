@@ -26,6 +26,7 @@
 	<header class="site-header">
         <span class="logo"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span>
 		<nav class="site-nav">
+			<button class="menu-toggle"><span></span><span></span><span></span></button>
             <?php wp_nav_menu( array('menu' => 'main-menu')); ?>
 		</nav>
 	</header>
