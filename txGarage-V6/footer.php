@@ -1,11 +1,18 @@
 	</main>
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
+				<nav class="footer--nav">
+            		<?php wp_nav_menu( array('menu' => 'footer-menu')); ?>
+				</nav>
+				<div class="footer--tawa">
+					<a href="http://texasautowriters.com">
+						<span class="tawa-txt">Proud Member:</span>
+						<img src="http://txgarage.com/images/2014/10/TAWA-State-Logo.png" alt="Texas Auto Writers Association" />
+					</a>
+				</div>
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> - all rights reserved
 				</p>
 				<!-- /copyright -->
 

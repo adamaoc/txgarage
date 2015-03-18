@@ -1,0 +1,14 @@
+%button {
+	text-decoration: none;
+	padding: 1em 2em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.btn {
+	&--dim {
+		@extend %button;
+		color: #fff;
+		background: darken($bg-color, 30%);
+	}
+}

@@ -46,6 +46,10 @@
 		outline: none;
 	}
 
+	@include bp(md) {
+		display: none;
+	}
+
 }
 
 .site-nav {
