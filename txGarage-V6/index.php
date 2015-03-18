@@ -3,12 +3,17 @@
 	<div class="hero-wrap insta-box" data-insta>
 		<?php get_template_part('hero'); ?>
 	</div>
-	<section class="post-list">
+
+	<section class="blog-slogan">
 		<h2><?php bloginfo('description'); ?><span>For the Texas Automotive Consumer</span></h2>
+	</section>
+
+	<section class="post-list">
 		<?php get_template_part('query_offset'); ?>
 
 		<a href="#" class="btn btn--dim">View More</a>
 	</section>
+	
 	<section class="prefered-box">
 		<div class="prefered-wrapp">
 			<a href="/prefered/" class="prefered__dealers">

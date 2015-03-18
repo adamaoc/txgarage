@@ -1,20 +1,33 @@
 .post-block {
 
-	width: 95%;
-	padding: 1em;
+	width: 100%;
+	padding: 1em 0;
 
 	@include bp(sm) {
 		width: 50%;
 		float: left;
+		padding: 1em 0.25em;
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}
 	}
+
 	@include bp(md) {
 		width: 33.3%;
+
+		&:nth-child(2n+1) {
+			clear: none;
+		}
+
+		&:nth-child(3n+1) {
+			clear: left;
+		}
 
 	}
 
 	&--title {
 		background: white;
-		height: 80px;
 		padding: 1em;
 
 		h3 {
@@ -23,13 +36,14 @@
 	}
 
 	&--hero {
-		height: 200px;
 		overflow: hidden;
 		position: relative;
 		img {
 			width: 100%;
 			height: auto;
+			display: block;
 		}
+		
 		&.news {
 			border-bottom: 5px solid $orange;
 			span {

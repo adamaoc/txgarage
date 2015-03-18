@@ -552,28 +552,34 @@ body {
   margin-top: .2em; }
 
 .post-block {
-  width: 95%;
-  padding: 1em; }
+  width: 100%;
+  padding: 1em 0; }
   @media (min-width: 37.5em) {
     .post-block {
       width: 50%;
-      float: left; } }
+      float: left;
+      padding: 1em 0.25em; }
+      .post-block:nth-child(2n+1) {
+        clear: left; } }
   @media (min-width: 50em) {
     .post-block {
-      width: 33.3%; } }
+      width: 33.3%; }
+      .post-block:nth-child(2n+1) {
+        clear: none; }
+      .post-block:nth-child(3n+1) {
+        clear: left; } }
   .post-block--title {
     background: white;
-    height: 80px;
     padding: 1em; }
     .post-block--title h3 {
       margin: 0; }
   .post-block--hero {
-    height: 200px;
     overflow: hidden;
     position: relative; }
     .post-block--hero img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      display: block; }
     .post-block--hero.news {
       border-bottom: 5px solid #FFA500; }
       .post-block--hero.news span {
@@ -604,7 +610,8 @@ body {
   margin: 0 auto;
   padding: 4em 0;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
   .prefered-wrapp a {
     display: flex;
     align-items: stretch;
@@ -613,7 +620,8 @@ body {
     background: white;
     text-decoration: none;
     color: #333;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-bottom: 1em; }
 
 .prefered--icon {
   width: 4em;
@@ -637,32 +645,24 @@ body {
     .hero-wrap {
       padding: 5em 0; } }
 
+.blog-slogan h2 {
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 2em;
+  padding: 1em 0; }
+  .blog-slogan h2 span {
+    display: block; }
+
 .post-list {
   overflow: hidden;
   max-width: 1080px;
   width: 90%;
   margin: 2em auto; }
-  .post-list h2 {
-    text-align: center;
-    font-family: serif;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 2em;
-    padding: 1em 0; }
-    .post-list h2 span {
-      display: block; }
   .post-list > .btn {
-    float: left;
-    margin-top: 1em;
-    width: 50%;
-    height: 280px;
-    line-height: 280px; }
-    @media (min-width: 50em) {
-      .post-list > .btn {
-        clear: both;
-        display: block;
-        margin: 0 auto;
-        width: 12em;
-        height: auto;
-        line-height: 1.3;
-        float: none; } }
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 12em;
+    height: auto; }
