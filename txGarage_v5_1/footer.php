@@ -13,75 +13,7 @@
 				</ul>
 				
 				<div class="footer-contact">
-					<a name="contact"></a>
-					<h3>Contact txGarage</h3>
-					<form action="" method="post">
-						
-						<?php 
-							if (isset($_GET['submitted'])) {
-								echo "<h4>thanks for contacting us!</h4>";
-							}else{ ?>
-								<p>
-							<label for="email">Your Email</label>
-							<input type="email" class="email <?php if(isset($_GET['email'])) { echo 'error'; } ?>" name="email" placeholder="<?php 
-								if (isset($_POST['email'])) {
-									echo $_POST['email'];
-								}else{
-									echo "your@email.com";
-								} ?> " onFocus="this.value=''" value="<?php 
-								if (isset($_POST['email'])) {
-									echo $_POST['email'];
-								}else{
-									echo "your@email.com";
-								} ?> " onFocus="this.value=''" />
-						</p>
-						<p>
-							<label for="subject">Why are you contacting us?</label>
-							<input type="text" class="subject <?php if(isset($_GET['subject'])) { echo 'error'; } ?>" name="subject" placeholder="<?php 
-								if (isset($_POST['subject'])) {
-									echo $_POST['subject'];
-								}else{
-									echo "subject";
-								} ?> " onFocus="this.value=''" value="<?php 
-								if (isset($_POST['subject'])) {
-									echo $_POST['subject'];
-								}else{
-									echo "subject";
-								} ?> " onFocus="this.value=''" />
-						</p>
-						<p>
-							<label for="message">Your message</label>
-							<textarea rows="3" cols="21" name="message" class="message <?php if(isset($_GET['message'])) { echo 'error'; } ?>" onFocus="this.value=''"><?php 
-								if (isset($_POST['message'])) {
-									echo $_POST['message'];
-								}else{
-									echo "Your message here...";
-								} ?> </textarea>
-						</p>
-						<p>
-							<label for="auth">Are you a human?</label>
-							<p>Are you a human?<br />Type <strong style="font-size: 16px; font-weight: bolder; font-style: italic;">yes</strong> below.</p>
-							<input type="text" class="auth <?php if(isset($_GET['subject'])) { echo 'error'; } ?>" name="auth" placeholder="<?php 
-								if (isset($_POST['auth'])) {
-									echo $_POST['auth'];
-								}else{
-									echo "authenticate";
-								} ?> " onFocus="this.value=''" value="<?php 
-								if (isset($_POST['auth'])) {
-									echo $_POST['auth'];
-								}else{
-									echo "authenticate";
-								} ?> " onFocus="this.value=''" />
-						</p>
-						<p>
-							<input type="submit" class="submit" value="Submit" />
-						</p> <?php
-								if (isset($_GET['subject']) || isset($_GET['message'])) {
-									echo "<p class='error-text'>&#42;There seems to have been some errors</p>";
-								}
-							}
-						?>
-					</form>
+				
 				</div>
 				
 				<div class="footerNav">

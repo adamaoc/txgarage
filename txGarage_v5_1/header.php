@@ -1,27 +1,27 @@
 <?php
-	include(TEMPLATEPATH . '/_/contact.php'); 
+//	include(TEMPLATEPATH . '/_/contact.php'); 
 		
-		$errors = array();
+//		$errors = array();
 		
-	if (isset($_POST['email'], $_POST['subject'], $_POST['message'])){
+	// if (isset($_POST['email'], $_POST['subject'], $_POST['message'])){
 		
-		if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
-			$errors[] = 'You must enter a valid email';
-		}
-		if (empty($_POST['subject']) || ($_POST['subject'] === "subject")) {
-			$errors[] = 'You must enter a valid subject';
-		}
-		if (($_POST['auth']) != "yes") {
-			$errors[] = 'You must be human to contact us.';
-		}
-		if (empty($_POST['message']) || ($_POST['message'] === "Your message here...")) {
-			$errors[] = 'Please enter a message.';
-		}
-		if (empty($errors)) {
-			contact_email($_POST['email'],  $_POST['subject'], $_POST['message']);
-		}
+	// 	if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) === false){
+	// 		$errors[] = 'You must enter a valid email';
+	// 	}
+	// 	if (empty($_POST['subject']) || ($_POST['subject'] === "subject")) {
+	// 		$errors[] = 'You must enter a valid subject';
+	// 	}
+	// 	if (($_POST['auth']) != "yes") {
+	// 		$errors[] = 'You must be human to contact us.';
+	// 	}
+	// 	if (empty($_POST['message']) || ($_POST['message'] === "Your message here...")) {
+	// 		$errors[] = 'Please enter a message.';
+	// 	}
+	// 	if (empty($errors)) {
+	// 		contact_email($_POST['email'],  $_POST['subject'], $_POST['message']);
+	// 	}
 		
-	}
+	// }
 ?>
 <!DOCTYPE html>
 
