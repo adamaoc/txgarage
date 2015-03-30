@@ -469,6 +469,66 @@ body {
       .site-nav li a {
         padding: 0 2em; } }
 
+.footer {
+  background: #143752;
+  padding-top: 1em;
+  overflow: hidden;
+  padding-bottom: 1em; }
+  .footer--nav {
+    width: 100%; }
+    @media (min-width: 37.5em) {
+      .footer--nav {
+        max-width: 60%;
+        float: left; } }
+    .footer--nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      @media (min-width: 37.5em) {
+        .footer--nav ul {
+          flex-wrap: nowrap; } }
+    .footer--nav a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 0.5em;
+      margin: 0 1em;
+      text-align: center; }
+      .footer--nav a:hover {
+        background: #852729; }
+  .footer--tawa {
+    width: 100%;
+    position: relative; }
+    @media (min-width: 37.5em) {
+      .footer--tawa {
+        width: 30%;
+        float: right; } }
+    .footer--tawa a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      overflow: hidden;
+      padding-left: 8em; }
+      .footer--tawa a span {
+        position: absolute;
+        top: 1.8em;
+        left: 2em; }
+      .footer--tawa a img {
+        max-width: 100%;
+        width: 8em; }
+  .footer .copyright {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    color: #4796d2;
+    font-size: 0.7em; }
+    .footer .copyright a {
+      color: #84b9e1; }
+
 .hero {
   max-width: 1080px;
   width: 90%;
@@ -644,8 +704,8 @@ body {
       padding: .3em 1em; }
 
 .prefered-box {
-  border-top: 10px solid #1E537B;
-  border-bottom: 10px solid #1E537B;
+  border-top: 10px solid #2d7cb9;
+  border-bottom: 10px solid #2d7cb9;
   background: #d9d9d9; }
 
 .prefered-wrapp {
