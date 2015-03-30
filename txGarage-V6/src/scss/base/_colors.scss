@@ -1,21 +1,25 @@
+
 $blue: #1E537B;
+$light-blue: lighten($blue, 15%);
+$dark-blue: darken($blue, 10%);
+
 $orange: #FFA500;
+$dark-orange: darken($orange, 10%);
+
 $red: #852729;
+$dark-red: darken($red, 10%);
+
 $black: #333;
 $white: #fff;
+
 $gray: #ccc;
+$dark-gray: darken($gray, 30%);
 
-$palette: (
-	blue: $blue,
-	orange: $orange,
-	red: $red
-);
-// remove these once colors are refactored //
-$pri-color: #852729;
-$sec-color: #1E537B;
-$bg-color: #ccc;
 
-$dark-blue: darken($blue, 10%);
+$pri-color: $red;
+$sec-color: $blue;
+$bg-color: $gray;
+
 
 $profiles: (
     bandcamp: #4e9bac,

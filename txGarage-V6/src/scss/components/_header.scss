@@ -2,7 +2,7 @@
 .site-header {
 	background: $dark-blue;
 	height: 3.5em;
-	border-bottom: 2px solid lighten($blue, 10%);
+	border-bottom: 2px solid $light-blue;
 	// position: relative;
 
 	@include bp(md) {
@@ -11,9 +11,8 @@
 	}
 
 	.logo {
-		background: lighten($blue, 10%);
+		background: $light-blue;
 		display: block;
-		// position: absolute;
 		width: 200px;
 		height: 3.5em;
 		margin: 0 auto;
@@ -21,7 +20,7 @@
 		z-index: 100;
 
 		a {
-			color: #fff;
+			color: $white;
 			text-decoration: none;
 			text-align: center;
 			display: block;

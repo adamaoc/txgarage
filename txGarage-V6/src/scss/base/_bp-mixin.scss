@@ -11,6 +11,9 @@
    @else if $point == sm {
      @media (min-width: 37.5em)  { @content; }
   }
+   @else if $point == xs {
+     @media (min-width: 28.5em)  { @content; }
+  }
   @else if $point == mobileonly {
      @media (max-width: 37.5em)  { @content; }
 

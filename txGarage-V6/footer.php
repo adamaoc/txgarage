@@ -25,6 +25,26 @@
 		<?php wp_footer(); ?>
 
 		<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/src/js/instafeed.js"></script>
+
+		<script>
+			var extras = "";
+			var feed = new Instafeed({
+				get: "tagged",
+				tagName: "txgarage",
+				limit: 32,
+				resolution: "thumbnail",
+				clientId: "c2e26464fcc944c4af803e1b64650871",
+				template: '<img src="{{image}}" class="insta-img" alt="{{caption}}" />',
+				sortBy: "most-recent",
+				after: function() {
+					extras = "<div class='insta-extras'>" + $('#instafeed').html() + "</div>"; 
+					$('#instafeed').append(extras);
+				}
+			});
+
+			feed.run();
+		</script>
 		
 		<!-- refactor out extra js files -->
 		<script src="<?php bloginfo('template_directory'); ?>/src/js/navigation.js"></script>

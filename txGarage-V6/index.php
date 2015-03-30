@@ -1,7 +1,11 @@
 <?php get_header(); ?>
 
-	<div class="hero-wrap insta-box" data-insta>
+	<div class="hero-wrap insta-box">
 		<?php get_template_part('hero'); ?>
+		<div class="insta-box__wrapper">
+			<div id="instafeed"></div>
+			<div class="insta-box__filter"></div>
+		</div>
 	</div>
 
 	<section class="blog-slogan">

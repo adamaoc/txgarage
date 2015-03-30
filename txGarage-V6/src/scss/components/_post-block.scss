@@ -1,7 +1,12 @@
 .post-block {
 
-	width: 100%;
+	width: 95%;
+	margin: 0 auto;
 	padding: 1em 0;
+
+	@include bp(xs) {
+		width: 85%;
+	}
 
 	@include bp(sm) {
 		width: 50%;

@@ -348,28 +348,26 @@ html {
 body {
   background: #ccc;
   font-family: 'Raleway', sans-serif;
-  color: #565656; }
-
-.btn--dim {
-  text-decoration: none;
-  padding: 1em 2em;
-  text-align: center;
-  text-transform: uppercase; }
+  color: #565656;
+  overflow-x: hidden; }
 
 .btn--dim {
   color: #fff;
-  background: gray; }
+  background: gray;
+  text-decoration: none;
+  padding: 1em 2em;
+  text-transform: uppercase; }
 
 .site-header {
   background: #143752;
   height: 3.5em;
-  border-bottom: 2px solid #286fa4; }
+  border-bottom: 2px solid #2d7cb9; }
   @media (min-width: 50em) {
     .site-header {
       display: flex;
       justify-content: space-between; } }
   .site-header .logo {
-    background: #286fa4;
+    background: #2d7cb9;
     display: block;
     width: 200px;
     height: 3.5em;
@@ -392,7 +390,7 @@ body {
   background: none;
   position: absolute;
   top: 0.3em;
-  right: -2.5em;
+  left: -2.5em;
   transition: all 1s ease-in-out; }
   .admin-bar .menu-toggle {
     top: 3.3em; }
@@ -421,7 +419,7 @@ body {
 
 .site-nav {
   width: 80%;
-  left: -80%;
+  right: -80%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -444,7 +442,7 @@ body {
       .admin-bar .site-nav {
         padding-top: 0; } }
   .site-nav.open {
-    left: 0; }
+    right: 0; }
   .site-nav ul {
     list-style: none;
     margin: 0;
@@ -474,7 +472,44 @@ body {
 .hero {
   max-width: 1080px;
   width: 90%;
-  margin: 2em auto; }
+  margin: 2em auto;
+  z-index: 10;
+  position: relative; }
+  @media (min-width: 50em) {
+    .hero {
+      margin: 6em auto; } }
+
+.hero-wrap {
+  position: relative;
+  padding: 0 !important;
+  overflow: hidden; }
+
+.insta-box__filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 55, 82, 0.7);
+  z-index: 2; }
+
+#instafeed {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+
+.insta-box__wrapper {
+  clear: both; }
+  .insta-box__wrapper img {
+    width: 20%;
+    display: block;
+    float: left; }
+    @media (min-width: 37.5em) {
+      .insta-box__wrapper img {
+        width: 12.5%; } }
 
 .img-wrap {
   display: block;
@@ -491,17 +526,19 @@ body {
       background: #FFA500;
       border-left: 5px solid #b37300; }
   .img-wrap.car-reviews {
-    border-bottom: 5px solid #852729; }
+    border-bottom: 5px solid #2d7cb9; }
     .img-wrap.car-reviews .cat-tab {
-      background: #852729;
-      border-left: 5px solid #4a1617; }
+      background: #2d7cb9;
+      border-left: 5px solid #1e537b; }
   @media (min-width: 37.5em) {
     .img-wrap {
-      display: inline-block;
-      width: 50%; } }
+      width: 80%;
+      margin: 0 auto; } }
   @media (min-width: 50em) {
     .img-wrap {
-      width: 70%; } }
+      display: inline-block;
+      width: 70%;
+      margin: 0; } }
   .img-wrap .aspectbox {
     padding-top: 55%; }
   .img-wrap .cat-tab {
@@ -511,19 +548,22 @@ body {
     background: #852729;
     color: #fff;
     padding: .5em 1.5em;
-    border-left: 5px solid #4a1617; }
+    border-left: 5px solid #5e1b1d; }
 
 .content-card {
   vertical-align: top;
-  display: inline-block;
+  display: block;
   width: 100%;
   background: #eee; }
   @media (min-width: 37.5em) {
     .content-card {
-      width: 50%; } }
+      width: 80%;
+      margin: 0 auto; } }
   @media (min-width: 50em) {
     .content-card {
-      width: 30%; } }
+      width: 30%;
+      display: inline-block;
+      margin: 0; } }
   .content-card .topbox {
     background: white;
     padding: .5em; }
@@ -536,12 +576,12 @@ body {
 
 .readmorebtn {
   display: inline-block;
-  background: #1E537B;
+  background: #852729;
   color: #fff;
   text-decoration: none;
   font-size: .9em;
   padding: .5em 1.5em;
-  border-left: 5px solid #0a1c29; }
+  border-left: 5px solid #5e1b1d; }
 
 .icon-bubble {
   fill: white; }
@@ -552,8 +592,12 @@ body {
   margin-top: .2em; }
 
 .post-block {
-  width: 100%;
+  width: 95%;
+  margin: 0 auto;
   padding: 1em 0; }
+  @media (min-width: 28.5em) {
+    .post-block {
+      width: 85%; } }
   @media (min-width: 37.5em) {
     .post-block {
       width: 50%;
@@ -640,7 +684,8 @@ body {
 
 .hero-wrap {
   background: #1E537B;
-  padding: 1em 0; }
+  padding: 1em 0;
+  border-bottom: 8px solid #2d7cb9; }
   @media (min-width: 37.5em) {
     .hero-wrap {
       padding: 5em 0; } }
