@@ -23,7 +23,7 @@ $category = catClass($catList);
        }
        ?>
     </div>
-  </div><div class="content-card">
+  </div><div class="content-card <?php get_template_part('cat-tab-color');?>">
     <div class="topbox">
       <h2><?php the_title(); ?></h2>
       <div class="meta">

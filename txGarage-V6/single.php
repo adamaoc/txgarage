@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div class="hero-wrap insta-box">
+	<div class="hero-wrap hero-wrap-<?php get_template_part('cat-tab-color');?> insta-box">
 		<?php get_template_part('hero-pages'); ?>
 		<div class="insta-box__wrapper">
 			<div id="instafeed"></div>
