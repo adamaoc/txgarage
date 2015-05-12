@@ -12,7 +12,7 @@
 				</div>
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> - all rights reserved
+					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> &amp; <a href="http://jkwcreated.com">JKW Created</a> - all rights reserved
 				</p>
 				<!-- /copyright -->
 

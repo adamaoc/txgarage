@@ -13,9 +13,9 @@ $category = catClass($catList);
     <div class="aspectbox"></div>
     <div class="cat-tab">
        <?php 
-       if ($category == "news") { ?>
+       if (in_category('News')) { ?>
        <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> News <?php
-       } elseif($category == "car-reviews") { ?>
+       } elseif(in_category('Car Reviews')) { ?>
        	<svg class="icon"><use xlink:href="#icon-bubble2"></use></svg> Reviews
        	<?php
        } else {
