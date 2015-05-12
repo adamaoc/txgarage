@@ -4,6 +4,15 @@
 	margin: 0 auto;
 	padding: 1em 0;
 
+	& a {
+		text-decoration: none;
+		color: $black;
+	}
+
+	&:hover img {
+		opacity: .5;
+	}
+
 	@include bp(xs) {
 		width: 85%;
 	}
@@ -52,6 +61,7 @@
 		}
 		
 		&.news {
+			background: $orange;
 			border-bottom: 5px solid $orange;
 			span {
 				background: $orange;
@@ -59,9 +69,10 @@
 		}
 
 		&.car-reviews {
-			border-bottom: 5px solid $blue;
+			background: $light-blue;
+			border-bottom: 5px solid $light-blue;
 			span {
-				background: $blue;
+				background: $light-blue;
 			}
 		}
 

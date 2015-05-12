@@ -559,7 +559,7 @@ body {
   background: rgba(204, 132, 0, 0.8); }
 
 .insta-box__car-reviews {
-  background: rgba(204, 132, 0, 0.9); }
+  background: rgba(45, 124, 185, 0.9); }
 
 #instafeed {
   position: absolute;
@@ -663,6 +663,11 @@ body {
   width: 95%;
   margin: 0 auto;
   padding: 1em 0; }
+  .post-block a {
+    text-decoration: none;
+    color: #333; }
+  .post-block:hover img {
+    opacity: .5; }
   @media (min-width: 28.5em) {
     .post-block {
       width: 85%; } }
@@ -695,13 +700,15 @@ body {
       height: auto;
       display: block; }
     .post-block--hero.news {
+      background: #FFA500;
       border-bottom: 5px solid #FFA500; }
       .post-block--hero.news span {
         background: #FFA500; }
     .post-block--hero.car-reviews {
-      border-bottom: 5px solid #1E537B; }
+      background: #2d7cb9;
+      border-bottom: 5px solid #2d7cb9; }
       .post-block--hero.car-reviews span {
-        background: #1E537B; }
+        background: #2d7cb9; }
     .post-block--hero.video {
       border-bottom: 5px solid #333; }
       .post-block--hero.video span {
@@ -754,11 +761,13 @@ body {
 
 .hero-wrap {
   background: #1E537B;
-  padding: 1em 0;
-  border-bottom: 8px solid #2d7cb9; }
+  padding: 1em 0; }
   @media (min-width: 37.5em) {
     .hero-wrap {
       padding: 5em 0; } }
+
+.hero-wrap-homepage {
+  border-bottom: 8px solid #2d7cb9; }
 
 .blog-slogan h2 {
   text-align: center;

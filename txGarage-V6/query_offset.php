@@ -14,26 +14,27 @@ $the_query = new WP_Query( 'offset=1' ); ?>
 		$category = catClass($catList);
 
 	?>
-		
 		<div class="post-block">
-			<div class="post-block--title">
-				<h3><?php the_title(); ?></h3>
-			</div>
-			<div class="post-block--hero <?= $category ?>">
-				<?php the_post_thumbnail(); ?>
-				<span>
-					<?php 
-			       if ($category == "news") { ?>
-			       <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> News <?php
-			       } elseif($category == "car-reviews") { ?>
-			       	<svg class="icon"><use xlink:href="#icon-bubble2"></use></svg> Reviews
-			       	<?php
-			       } else {
-			       	echo "Video";
-			       }
-			       ?>
-				</span>
-			</div>
+			<a href="<?php the_permalink() ?>" rel="bookmark" class="" title="Permanent Link to <?php the_title_attribute(); ?>">
+				<div class="post-block--title">
+					<h3><?php the_title(); ?></h3>
+				</div>
+				<div class="post-block--hero <?= $category ?>">
+					<?php the_post_thumbnail(); ?>
+					<span>
+						<?php 
+				       if ($category == "news") { ?>
+				       <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> News <?php
+				       } elseif($category == "car-reviews") { ?>
+				       	<svg class="icon"><use xlink:href="#icon-bubble2"></use></svg> Reviews
+				       	<?php
+				       } else {
+				       	echo "Video";
+				       }
+				       ?>
+					</span>
+				</div>
+			</a>
 		</div>
 
 	<?php endwhile; ?>

@@ -1,11 +1,15 @@
 .hero-wrap {
 	background: $blue;
 	padding: 1em 0;
-	border-bottom: 8px solid $light-blue;
+	// border-bottom: 8px solid $light-blue;
 
 	@include bp(sm) {
 		padding: 5em 0;
 	}
+}
+
+.hero-wrap-homepage {
+	border-bottom: 8px solid $light-blue;
 }
 
 .blog-slogan {

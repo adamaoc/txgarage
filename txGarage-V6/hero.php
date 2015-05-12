@@ -9,7 +9,7 @@ if ( has_post_thumbnail() ) {
 $catList = get_the_category();
 $category = catClass($catList);
 ?>
-<div class="img-wrap <?= $category ?>" style="background-image: url(<?= $large_image_url[0]; ?>);">
+<div class="img-wrap <?php get_template_part('cat-tab-color');?>" style="background-image: url(<?= $large_image_url[0]; ?>);">
     <div class="aspectbox"></div>
     <div class="cat-tab">
        <?php 
