@@ -4,12 +4,12 @@
 		<?php get_template_part('hero'); ?>
 		<div class="insta-box__wrapper">
 			<div id="instafeed"></div>
-			<div class="insta-box__filter"></div>
+			<div class="insta-box__filter insta-box__default"></div>
 		</div>
 	</div>
 
 	<section class="blog-slogan">
-		<h2><?php bloginfo('description'); ?><span>For the Texas Automotive Consumer</span></h2>
+		<h2><?php bloginfo('description'); ?><span><!-- For the Texas Automotive Consumer --></span></h2>
 	</section>
 
 	<section class="post-list">

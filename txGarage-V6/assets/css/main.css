@@ -544,14 +544,22 @@ body {
   padding: 0 !important;
   overflow: hidden; }
 
-.insta-box__filter {
+.insta-box__filter, .insta-box__default, .insta-box__news, .insta-box__car-reviews {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(20, 55, 82, 0.7);
   z-index: 2; }
+
+.insta-box__default {
+  background: rgba(20, 55, 82, 0.7); }
+
+.insta-box__news {
+  background: rgba(204, 132, 0, 0.8); }
+
+.insta-box__car-reviews {
+  background: rgba(20, 55, 82, 0.9); }
 
 #instafeed {
   position: absolute;
@@ -674,12 +682,14 @@ body {
         clear: left; } }
   .post-block--title {
     background: white;
-    padding: 1em; }
+    padding: 1em;
+    min-height: 6em; }
     .post-block--title h3 {
       margin: 0; }
   .post-block--hero {
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    max-height: 13em; }
     .post-block--hero img {
       width: 100%;
       height: auto;
