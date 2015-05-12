@@ -20,21 +20,21 @@
 	
 	<section class="prefered-box">
 		<div class="prefered-wrapp">
-			<a href="/prefered/" class="prefered__dealers">
+			<a href="<?php echo get_option('home'); ?>/prefered/" class="prefered__dealers">
 				<div class="prefered--icon"></div>
 				<div class="prefered--txt">
 					<span>Prefered</span>
 					<h4>Dealers</h4>
 				</div>
 			</a>
-			<a href="/prefered/" class="prefered__shops">
+			<a href="<?php echo get_option('home'); ?>/prefered/" class="prefered__shops">
 				<div class="prefered--icon"></div>
 				<div class="prefered--txt">
 					<span>Prefered</span>
 					<h4>Shops</h4>
 				</div>
 			</a>
-			<a href="/prefered/" class="prefered__sponsors">
+			<a href="<?php echo get_option('home'); ?>/prefered/" class="prefered__sponsors">
 				<div class="prefered--icon"></div>
 				<div class="prefered--txt">
 					<span>txGarage</span>
