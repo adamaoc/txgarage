@@ -8,5 +8,24 @@
 		width: 100%;
 		// overflow: hidden;
 	}
+
+	& h1 {
+		margin-bottom: 0 !important;
+	}
+
+	& h1.news {
+		color: $dark-orange;
+	}
+
+	& h1.reviews {
+		color: $blue;
+	}
 	
+ }
+
+ .hero-center {
+ 	&img {
+ 		width: 100% !important;
+ 	}
+ 	// width: 100%;
  }

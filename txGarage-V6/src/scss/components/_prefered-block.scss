@@ -1,8 +1,10 @@
 .prefered-box {
-	border-top: 10px solid $light-blue;
-	border-bottom: 10px solid $light-blue;
+	border-top: 5px solid $light-blue;
+	// border-bottom: 10px solid $light-blue;
 
-	background: lighten($bg-color, 5%);
+	// background: lighten($bg-color, 5%);
+	background: url("../../theme_images/prefered_bg.jpg") center no-repeat;
+	background-size: cover;
 }
 
 .prefered-wrapp {

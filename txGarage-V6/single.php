@@ -14,7 +14,11 @@
 	<section class="content-wrapper">
 		<div>
 			
-			<h1><?php the_title(); ?></h1>
+			<h1 class="<?php get_template_part('cat-tab-color');?>"><?php the_title(); ?></h1>
+			<div class="meta">
+		        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+		        by <?php the_author(); ?>
+	    	</div>
 			<p>
 			<?php the_content(); ?>
 			</p>
