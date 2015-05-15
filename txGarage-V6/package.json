@@ -8,5 +8,8 @@
     "gulp": "^3.8.0",
     "gulp-concat": "^2.2.0",
     "gulp-sass": "^1.2.4"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.0"
   }
 }

@@ -13,20 +13,25 @@
 	<section class="content-wrapper">
 		<div>
 			
+			<a href="<?php the_permalink(); ?>">
+				<h1 class="archive-title <?php get_template_part('cat-tab-color');?>"><?php the_archive_title(); ?></h1>
+			</a>
+
 			<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="taxonomy-description">', '</div>' );
+
+				//the_archive_title( '<h1 class="page-title ">', '</h1>' );
+				// the_archive_description( '<div class="taxonomy-description">', '</div>' );
 			?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
+					/* translators: %s: Name of current post */
+					the_content( sprintf(
+						__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wilks_whitetail' ),
+						the_title( '<span class="screen-reader-text">"', '"</span>', false )
+					) );
 				?>
 
 			<?php endwhile; ?>
