@@ -38,8 +38,6 @@
 
 					<?php 
 						// unhide to show the word count 
-						// 
-						// 
 						$charactercount = 100;
 						echo wp_trim_words( get_the_content(), $charactercount, ' ... Read More >>	' ); 
 					?>
@@ -47,14 +45,7 @@
 
 
 			<?php endwhile; ?>
-
-
-			<?php the_posts_navigation(); ?>
-
 			<?php else : ?>
-
-				<?php get_template_part( 'content', 'none' ); ?>
-			
 		</div>
 	</section>
 			
