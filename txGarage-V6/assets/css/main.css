@@ -784,7 +784,7 @@ body {
     margin-bottom: 0 !important; }
   .content-wrapper h1.news, .content-wrapper h2.news {
     color: #cc8400; }
-  .content-wrapper h1.reviews {
+  .content-wrapper h1.reviews, .content-wrapper h2.reviews {
     color: #1E537B; }
 
 .hero-centerimg {
