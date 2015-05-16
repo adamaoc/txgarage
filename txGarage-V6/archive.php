@@ -27,6 +27,9 @@
 							<?php the_title(); ?>
 						</h2>
 					</a>
+					<div class="meta">
+			        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+			        by <?php the_author(); ?></div>
 					<?php 
 					if ( has_post_thumbnail() ) { 
 						the_post_thumbnail();
