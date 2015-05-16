@@ -13,28 +13,38 @@
 	<section class="content-wrapper">
 		<div>
 			
-			<a href="<?php the_permalink(); ?>">
-				<h1 class="archive-title <?php get_template_part('cat-tab-color');?>"><?php the_archive_title(); ?></h1>
+
+			<a class="archive-title" href="<?php the_permalink(); ?>">
+				<h1 class="<?php get_template_part('cat-tab-color');?>"><?php the_archive_title(); ?></h1>
 			</a>
-
-			<?php
-
-				//the_archive_title( '<h1 class="page-title ">', '</h1>' );
-				// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
+			<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
+				<div class="archive-wrapper">
+					<a class="link-title" href="<?php the_permalink(); ?>">
+						<h2 class="<?php get_template_part('cat-tab-color');?>">
+							<?php the_title(); ?>
+						</h2>
+					</a>
+					<?php 
+					if ( has_post_thumbnail() ) { 
+						the_post_thumbnail();
+					} 
+					?>
 
-				<?php
-					/* translators: %s: Name of current post */
-					the_content( sprintf(
-						__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wilks_whitetail' ),
-						the_title( '<span class="screen-reader-text">"', '"</span>', false )
-					) );
-				?>
+					<?php 
+						// unhide to show the word count 
+						// 
+						// 
+						$charactercount = 100;
+						echo wp_trim_words( get_the_content(), $charactercount, ' ... Read More >>	' ); 
+					?>
+				</div>
+
 
 			<?php endwhile; ?>
+
 
 			<?php the_posts_navigation(); ?>
 

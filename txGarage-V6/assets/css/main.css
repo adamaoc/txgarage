@@ -782,13 +782,23 @@ body {
     width: 100%; }
   .content-wrapper h1 {
     margin-bottom: 0 !important; }
-  .content-wrapper h1.news {
+  .content-wrapper h1.news, .content-wrapper h2.news {
     color: #cc8400; }
   .content-wrapper h1.reviews {
     color: #1E537B; }
 
 .hero-centerimg {
   width: 100% !important; }
+
+.archive-wrapper {
+  min-height: 15em; }
+  .archive-wrapper img {
+    max-width: 150px;
+    height: auto;
+    float: left; }
+
+.archive-title, .link-title {
+  text-decoration: none; }
 
 .hero-wrap {
   background: #1E537B;
