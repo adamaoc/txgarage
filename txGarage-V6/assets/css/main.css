@@ -816,6 +816,22 @@ body {
   .post-hero--list > div {
     width: 33.333%;
     float: left; }
+  .post-hero--list .post-hero--img {
+    position: relative; }
+  .post-hero--list .img--prev {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    width: 3em;
+    background: rgba(0, 0, 0, 0.5); }
+  .post-hero--list .img--next {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    right: 0;
+    width: 3em;
+    background: rgba(0, 0, 0, 0.5); }
 
 .hero-wrap {
   background: #1E537B;

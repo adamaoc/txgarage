@@ -12,27 +12,26 @@
 	</div>
 
 	<section class="content-wrapper">
-		<?php if (have_posts()) : while (have_posts()) : the_post();?>
-			<div class="post-wrapper">
-				
+		<div class="full-wrapper">
+			<?php if (have_posts()) : while (have_posts()) : the_post();?>
 				<h1 class="<?php get_template_part('cat-tab-color');?>"><?php the_title(); ?></h1>
-				<div class="meta">
-		        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-		        by <?php the_author(); ?>
-	    	</div>
-				
-				<?php if ( has_post_thumbnail() ) { 
-					$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );  
-		    ?>
-					<div id="post-hero" class="post-hero" data-img="<?=$large_image_url[0]?>">
-						<img src="<?=$large_image_url[0]?>" width="100%" />
-					</div>
-				<?php } ?>
-
-				<p>
-				<?php the_content(); ?>
-				</p>
-				
+					<div class="meta">
+			        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+			        by <?php the_author(); ?>
+		    	</div>
+					
+					<?php if ( has_post_thumbnail() ) { 
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );  
+			    ?>
+						<div id="post-hero" class="post-hero" data-img="<?=$large_image_url[0]?>">
+							<img src="<?=$large_image_url[0]?>" width="100%" />
+						</div>
+					<?php } ?>
+				<div class="post-wrapper">
+					<p>
+					<?php the_content(); ?>
+					</p>
+				</div>
 			</div>
 		<?php endwhile; endif; ?>
 

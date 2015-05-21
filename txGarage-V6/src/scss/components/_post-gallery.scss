@@ -4,4 +4,23 @@
     width: 33.333%;
     float: left;
   }
+  .post-hero--img {
+    position: relative;
+  }
+  .img--prev {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    width: 3em;
+    background: rgba(black, 0.5);
+  }
+  .img--next {
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    right: 0;
+    width: 3em;
+    background: rgba(black, 0.5);
+  }
 }
