@@ -1,3 +1,16 @@
+@mixin arrows() {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 2em;
+    height: 3em;
+    transform: translateY(-50%);
+    background: #d6d6d6;
+    font-family: Open-sans;
+    padding: 0.8em;
+    border: 2px solid darken(#d6d6d6, 10%);
+    cursor: pointer;
+}
 .post-hero--list {
   overflow: hidden;
   > div {
@@ -8,19 +21,13 @@
     position: relative;
   }
   .img--prev {
-    position: absolute;
-    top: 0;
-    bottom: 4px;
-    left: 0;
-    width: 3em;
-    background: rgba(black, 0.5);
+    @include arrows;
+    left: -2em;
+    border-right: none;
   }
   .img--next {
-    position: absolute;
-    top: 0;
-    bottom: 4px;
-    right: 0;
-    width: 3em;
-    background: rgba(black, 0.5);
+    @include arrows;
+    right: -2em;
+    border-left: none;
   }
 }

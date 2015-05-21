@@ -50,7 +50,9 @@
 				return {
 					currImg: this.props.mainImg,
 					prevImg: this.props.list[19],
-					nextImg: this.props.list[1]
+					nextImg: this.props.list[1],
+					arrowNext: ">",
+					arrowPrev: "<"
 				}
 			},
 
@@ -93,9 +95,13 @@
 							<img src={this.state.prevImg} style={imgStyle} />
 						</div>
 						<div className="post-hero--img">
-							<div className="img--prev" onClick={this.moveBack}>prev</div>
+							<div className="img--prev" onClick={this.moveBack}>
+								{this.state.arrowPrev}
+							</div>
 							<img src={this.state.currImg} style={imgStyle} />
-							<div className="img--next" onClick={this.moveForward}>next</div>
+							<div className="img--next" onClick={this.moveForward}>
+								{this.state.arrowNext}
+							</div>
 						</div>
 						<div className="post-hero--prev">
 							<img src={this.state.nextImg} style={imgStyle} />

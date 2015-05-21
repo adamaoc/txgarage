@@ -820,18 +820,32 @@ body {
     position: relative; }
   .post-hero--list .img--prev {
     position: absolute;
-    top: 0;
-    bottom: 4px;
-    left: 0;
-    width: 3em;
-    background: rgba(0, 0, 0, 0.5); }
+    font-weight: bold;
+    top: 50%;
+    width: 2em;
+    height: 3em;
+    transform: translateY(-50%);
+    background: #d6d6d6;
+    font-family: Open-sans;
+    padding: 0.8em;
+    border: 2px solid #bdbdbd;
+    cursor: pointer;
+    left: -2em;
+    border-right: none; }
   .post-hero--list .img--next {
     position: absolute;
-    top: 0;
-    bottom: 4px;
-    right: 0;
-    width: 3em;
-    background: rgba(0, 0, 0, 0.5); }
+    font-weight: bold;
+    top: 50%;
+    width: 2em;
+    height: 3em;
+    transform: translateY(-50%);
+    background: #d6d6d6;
+    font-family: Open-sans;
+    padding: 0.8em;
+    border: 2px solid #bdbdbd;
+    cursor: pointer;
+    right: -2em;
+    border-left: none; }
 
 .hero-wrap {
   background: #1E537B;
