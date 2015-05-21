@@ -44,3 +44,6 @@ register_nav_menus( array(
     'main-nav' => 'Main navigation menu',
     'footer_menu' => 'My Custom Footer Menu',
 ) );
+
+
+require_once('includes/shortcodes.php');
