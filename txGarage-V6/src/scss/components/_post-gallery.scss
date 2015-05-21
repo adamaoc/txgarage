@@ -16,9 +16,13 @@
   > div {
     width: 33.333%;
     float: left;
+    opacity: 0.5;
   }
   .post-hero--img {
     position: relative;
+    opacity: 1;
+    box-shadow: 0 0 22px #333;
+    z-index: 100;
   }
   .img--prev {
     @include arrows;

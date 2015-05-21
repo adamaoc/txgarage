@@ -815,9 +815,13 @@ body {
   overflow: hidden; }
   .post-hero--list > div {
     width: 33.333%;
-    float: left; }
+    float: left;
+    opacity: 0.5; }
   .post-hero--list .post-hero--img {
-    position: relative; }
+    position: relative;
+    opacity: 1;
+    box-shadow: 0 0 22px #333;
+    z-index: 100; }
   .post-hero--list .img--prev {
     position: absolute;
     font-weight: bold;
