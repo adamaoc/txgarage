@@ -811,6 +811,12 @@ body {
 .archive-title, .link-title {
   text-decoration: none; }
 
+.post-hero--list {
+  overflow: hidden; }
+  .post-hero--list > div {
+    width: 33.333%;
+    float: left; }
+
 .hero-wrap {
   background: #1E537B;
   padding: 1em 0; }

@@ -43,21 +43,70 @@
 	<script type="text/jsx">
 		var heroEl = document.getElementById('post-hero');
 		var heroImg = heroEl.dataset.img;
-		console.log(galleryList);
-
+		// console.log(galleryList);
+		var imgStyle = { width: '100%'};
+		
 		var Hero = React.createClass({
+			getInitialState: function() {
+				return {
+					currImg: this.props.mainImg,
+					prevImg: this.props.list[19],
+					nextImg: this.props.list[1]
+				}
+			},
+
+			moveForward: function() {
+				var fullList = this.props.list;
+				var currImg = this.state.currImg;
+				var nextImg = this.state.nextImg;
+				var pos = fullList.indexOf(nextImg) + 1;
+				if(pos > (fullList.length -1)) {
+					pos = 0;
+				}
+				var newNext = fullList[pos];
+
+				this.setState({
+					currImg: nextImg,
+					prevImg: currImg,
+					nextImg: newNext
+				});
+			},
+			moveBack: function() {
+				var fullList = this.props.list;
+				var currImg = this.state.currImg;
+				var prevImg = this.state.prevImg;
+				var pos = fullList.indexOf(prevImg) - 1;
+				if(pos === 0) {
+					pos = fullList.length -1;
+				}
+				var newPrev = fullList[pos];
+
+				this.setState({
+					currImg: prevImg,
+					prevImg: newPrev,
+					nextImg: currImg
+				});
+			},
 			render: function() {
 				return (
 					<div className="post-hero--list">
+						<div className="post-hero--prev">
+							<img src={this.state.prevImg} style={imgStyle} />
+						</div>
 						<div className="post-hero--img">
-							<img src={this.props.mainImg} style="max-width: 100%;" />
+							<div className="img--prev" onClick={this.moveBack}>prev</div>
+							<img src={this.state.currImg} style={imgStyle} />
+							<div className="img--next" onClick={this.moveForward}>next</div>
+						</div>
+						<div className="post-hero--prev">
+							<img src={this.state.nextImg} style={imgStyle} />
 						</div>
 					</div>
 				);
 			}
 		});
 
-		React.render(<Hero mainImg={heroImg} list={galleryList} />, document.getElementById('post-hero'));
+		React.render(<Hero mainImg={heroImg} list={galleryList} />, heroEl);
 	</script>
 
 <?php get_footer(); ?>
