@@ -11,6 +11,11 @@
     border: 2px solid darken(#d6d6d6, 10%);
     cursor: pointer;
 }
+
+.full-wrapper {
+  width: 100%;
+}
+
 .post-hero--list {
   overflow: hidden;
   > div {

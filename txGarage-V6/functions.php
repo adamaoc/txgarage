@@ -1,4 +1,5 @@
 <?php 
+
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
@@ -10,9 +11,11 @@ if ( function_exists( 'add_theme_support' ) ) {
   add_theme_support( 'post-thumbnails' ); 
 }
 
-// featured images size ---
-add_image_size( 'category-thumb', 400, 9999 ); //400 pixels wide (and unlimited height)
-
+add_action( 'after_setup_theme', 'img_theme_setup' );
+function img_theme_setup() {
+  add_image_size( 'category-thumb', 400 ); 
+  add_image_size( 'hero-thumb', 700, 525, true ); // (cropped)
+}
 
 function catClass($data) {
 	$catArr = $data;
@@ -36,8 +39,6 @@ function limit_words($string, $word_limit) {
 	return implode(' ', array_slice($words, 0, $word_limit));
 }	
 
-// featured images size ---
-add_image_size( 'category-thumb', 400, 9999 ); //400 pixels wide (and unlimited height)
 
 // register menu //
 register_nav_menus( array(

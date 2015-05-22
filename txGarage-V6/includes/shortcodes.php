@@ -111,7 +111,10 @@ function gallery_shortcode_custom($attr) {
   $urlList = array();
 
   foreach ( $attachments as $id => $attachment ) {
-    array_push($urlList, $attachment->guid);
+    $link = wp_get_attachment_image_src($id, 'thumbnail', false);
+    // print_r($link);
+    array_push($urlList, $link[0]);
+    // array_push($urlList, $attachment->guid);
   }
 
   $urlList = json_encode($urlList);

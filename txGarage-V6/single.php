@@ -21,10 +21,12 @@
 		    	</div>
 					
 					<?php if ( has_post_thumbnail() ) { 
-						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large' );  
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );  
 			    ?>
 						<div id="post-hero" class="post-hero" data-img="<?=$large_image_url[0]?>">
-							<img src="<?=$large_image_url[0]?>" width="100%" />
+							<div style="max-width: 420px; margin: 0 auto;">
+								<img src="<?=$large_image_url[0]?>" width="100%" />
+							</div>
 						</div>
 					<?php } ?>
 				<div class="post-wrapper">

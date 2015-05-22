@@ -811,6 +811,9 @@ body {
 .archive-title, .link-title {
   text-decoration: none; }
 
+.full-wrapper {
+  width: 100%; }
+
 .post-hero--list {
   overflow: hidden; }
   .post-hero--list > div {
