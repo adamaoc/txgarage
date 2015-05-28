@@ -14,10 +14,12 @@
 	<section class="content-wrapper">
 		<div class="full-wrapper">
 			<?php if (have_posts()) : while (have_posts()) : the_post();?>
-				<h1 class="<?php get_template_part('cat-tab-color');?>"><?php the_title(); ?></h1>
-					<div class="meta">
-			        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-			        by <?php the_author(); ?>
+				<div class="title-wrap">
+					<h1 class="<?php get_template_part('cat-tab-color');?>"><?php the_title(); ?></h1>
+						<div class="meta">
+				        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+				        by <?php the_author(); ?>
+			    	</div>
 		    	</div>
 					
 					<?php if ( has_post_thumbnail() ) { 
@@ -46,7 +48,7 @@
 		var heroImg = heroEl.dataset.img;
 		var imgStyle = { width: '100%'};
 		var heroIndex = galleryList.indexOf(heroImg);
-		
+
 		var Hero = React.createClass({
 			getInitialState: function() {
 				var listLength = this.props.list.length - 1;

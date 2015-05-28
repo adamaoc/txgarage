@@ -885,3 +885,14 @@ body {
     margin: 0 auto;
     width: 12em;
     height: auto; }
+
+.single .content-wrapper {
+  max-width: 100%; }
+.single .post-wrapper {
+  text-align: justify; }
+.single .post-hero {
+  margin: 2em 0; }
+.single .title-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1em; }
