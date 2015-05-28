@@ -21,7 +21,7 @@
 		    	</div>
 					
 					<?php if ( has_post_thumbnail() ) { 
-						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'thumbnail' );  
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'hero-thumb' );
 			    ?>
 						<div id="post-hero" class="post-hero" data-img="<?=$large_image_url[0]?>">
 							<div style="max-width: 420px; margin: 0 auto;">
@@ -44,15 +44,32 @@
 	<script type="text/jsx">
 		var heroEl = document.getElementById('post-hero');
 		var heroImg = heroEl.dataset.img;
-		// console.log(galleryList);
 		var imgStyle = { width: '100%'};
+		var heroIndex = galleryList.indexOf(heroImg);
 		
 		var Hero = React.createClass({
 			getInitialState: function() {
+				var listLength = this.props.list.length - 1;
+				var mainImg = this.props.mainImg;
+				var prevImg = function() {
+					if((mainImg - 1) < 0) {
+						return listLength;
+					}else{
+						return mainImg - 1;
+					}
+				};
+				var nextImg = function() {
+					if((mainImg + 1) > listLength) {
+						return 0;
+					}else{
+						return mainImg + 1;
+					}
+				};
+				console.log(mainImg, nextImg, prevImg);
 				return {
-					currImg: this.props.mainImg,
-					prevImg: this.props.list[19],
-					nextImg: this.props.list[1],
+					currImg: this.props.list[mainImg],
+					prevImg: this.props.list[prevImg()],
+					nextImg: this.props.list[nextImg()],
 					arrowNext: ">",
 					arrowPrev: "<"
 				}
@@ -113,7 +130,7 @@
 			}
 		});
 
-		React.render(<Hero mainImg={heroImg} list={galleryList} />, heroEl);
+		React.render(<Hero mainImg={heroIndex} list={galleryList} />, heroEl);
 	</script>
 
 <?php get_footer(); ?>
