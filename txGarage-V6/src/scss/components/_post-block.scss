@@ -43,7 +43,7 @@
 	&--title {
 		background: white;
 		padding: 1em;
-		min-height: 6em;
+		min-height: 6.2em;
 
 		h3 {
 			margin: 0;
@@ -58,6 +58,8 @@
 			width: 100%;
 			height: auto;
 			display: block;
+			opacity: 1;
+			transition: all .3s ease-in-out;
 		}
 		
 		&.news {

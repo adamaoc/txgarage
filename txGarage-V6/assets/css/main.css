@@ -702,7 +702,7 @@ body {
   .post-block--title {
     background: white;
     padding: 1em;
-    min-height: 6em; }
+    min-height: 6.2em; }
     .post-block--title h3 {
       margin: 0; }
   .post-block--hero {
@@ -712,7 +712,9 @@ body {
     .post-block--hero img {
       width: 100%;
       height: auto;
-      display: block; }
+      display: block;
+      opacity: 1;
+      transition: all .3s ease-in-out; }
     .post-block--hero.news {
       background: #FFA500;
       border-bottom: 5px solid #FFA500; }

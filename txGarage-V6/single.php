@@ -111,6 +111,28 @@
 			},
 			render: function() {
 				return (
+					// <div className="post-hero--list">
+					// 	<div className="post-hero--prev">
+					// 		<img src={this.state.prevImg} style={imgStyle} />
+					// 	</div>
+					// 	<div className="post-hero--img">
+					// 		<div className="img--prev" onClick={this.moveBack}>
+					// 			{this.state.arrowPrev}
+					// 		</div>
+					// 		<article class="center-img-wrapper">
+					// 		<img src={this.state.currImg} style={imgStyle} />
+					// 		</article>
+					// 		<div className="img--next" onClick={this.moveForward}>
+					// 			{this.state.arrowNext}
+					// 		</div>
+					// 	</div>
+					// 	<div className="post-hero--prev">
+					// 		<img src={this.state.nextImg} style={imgStyle} />
+					// 	</div>
+					// </div>
+					// 
+					// 
+					//Justin's Hacky way
 					<div className="post-hero--list">
 						<div className="post-hero--prev">
 							<img src={this.state.prevImg} style={imgStyle} />
@@ -119,7 +141,9 @@
 							<div className="img--prev" onClick={this.moveBack}>
 								{this.state.arrowPrev}
 							</div>
+							<article class="center-img-wrapper">
 							<img src={this.state.currImg} style={imgStyle} />
+							</article>
 							<div className="img--next" onClick={this.moveForward}>
 								{this.state.arrowNext}
 							</div>
