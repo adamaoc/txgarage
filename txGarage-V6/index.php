@@ -16,8 +16,13 @@
 		<?php get_template_part('query_offset'); ?>
 
 		<a href="#" class="btn btn--dim">View More</a>
+
 	</section>
-	
+
+	<aside>
+		<?php // Side bar stuff... ?> 	
+	</aside>	
+
 	<section class="prefered-box">
 		<div class="prefered-wrapp">
 			<a href="<?php echo get_option('home'); ?>/prefered/" class="prefered__dealers">

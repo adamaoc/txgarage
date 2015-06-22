@@ -75,18 +75,8 @@
 </div>
 
 <!-- add logo for Texas open for business -->
-<div class="texas-open-for-biz-logo" style="
-    margin: 15px auto;
-    width: 250px;
-">
-<a href="http://www.texaswideopenforbusiness.com/index.php#txGarage" style="
-    text-indent: -9999px;
-    display: block;
-    width: 100%;
-    background-image: url(http://txgarage.com/images/2013/02/texas-ofb-logo.png) no-repeat;
-    background: url(http://txgarage.com/images/2013/02/texas-ofb-logo.png) no-repeat;
-    height: 160px;
-" target="_blank">
+<div class="texas-open-for-biz-logo">
+<a href="https://texaswideopenforbusiness.com/#txGarage" target="_blank">
 Texas Wide Open for Business</a>
 </div>	
 	<?php endif; ?>

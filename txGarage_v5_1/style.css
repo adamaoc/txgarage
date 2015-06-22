@@ -400,7 +400,12 @@ body #sidebar blockquote { color: #333; text-align: justify; background: url(_/i
 #sidebar .featured-reviews li { padding: 0 14px 5px; border-bottom: 1px solid #ccc; margin-bottom: 5px; font-style: italic; text-align: justify; }
 #sidebar .featured-reviews li { text-shadow: 1px 1px 1px #fff; }
 
-#sidebar .tawa-logo { background: url(_/img/site-sprite.png) no-repeat -367px -87px; padding-left: 93px; margin: 24px -5px; height: 47px; padding-top: 8px; }
+#sidebar .tawa-logo { 
+  background-image: url(http://txgarage.com/images/2014/10/TAWA-State-Logo.png);
+  background-repeat: no-repeat;
+  background-size: 33%;
+  height: 90px;
+	/*background: url(_/img/site-sprite.png) no-repeat -367px -87px;*/ padding-left: 93px; margin: 24px -5px; /*height: 47px;*/ padding-top: 8px; }
 #sidebar .tawa-logo p { white-space: nowrap; }
 
 .msr-banner { margin-left: 11px; padding-bottom: 0; }
@@ -568,6 +573,19 @@ body .socialshare > label > span {
 }
 body .socialshare > [class*=entypo-]:before {
 	content: "";
+}
+
+.texas-open-for-biz-logo {
+	margin: 15px auto;
+  width: 250px;
+}
+.texas-open-for-biz-logo a {
+	text-indent: -9999px;
+  display: block;
+  width: 100%;
+  background: url(http://txgarage.com/images/2015/06/twofb-logo.png) no-repeat;
+  height: 230px;
+  background-size: cover;
 }
 
 /* Print styles!
