@@ -1,0 +1,97 @@
+.post-block {
+
+	width: 95%;
+	margin: 0 auto;
+	padding: 1em 0;
+
+	& a {
+		text-decoration: none;
+		color: $black;
+	}
+
+	&:hover img {
+		opacity: .5;
+	}
+
+	@include bp(xs) {
+		width: 85%;
+	}
+
+	@include bp(sm) {
+		width: 50%;
+		float: left;
+		padding: 1em 0.25em;
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}
+	}
+
+	@include bp(md) {
+		width: 33.3%;
+
+		&:nth-child(2n+1) {
+			clear: none;
+		}
+
+		&:nth-child(3n+1) {
+			clear: left;
+		}
+
+	}
+
+	&--title {
+		background: white;
+		padding: 1em;
+		min-height: 6.2em;
+
+		h3 {
+			margin: 0;
+		}
+	}
+
+	&--hero {
+		overflow: hidden;
+		position: relative;
+		max-height: 13em;
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+			opacity: 1;
+			transition: all .3s ease-in-out;
+		}
+		
+		&.news {
+			background: $orange;
+			border-bottom: 5px solid $orange;
+			span {
+				background: $orange;
+			}
+		}
+
+		&.car-reviews {
+			background: $light-blue;
+			border-bottom: 5px solid $light-blue;
+			span {
+				background: $light-blue;
+			}
+		}
+
+		&.video {
+			border-bottom: 5px solid $black;
+			span {
+				background: $black;
+			}
+		}
+
+		span {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			color: $white;
+			padding: .3em 1em;
+		}
+
+	}
+}

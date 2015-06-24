@@ -1,0 +1,64 @@
+@mixin flex-direction($direction) {
+	flex-direction: $direction;
+	-webkit-flex-direction: $direction;
+	-moz-flex-direction: $direction;
+}
+
+@mixin flexsize($flexsize) {
+	flex: $flexsize;
+	-webkit-flex: $flexsize;
+	-moz-flex: $flexsize;
+}
+
+.content-wrapper {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	@include flex-direction(row);
+	max-width: 1080px;
+	margin: 0 auto;
+
+
+	& div {
+		
+		// width: 100%;
+		// overflow: hidden;
+	}
+
+	& h1 {
+		margin-top: 1.5em;
+		margin-bottom: 0 !important;
+	}
+
+	& h1.news, h2.news {
+		color: $dark-orange;
+	}
+
+	& h1.reviews, h2.reviews {
+		color: $blue;
+	}
+	
+ }
+
+ .post-wrapper {
+ 	// @include flexsize(7);
+ 	max-width: 600px;
+ 	margin: 0 auto;
+ 	
+ 	& .meta {
+ 		margin-top: 1em;
+ 		background: $light-gray;
+ 		padding: .5em;
+ 	}
+ }
+
+ // #sidebar {
+ // 	@include flexsize(3);
+ // }
+
+ .hero-center {
+ 	&img {
+ 		width: 100% !important;
+ 	}
+ 	// width: 100%;
+ }

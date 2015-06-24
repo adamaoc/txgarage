@@ -1,0 +1,45 @@
+
+$blue: #1E537B;
+$light-blue: lighten($blue, 15%);
+$dark-blue: darken($blue, 10%);
+
+$orange: #FFA500;
+$dark-orange: darken($orange, 10%);
+
+$red: #852729;
+$dark-red: darken($red, 10%);
+
+$black: #333;
+$white: #fff;
+
+$gray: #ccc;
+$dark-gray: darken($gray, 30%);
+$light-gray: lighten($gray, 5%);
+
+
+$pri-color: $red;
+$sec-color: $blue;
+$bg-color: $gray;
+
+
+$profiles: (
+    bandcamp: #4e9bac,
+    delicious: #248cff,
+    facebook: #3b5998,
+    ficly: #b51c2c,
+    flickr: #0063db,
+    github: #4183c4,
+    googleplus: #dd4b39,
+    instagram: #517fa4,
+    kickstarter: #76cc1e,
+    lanyrd: #152e51,
+    lastfm: #d51007,
+    linkedin: #007bb6,
+    photodrop: #cdb6e3,
+    pinterest: #cb2027,
+    rdio: #0088da,
+    soundcloud: #f60,
+    twitter: #00aced,
+    vimeo: #aad450,
+    youtube: #b00
+);

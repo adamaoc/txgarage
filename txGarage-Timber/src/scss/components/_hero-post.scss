@@ -1,0 +1,193 @@
+.hero {
+	max-width: 1080px;
+	width: 90%;
+	margin: 2em auto;
+	z-index: 10;
+	position: relative;
+
+	@include bp(md) {
+		margin: 6em auto;
+	}
+}
+
+.hero-wrap {
+	position: relative;
+	padding: 0 !important;
+	overflow: hidden;
+  min-height: 140px;
+  border-bottom: 5px solid $blue;
+}
+
+.hero-wrap-reviews {
+  border-bottom: 5px solid $blue;
+}
+
+.hero-wrap-news {
+  border-bottom: 5px solid $dark-orange;
+}
+
+.insta-box__filter {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	// background: rgba($dark-blue, 0.7);
+	z-index: 2;
+}
+
+.insta-box__default {
+  @extend .insta-box__filter;
+    background: rgba($dark-blue, 0.7);
+}
+
+.insta-box__news {
+  @extend .insta-box__filter;
+    background: rgba($dark-orange, 0.8);
+}
+
+.insta-box__car-reviews {
+  @extend .insta-box__filter;
+    background: rgba($light-blue, 0.9);
+}
+
+#instafeed {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+.insta-box__wrapper {
+	clear: both;
+	img {
+		width: 20%;
+		display: block;
+		float: left;
+		@include bp(sm) {
+			width: 12.5%
+		}
+	}
+}
+
+
+
+.img-wrap {
+
+	&.news {
+		$news-color: $orange;
+  		border-bottom: 5px solid $news-color;
+  		.cat-tab {
+			background: $news-color;
+			border-left: 5px solid darken($news-color, 15%);
+  		}
+	}
+
+	&.reviews {
+		$review-color: $light-blue;
+  		border-bottom: 5px solid $review-color;
+  		.cat-tab {
+			background: $review-color;
+			border-left: 5px solid darken($review-color, 15%);
+  		}
+	}
+  
+   
+	display: block;
+	position: relative;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center center;
+
+	border-bottom: 5px solid $red;
+	box-shadow: -2px -3px 8px #333;
+
+  @include bp(sm) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include bp(md) {
+    display: inline-block;
+    width: 70%;
+    margin: 0;
+  }
+
+	.aspectbox {
+    	padding-top: 55%;
+	}
+	.cat-tab {
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        background: $red;
+        color: #fff;
+        padding: .5em 1.5em;
+        border-left: 5px solid $dark-red;
+	}
+}
+
+.content-card {
+  vertical-align: top;
+  display: block;
+  width: 100%;
+  background: #eee;
+  border-bottom: 5px solid $red;
+
+  &.news {
+    $news-color: $orange;
+    border-bottom: 5px solid $news-color;
+  }
+
+  &.reviews {
+    $review-color: $light-blue;
+    border-bottom: 5px solid $review-color;
+  }
+  
+  @include bp(sm) {
+    width: 80%;
+    margin: 0 auto;
+  }
+  @include bp(md) {
+    width: 30%;
+  	display: inline-block;
+    margin: 0;
+  }
+  
+  .topbox {
+    background: white;
+    padding: .5em;
+  }
+  h2 {
+    margin: 0;
+    padding-bottom: .5em;
+  }
+}
+
+.excerpt {
+  padding: 0.5em;
+}
+
+.readmorebtn {
+  display: inline-block;
+  background: $red;
+  color: $white;
+  text-decoration: none;
+  font-size: .9em;
+  padding: .5em 1.5em;
+  border-left: 5px solid $dark-red;
+}
+
+.icon-bubble {
+  fill: white;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-top: .2em;
+}
+
+
+
