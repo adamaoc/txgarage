@@ -1,7 +1,14 @@
 <?php get_header(); ?>
-
+<?php 
+	// Timber Setup
+	$context = array();
+	$context['hero'] = Timber::get_posts('posts_per_page=1');
+	$context['posts'] = Timber::get_posts('offset=1');
+?>
 	<div class="hero-wrap hero-wrap-homepage insta-box">
-		<?php get_template_part('hero'); ?>
+		<?php 
+			Timber::render('homepage-hero.twig', $context);
+		//get_template_part('hero'); ?>
 		<div class="insta-box__wrapper">
 			<div id="instafeed"></div>
 			<div class="insta-box__filter insta-box__default"></div>
@@ -9,11 +16,14 @@
 	</div>
 
 	<section class="blog-slogan">
-		<h2><?php bloginfo('description'); ?><span>For the Texas Automotive Consumer</span></h2>
+		<h2>News. Reviews. Passion.<span>For the Texas Automotive Consumer</span></h2>
 	</section>
 
 	<section class="post-list">
-		<?php get_template_part('query_offset'); ?>
+		<?php 
+		Timber::render('blog-list.twig', $context);
+		//get_template_part('query_offset'); 
+		?>
 
 		<a href="#" class="btn btn--dim">View More</a>
 
