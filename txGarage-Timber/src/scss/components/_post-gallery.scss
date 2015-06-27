@@ -1,0 +1,42 @@
+@mixin arrows() {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 2em;
+    height: 3em;
+    transform: translateY(-50%);
+    background: #d6d6d6;
+    font-family: Open-sans;
+    padding: 0.8em;
+    border: 2px solid darken(#d6d6d6, 10%);
+    cursor: pointer;
+}
+
+.full-wrapper {
+  width: 100%;
+}
+
+.post-hero--list {
+  overflow: hidden;
+  > div {
+    width: 33.333%;
+    float: left;
+    opacity: 0.5;
+  }
+  .post-hero--img {
+    position: relative;
+    opacity: 1;
+    box-shadow: 0 0 22px #333;
+    z-index: 100;
+  }
+  .img--prev {
+    @include arrows;
+    left: -2em;
+    border-right: none;
+  }
+  .img--next {
+    @include arrows;
+    right: -2em;
+    border-left: none;
+  }
+}

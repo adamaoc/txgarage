@@ -1,0 +1,43 @@
+.hero-wrap {
+	background: $blue;
+	padding: 1em 0;
+	// border-bottom: 8px solid $light-blue;
+
+	@include bp(sm) {
+		padding: 5em 0;
+	}
+}
+
+.hero-wrap-homepage {
+	border-bottom: 8px solid $light-blue;
+}
+
+.blog-slogan {
+	h2 {
+		text-align: center;
+		font-family: serif;
+		font-style: italic;
+		font-weight: 100;
+		font-size: 2em;
+		padding: 1em 0;
+		span {
+			display: block;
+		}
+	}
+}
+
+.post-list {
+	overflow: hidden;
+	max-width: 1080px;
+	width: 90%;
+	margin: 2em auto;
+
+	> .btn {
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		width: 12em;
+		height: auto;
+	}
+}
+

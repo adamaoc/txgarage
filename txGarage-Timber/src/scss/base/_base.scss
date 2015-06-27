@@ -1,0 +1,18 @@
+// get normalize
+@import "normalize";
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $bg-color;
+  font-family: 'Raleway', sans-serif;
+  color: #565656;
+  overflow-x: hidden;
+}

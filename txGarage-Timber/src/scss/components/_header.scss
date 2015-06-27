@@ -1,0 +1,32 @@
+
+.site-header {
+	background: $dark-blue;
+	height: 3.5em;
+	border-bottom: 2px solid $light-blue;
+	// position: relative;
+
+	@include bp(md) {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.logo {
+		background: $light-blue;
+		display: block;
+		width: 200px;
+		height: 3.5em;
+		margin: 0 auto;
+		color: $white;
+		z-index: 100;
+
+		a {
+			color: $white;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			height: 3.5em;
+			line-height: 3.5em;
+		}
+	}
+}
+@import "header-navigation";

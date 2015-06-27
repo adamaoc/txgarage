@@ -1,0 +1,15 @@
+{
+  "name": "txGarage-theme",
+  "version": "0.0.1",
+  "description": "",
+  "author": "ampnetmedia",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.8.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-sass": "^1.2.4"
+  },
+  "devDependencies": {
+    "gulp-livereload": "^3.8.0"
+  }
+}
