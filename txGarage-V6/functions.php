@@ -46,5 +46,22 @@ register_nav_menus( array(
     'footer_menu' => 'My Custom Footer Menu',
 ) );
 
+// Register Widget Areas / Sidebars //
+
+if (!function_exists('txG_widgets_init')) {
+  function txG_widgets_init() {
+    global $options;
+    register_sidebar(array('name' => __('ads', 'txG'), 'id' => 'ads', 'description' => __('Sidebar of advertising', 'txG'), 'before_widget' => '<div class="ads-widget">', 'after_widget' => '</div>', 'before_title' => '', 'after_title' => ''));
+  }
+}
+add_action('widgets_init', 'txG_widgets_init');
+
+function register_txG_widgets() {
+  register_widget('txG_advertising_widget');
+}
+add_action('widgets_init', 'register_txG_widgets'); 
+
+require_once('includes/ads-widget.php');
+
 
 require_once('includes/shortcodes.php');
