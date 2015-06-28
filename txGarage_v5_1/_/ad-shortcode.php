@@ -12,7 +12,7 @@ function txGad($atts, $content = null) {
 
   $showAd = true;
   if($today < $start) {
-    echo "not time to show the ad";
+    // echo "not time to show the ad";
     if(is_user_logged_in()) {
       array_push($classList, 'admin');
     }else{
