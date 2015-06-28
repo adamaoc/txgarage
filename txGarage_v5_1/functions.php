@@ -65,4 +65,7 @@
 		// featured images size ---
 		add_image_size( 'category-thumb', 400, 9999 ); //400 pixels wide (and unlimited height)
 
+
+    require_once('_/ad-shortcode.php');
+
 ?>

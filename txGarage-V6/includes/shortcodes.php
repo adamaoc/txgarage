@@ -44,6 +44,46 @@ function dropcap($atts, $content = null) {
 }
 add_shortcode('dropcap', 'dropcap');
 
+/***** Advertising *****/
+
+function txGad($atts, $content = null) {
+  // print_r($atts);
+  $start = $atts['start'];
+  $end = $atts['end'];
+  $type = $atts['type'];
+  $tag = $atts['tag'];
+  $today = date('n/d/Y');
+  $classList = ['txGad', 'ad-item', $type];
+
+  // echo "<br>";
+  // echo "start date: " . $start;
+  // echo "<br>";
+  // echo "today's date: " . $today;
+  // echo "<br>";
+
+  $showAd = true;
+  if($today < $start) {
+    echo "not time to show the ad";
+    if(is_user_logged_in()) {
+      array_push($classList, 'admin');
+    }else{
+      $showAd = false;
+    }
+  }
+
+  $build = '';
+  $build .= '<li id="'.$tag.'" class="'.implode(' ', $classList).'">';
+  $build .= do_shortcode($content);
+  $build .= '</li>';
+  
+  if($showAd) {
+    return $build;  
+  }
+  
+  return false;
+}
+add_shortcode('txGad', 'txGad');
+
 /***** Gallery *****/
 
 remove_shortcode('gallery', 'gallery_shortcode');
