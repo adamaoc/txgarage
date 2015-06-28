@@ -8,7 +8,7 @@ function txGad($atts, $content = null) {
   $type = $atts['type'];
   $tag = $atts['tag'];
   $today = date('n/d/Y');
-  $classList = ['txGad', 'ad-item', $type];
+  $classList = array('txGad', 'ad-item', $type);
 
   $showAd = true;
   if($today < $start) {
