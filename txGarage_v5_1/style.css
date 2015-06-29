@@ -535,7 +535,7 @@ ol.commentlist li.thread-odd {}
 	======= Sponsors Page =======
 	============================== */
 	
-	.sponsor-ads br { display: none;}
+	.sponsor-ads br, .sponsor-list p { display: none;}
 
 	.sponsor-list li {
 		float: left; margin: 10px; position: relative;
