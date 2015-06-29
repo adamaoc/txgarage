@@ -3,11 +3,12 @@
 /***** Advertising *****/
 
 function txGad($atts, $content = null) {
-  $start = $atts['start'];
-  $end = $atts['end'];
-  $type = $atts['type'];
-  $tag = $atts['tag'];
-  $today = date('n/d/Y');
+  $link   = $atts['link'];
+  $start  = $atts['start'];
+  $end    = $atts['end'];
+  $type   = $atts['type'];
+  $tag    = $atts['tag'];
+  $today  = date('n/d/Y');
   $classList = array('txGad', 'ad-item', $type);
 
   $showAd = true;
@@ -22,7 +23,12 @@ function txGad($atts, $content = null) {
 
   $build = '';
   $build .= '<li id="'.$tag.'" class="'.implode(' ', $classList).'">';
+  $build .= '<div class="ad-item__bg">';
   $build .= do_shortcode($content);
+  if($link) {
+    $build .= '<a href="'.$link.'" target="_blank" class="ad-item__link"></a>';  
+  }
+  $build .= '</div>';
   $build .= '</li>';
   
   if($showAd) {

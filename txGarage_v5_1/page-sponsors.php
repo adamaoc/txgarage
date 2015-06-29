@@ -19,7 +19,7 @@ Template Name: sposors_page
 
 			<div class="entry">
 
-				<?php the_content(); ?>
+				<?php get_the_content(); ?>
 				
 				<ul class="sponsor-list">
 					<?php 

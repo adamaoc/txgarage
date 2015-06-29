@@ -536,10 +536,11 @@ ol.commentlist li.thread-odd {}
 	============================== */
 	
 	.sponsor-list li {
-		float: left; margin: 10px;
+		float: left; margin: 10px; position: relative;
 	}
 	
-	.sponsor-list li a { display: block; background: #999; box-shadow: 1px 2px 8px #888; padding: 20px; -webkit-box-sizing: border-box; }
+	.sponsor-list li .ad-item__bg { display: block; background: #999; box-shadow: 1px 2px 8px #888; padding: 20px; -webkit-box-sizing: border-box; box-sizing: border-box; -mox-box-sizing: border-box; }
+	.sponsor-list li .ad-item__link {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 200;}
 	
 	
 .mobile-show { display: none; }
