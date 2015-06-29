@@ -17,9 +17,9 @@ Template Name: sposors_page
 			
 		<article class="post" id="post-<?php the_ID(); ?>">
 
-			<div class="entry">
+			<div class="entry sponsor-ads">
 
-				<?php get_the_content(); ?>
+				<?php the_content(); ?>
 				
 				<ul class="sponsor-list">
 					<?php 
