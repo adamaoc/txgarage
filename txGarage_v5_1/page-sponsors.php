@@ -4,7 +4,34 @@ Template Name: sposors_page
 ?>
 	
 <?php get_header(); ?>
+<script type="text/javascript" src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
+<script>
+	var titanTag = document.getElementById('nissanTitan');
+	var api = new Firebase("https://amp-stats.firebaseio.com/txgarage/sponsors");
 
+	var date = function() {
+		var today = new Date();
+		var dd = today.getDate();
+		var mm = today.getMonth()+1;
+		var yyyy = today.getFullYear();
+		if(dd<10) {
+			dd='0'+dd
+		} 
+		if(mm<10) {
+			mm='0'+mm
+		} 
+		today = mm+'/'+dd+'/'+yyyy;
+		return today;
+	}
+
+	titanTag.addEventListener("click", doOmniture);
+
+	function doOmniture(event) {
+		console.log(event.target.parentNode.id);
+		// var	adClicked = event.target.parentNode.id;
+		api.push({date: date(), link: 'nissanTitan', page: 'sponsor', timeStamp: Firebase.ServerValue.TIMESTAMP});
+	}
+</script>
 <?php /* If this page is magazine */ if (is_page('magazine')) { ?>
 	<?php include("_/page_headers/magazine.php"); ?>
 	<?php } ?>
