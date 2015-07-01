@@ -83,7 +83,7 @@ define('DONOTCACHEPAGE', TRUE);
 
 	function doOmniture(event) {
 		// console.log(event.target.parentNode.parentNode.id);
-		var	adClicked = event.target.parentNode.parentNode.id;
+		var	adClicked = event.target.parentNode.parentNode.parentNode.id;
 		api.push({date: date(), link: adClicked, page: 'sponsor', timeStamp: Firebase.ServerValue.TIMESTAMP});
 	}
 </script>
