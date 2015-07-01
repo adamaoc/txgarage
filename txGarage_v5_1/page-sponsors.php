@@ -1,10 +1,11 @@
 <?php /*
 Template Name: sposors_page
-*/ 
+*/
+define('DONOTCACHEPAGE', TRUE); 
 ?>
 	
 <?php get_header(); ?>
-<script type="text/javascript" src="<?php get_theme_root(); ?>/_/js/detect-swf.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory');  ?>/_/js/detect-swf.min.js"></script>
 <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
 <?php /* If this page is magazine */ if (is_page('magazine')) { ?>
 	<?php include("_/page_headers/magazine.php"); ?>
@@ -48,7 +49,14 @@ Template Name: sposors_page
 <script>
 	// feature detect
 	if(!FlashDetect.installed){
-      console.log("Flash is required to enjoy this site.");         
+      console.log("Flash is required to enjoy this site.");
+	var sponsorList = document.querySelector('.sponsor-list');
+	var objList = sponsorList.querySelectorAll('.obj-wrap');
+	console.log(objList);
+	for(var i = 0; i < objList.length; i++) {
+		objList[i].classList.add('hide-obj');
+	}
+
   }else{
       console.log("Flash is insalled on your Web browser.");
   }

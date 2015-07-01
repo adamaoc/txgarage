@@ -131,7 +131,7 @@ button {width: auto; overflow: visible;}
 .clearfix:after { clear: both; }  
 .clearfix { zoom: 1; }  
 
-
+.hide-obj object { visibility: hidden; }
 
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
