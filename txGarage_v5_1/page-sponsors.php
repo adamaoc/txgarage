@@ -4,6 +4,7 @@ Template Name: sposors_page
 ?>
 	
 <?php get_header(); ?>
+<script type="text/javascript" src="<?php get_theme_root(); ?>/_/js/detect-swf.min.js"></script>
 <script type="text/javascript" src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
 <?php /* If this page is magazine */ if (is_page('magazine')) { ?>
 	<?php include("_/page_headers/magazine.php"); ?>
@@ -45,6 +46,13 @@ Template Name: sposors_page
 </div><!-- off inner main wrap -->	
 	
 <script>
+	// feature detect
+	if(!FlashDetect.installed){
+      console.log("Flash is required to enjoy this site.");         
+  }else{
+      console.log("Flash is insalled on your Web browser.");
+  }
+
 	var titanTag = document.getElementById('nissanTitan');
 	var api = new Firebase("https://amp-stats.firebaseio.com/txgarage/sponsors");
 
@@ -66,7 +74,7 @@ Template Name: sposors_page
 	titanTag.addEventListener("click", doOmniture);
 
 	function doOmniture(event) {
-		console.log(event.target.parentNode.parentNode.id);
+		// console.log(event.target.parentNode.parentNode.id);
 		var	adClicked = event.target.parentNode.parentNode.id;
 		api.push({date: date(), link: adClicked, page: 'sponsor', timeStamp: Firebase.ServerValue.TIMESTAMP});
 	}
