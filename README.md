@@ -34,7 +34,7 @@ v.6 - Currently working on an update for full look and feel to be more modern an
 
 _thanks for checking out my github repo's_ 
 
-| [ampnet(media)](http://ampnetmedia.com/) | [@adamaoc](http://twitter.com/adamaoc/) | [team treehouse](http://teamtreehouse.com/adamaoc) | [codepen](http://codepen.com/adamaoc/) |
+| [ampnet(media)](http://ampnetmedia.com/) | [@adamaoc](http://twitter.com/adamaoc/) | [team treehouse](http://teamtreehouse.com/adamaoc) | [codepen](http://codepen.io/adamaoc/) |
 
 
 
