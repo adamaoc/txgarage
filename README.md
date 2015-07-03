@@ -28,7 +28,7 @@ v.6 - Currently working on an update for full look and feel to be more modern an
 
 - the v6 design has been moved to txGarage-Timber using the Timber framework
 
-`check out the txGarage-Timber theme for more details`   
+> check out the [txGarage-Timber theme](https://github.com/adamaoc/txgarage/tree/master/txGarage-Timber) for more details   
 
 * * *
 
