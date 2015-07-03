@@ -29,8 +29,8 @@
 
 	</section>
 
-	<aside>
-		<?php // Side bar stuff... ?> 	
+	<aside class="sidebar--ads">
+		<?php dynamic_sidebar('ads'); ?> 	
 	</aside>	
 
 	<section class="prefered-box">
