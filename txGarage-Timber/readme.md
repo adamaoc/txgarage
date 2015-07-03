@@ -38,10 +38,10 @@ gulp watch // watching sass files
 
 Folder structure:
 
-the `/assets` folder holds built files including css, javascript, and SVG Sprite
+the **/assets** folder holds built files including `css`, `javascript`, and `SVG Sprite`
 
-the `/includes` folder is for php includes such as shortcodes and widgets
+the **/includes** folder is for php includes such as `shortcodes` and `widgets`
 
-the `/src` folder is where your source files are for generating css and js. This is where you'll write Sass or React code.
+the **/src** folder is where your source files are for generating `css` and `js`. This is where you'll write `Sass` or `React` code.
 
-the `/views` folder holds all your twig files for the Timber framework. This is where you'll define components and page views. 
+the **/views** folder holds all your `twig` files for the `Timber framework`. This is where you'll define components and page views. 
