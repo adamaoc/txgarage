@@ -18,7 +18,20 @@
 // }
 
 .btn {
+	display: inline-block;
 	&--dim {
 		@include button($dark-gray, "dark");
 	}
+
+	&.prev {
+		border-left: 5px solid $light-blue;
+	}
+	&.next {
+		border-right: 5px solid $light-blue;
+	}
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: space-around;
 }
