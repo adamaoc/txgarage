@@ -20,3 +20,10 @@ body {
 img {
   max-width: 100%;
 }
+
+.limit-wrapper {
+  // overflow: hidden;
+  max-width: 1080px;
+  width: 90%;
+  margin: .5em auto;
+}

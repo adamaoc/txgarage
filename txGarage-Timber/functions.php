@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
@@ -7,37 +7,35 @@ function my_jquery_enqueue() {
    wp_enqueue_script('jquery');
 }
 
-if ( function_exists( 'add_theme_support' ) ) { 
-  add_theme_support( 'post-thumbnails' ); 
+if ( function_exists( 'add_theme_support' ) ) {
+  add_theme_support( 'post-thumbnails' );
 }
 
 add_action( 'after_setup_theme', 'img_theme_setup' );
 function img_theme_setup() {
-  add_image_size( 'category-thumb', 400 ); 
+  add_image_size( 'category-thumb', 400 );
   add_image_size( 'hero-thumb', 700, 525, true ); // (cropped)
 }
 
 function catClass($data) {
 	$catArr = $data;
-	foreach ($catArr as $catList) {
-		foreach ($catList as $category) {
-			if($category == "news") {
-				return "news";
-			} elseif($category == "car-reviews") {
-				return "car-reviews";
-			}
-		}
-	}
+  foreach ($catArr as $category) {
+    if($category->name == "News") {
+      return "news";
+    }elseif($category->name == "Car Reviews") {
+      return "car-reviews";
+    }
+  }
 }
 
 
 // limit excerpt //
-	
+
 function limit_words($string, $word_limit) {
 
-	$words = explode(' ', $string);		
+	$words = explode(' ', $string);
 	return implode(' ', array_slice($words, 0, $word_limit));
-}	
+}
 
 
 // register menu //
@@ -59,7 +57,7 @@ add_action('widgets_init', 'txG_widgets_init');
 function register_txG_widgets() {
   register_widget('txG_advertising_widget');
 }
-add_action('widgets_init', 'register_txG_widgets'); 
+add_action('widgets_init', 'register_txG_widgets');
 
 require_once('includes/ads-widget.php');
 

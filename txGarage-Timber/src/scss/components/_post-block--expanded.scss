@@ -1,0 +1,36 @@
+.post-block {
+  &--expanded {
+    display: flex;
+    margin-bottom: 2em;
+    box-shadow: 1px 3px 8px #888;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+    }
+
+    .post-block--title {
+      padding: 0;
+      min-height: 1em;
+      margin-bottom: 1em;
+    }
+
+    .post-img-wrap {
+      display: block;
+      min-width: 22em;
+      max-width: 22em;
+      width: 22em;
+    }
+  }
+  &--excerpt {
+    background-color: #fff;
+    padding: 1em;
+
+    &.car-reviews {
+      border-bottom: 5px solid $light-blue;
+    }
+    &.news {
+      border-bottom: 5px solid $orange;
+    }
+  }
+}

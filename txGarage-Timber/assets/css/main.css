@@ -351,6 +351,11 @@ body {
 img {
   max-width: 100%; }
 
+.limit-wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: .5em auto; }
+
 .btn--dim {
   color: #fff;
   background: gray;
@@ -564,6 +569,14 @@ img {
   overflow: hidden;
   min-height: 140px;
   border-bottom: 5px solid #1E537B; }
+  .hero-wrap--inner {
+    margin-bottom: 2em; }
+  .hero-wrap h1 {
+    z-index: 100;
+    position: relative;
+    color: white;
+    padding-top: 1.5em;
+    padding-left: 2em; }
 
 .hero-wrap-reviews {
   border-bottom: 5px solid #1E537B; }
@@ -755,6 +768,32 @@ img {
       left: 0;
       color: #fff;
       padding: .3em 1em; }
+
+.post-block--expanded {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2em;
+  box-shadow: 1px 3px 8px #888; }
+  .post-block--expanded a {
+    color: #1E537B;
+    text-decoration: none; }
+  .post-block--expanded .post-block--title {
+    padding: 0;
+    min-height: 1em;
+    margin-bottom: 1em; }
+  .post-block--expanded .post-img-wrap {
+    display: block;
+    min-width: 22em;
+    max-width: 22em;
+    width: 22em; }
+.post-block--excerpt {
+  background-color: #fff;
+  padding: 1em; }
+  .post-block--excerpt.car-reviews {
+    border-bottom: 5px solid #2d7cb9; }
+  .post-block--excerpt.news {
+    border-bottom: 5px solid #FFA500; }
 
 .prefered-box {
   border-top: 5px solid #2d7cb9;

@@ -1,11 +1,8 @@
 <div class="post-block post-block--{{post.ID}}">
   <a href="{{post.get_path}}" rel="bookmark" class="" title="Permanent Link to {{post.get_title}}">
-  
+
     <div class="post-block--title">
       <h3>{{post.get_title}}</h3>
-      {% if post.can_edit %}
-        <span><a href="{{post.get_edit_url}}">+</a></span>
-      {% endif %}
     </div>
 
     <div class="post-block--hero {{category}}">
@@ -16,5 +13,9 @@
       {% include "components/cat-icons.twig" %}
     </div>
   </a>
+
+  {% if post.can_edit %}
+    <!-- <span><a href="{{post.get_edit_url}}">+</a></span> -->
+  {% endif %}
 </div>
 {# post.get_preview(60) #}

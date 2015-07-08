@@ -1,0 +1,19 @@
+<div class="post-block--expanded post-block--{{post.ID}}">
+  <a href="{{post.get_path}}" rel="bookmark" class="post-img-wrap" title="Permanent Link to {{post.get_title}}">
+    <div class="post-block--hero {{category}}">
+      {% if post.thumbnail %}
+        <img src="{{post.thumbnail.src}}" class="attachment-post-thumbnail post-image" alt="{{post.thumbnail.title}}">
+      {% endif %}
+      {% include "components/cat-icons.twig" %}
+    </div>
+  </a>
+  <article class="post-block--excerpt {{category}}">
+    <div class="post-block--title">
+      <a href="{{post.get_path}}" rel="bookmark"  title="Permanent Link to {{post.get_title}}">
+        <h3>{{post.get_title}}</h3>
+      </a>
+    </div>
+    {{post.get_preview(60)}}
+  </article>
+
+</div>

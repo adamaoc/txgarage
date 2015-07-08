@@ -1,0 +1,4 @@
+{% for post in posts %}
+  {% set category = function('catClass', post.categories) %}
+  {% include "tz-archive.twig" %}
+{% endfor %}

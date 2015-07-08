@@ -16,6 +16,17 @@
 	overflow: hidden;
   min-height: 140px;
   border-bottom: 5px solid $blue;
+
+	&--inner {
+		margin-bottom: 2em;
+	}
+	h1 {
+		z-index: 100;
+	  position: relative;
+	  color: white;
+	  padding-top: 1.5em;
+	  padding-left: 2em;
+	}
 }
 
 .hero-wrap-reviews {
@@ -92,8 +103,8 @@
 			border-left: 5px solid darken($review-color, 15%);
   		}
 	}
-  
-   
+
+
 	display: block;
 	position: relative;
 	width: 100%;
@@ -144,7 +155,7 @@
     $review-color: $light-blue;
     border-bottom: 5px solid $review-color;
   }
-  
+
   @include bp(sm) {
     width: 80%;
     margin: 0 auto;
@@ -154,7 +165,7 @@
   	display: inline-block;
     margin: 0;
   }
-  
+
   .topbox {
     background: white;
     padding: .5em;
@@ -192,6 +203,3 @@
   height: 1em;
   margin-top: .2em;
 }
-
-
-
