@@ -14,9 +14,7 @@
 		</div>
 	</div>
 
-	<section class="blog-slogan">
-		<h2>News. Reviews. Passion.<span>For the Texas Automotive Consumer</span></h2>
-	</section>
+	<?php Timber::render('components/blog-slogan.twig', $context); ?>
 
 	<section class="post-list">
 		<?php Timber::render('blog-list.twig', $context); ?>
