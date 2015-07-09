@@ -41,8 +41,17 @@ function limit_words($string, $word_limit) {
 // register menu //
 register_nav_menus( array(
     'main-nav' => 'Main navigation menu',
-    'footer_menu' => 'My Custom Footer Menu',
+    'preferred-menu' => 'Menu for Preferred Section',
+    'footer_menu' => 'Footer Menu',
 ) );
+
+// adding to Timber context
+add_filter('timber_context', 'add_to_context');
+function add_to_context($data){
+  $context['notes'] = 'These values are available everytime you call Timber::get_context();';
+  $data['preferred'] = new TimberMenu('preferred-menu'); // This is where you can also send a Wordpress menu slug or ID
+  return $data;
+}
 
 // Register Widget Areas / Sidebars //
 

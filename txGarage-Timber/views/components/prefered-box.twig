@@ -1,0 +1,12 @@
+<section class="prefered-box">
+  <div class="prefered-wrapp">
+  {% for item in preferred.get_items %}
+    <a href="{{item.get_link}}" class="{{item.classes | join(' ')}}">
+      <div class="prefered--icon"></div>
+      <div class="prefered--txt">
+        {{item.title}}
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+</section>
