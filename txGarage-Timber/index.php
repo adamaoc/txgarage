@@ -24,7 +24,7 @@
 	<aside class="sidebar--ads">
 		<?php dynamic_sidebar('ads'); ?>
 	</aside>
-
+	
 	<?php Timber::render('components/prefered-box.twig', $context); ?>
 
 <?php get_footer(); ?>

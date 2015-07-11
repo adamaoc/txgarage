@@ -841,13 +841,28 @@ img {
     text-decoration: none;
     color: #333;
     overflow: hidden;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    transition: 0.3s all ease-out; }
+    .prefered-wrapp a:hover {
+      box-shadow: 1px 3px 9px #888; }
+      .prefered-wrapp a:hover .prefered--icon .icon {
+        margin-top: 0.7em; }
+      .prefered-wrapp a:hover .prefered--txt {
+        padding-left: 1.8em; }
 
 .prefered--icon {
   width: 4em;
   background: #1E537B;
-  margin: 0; }
+  margin: 0;
+  text-align: center; }
+  .prefered--icon > .icon {
+    transition: 0.3s all ease-out;
+    fill: #fff;
+    width: 3.1em;
+    height: 3.1em;
+    margin-top: 0.6em; }
 .prefered--txt {
+  transition: 0.3s all ease-out;
   padding: 0.5em 1em; }
   .prefered--txt span {
     font-style: italic; }
