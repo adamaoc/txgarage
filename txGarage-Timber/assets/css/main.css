@@ -980,6 +980,34 @@ img {
     .sidebar--ads .ads-widget a {
       display: block; }
 
+.sidebar--homepage {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .sidebar--homepage .sidebar-widget {
+    max-width: 300px;
+    margin: 2em;
+    color: #555; }
+  .sidebar--homepage .tagcloud a {
+    color: #cc8400;
+    text-decoration: none;
+    transition: 0.3s all ease; }
+    .sidebar--homepage .tagcloud a:hover {
+      color: gray; }
+  .sidebar--homepage blockquote {
+    color: #666;
+    text-align: justify;
+    background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
+    text-indent: 2em;
+    padding-top: 0.5em;
+    margin: 0; }
+
 .hero-wrap {
   background: #1E537B;
   padding: 1em 0; }

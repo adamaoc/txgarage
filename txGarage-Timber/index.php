@@ -21,10 +21,14 @@
 		<a href="#" class="btn btn--dim">View More</a>
 	</section>
 
+	<aside class="sidebar--homepage">
+		<?php dynamic_sidebar('global'); ?>
+	</aside>
+
 	<aside class="sidebar--ads">
 		<?php dynamic_sidebar('ads'); ?>
 	</aside>
-	
+
 	<?php Timber::render('components/prefered-box.twig', $context); ?>
 
 <?php get_footer(); ?>

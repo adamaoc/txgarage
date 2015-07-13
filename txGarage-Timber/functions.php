@@ -59,9 +59,21 @@ if (!function_exists('txG_widgets_init')) {
   function txG_widgets_init() {
     global $options;
     register_sidebar(array('name' => __('ads', 'txG'), 'id' => 'ads', 'description' => __('Sidebar of advertising', 'txG'), 'before_widget' => '<div class="ads-widget">', 'after_widget' => '</div>', 'before_title' => '', 'after_title' => ''));
+    register_sidebar(array('name' => __('global', 'txG'), 'id' => 'global-sidebar', 'description' => __('Global sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
   }
 }
 add_action('widgets_init', 'txG_widgets_init');
+
+
+// changing the default tag cloud
+add_filter( 'widget_tag_cloud_args', 'my_widget_tag_cloud_args' );
+function my_widget_tag_cloud_args( $args ) {
+	$args['number'] = 24;
+	$args['largest'] = 1.5;
+	$args['smallest'] = 0.7;
+	$args['unit'] = 'em';
+	return $args;
+}
 
 function register_txG_widgets() {
   register_widget('txG_advertising_widget');

@@ -1,0 +1,33 @@
+.sidebar {
+    &--homepage {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .sidebar-widget {
+        max-width: 300px;
+        margin: 2em;
+        color: #555;
+      }
+
+      .tagcloud {
+        a {
+          color: $dark-orange;
+          text-decoration: none;
+          transition: 0.3s all ease;
+          &:hover {
+            color: $dark-gray;
+          }
+        }
+      }
+
+      blockquote {
+        color: #666;
+        text-align: justify;
+        background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
+        text-indent: 2em;
+        padding-top: 0.5em;
+        margin: 0;
+      }
+    }
+}
