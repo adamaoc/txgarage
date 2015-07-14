@@ -1,5 +1,17 @@
+{% set category = function('pageCatClass', wp_title) %}
+
+<div class="hero-wrap hero-wrap--inner insta-box">
+	<div class="insta-box__wrapper">
+		<div id="instafeed"></div>
+		<div class="insta-box__{{category}}"></div>
+	</div>
+	<h1>{{ wp_title }}</h1>
+</div>
+
+<section class="post-list--expanded limit-wrapper">
 {% for post in posts %}
   {% set category = function('catClass', post.categories) %}
   {% include "tz-archive.twig" %}
 {% endfor %}
 {% include "components/pagination.twig" %}
+</section>

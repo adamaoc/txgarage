@@ -27,6 +27,17 @@ function catClass($data) {
     }
   }
 }
+function pageCatClass($title) {
+  if($title == "News") {
+    return "news";
+  }elseif($title == "Car Reviews") {
+    return "car-reviews";
+  }elseif($title == "Video") {
+    return "videos";
+  }else{
+    return "default";
+  }
+}
 
 
 // limit excerpt //

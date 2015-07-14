@@ -24,17 +24,6 @@
 	}
 ?>
 
-	<div class="hero-wrap hero-wrap--inner insta-box">
-		<?php// get_template_part('hero-pages'); ?>
-		<div class="insta-box__wrapper">
-			<div id="instafeed"></div>
-			<div class="insta-box__filter insta-box__default"></div>
-		</div>
-		<h1><?= $context['title']; ?></h1>
-	</div>
-
-	<section class="post-list--expanded limit-wrapper">
-	  <?php Timber::render('archive-list.twig', $context); ?>
-	</section>
+  <?php Timber::render('archive-list.twig', $context); ?>
 
 <?php get_footer(); ?>
