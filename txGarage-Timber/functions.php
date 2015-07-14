@@ -37,6 +37,12 @@ function limit_words($string, $word_limit) {
 	return implode(' ', array_slice($words, 0, $word_limit));
 }
 
+/* getting large thumbnail */
+function get_large_thumb() {
+  $heroThumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'hero-thumb' );
+  return $heroThumb[0];
+}
+
 
 // register menu //
 register_nav_menus( array(

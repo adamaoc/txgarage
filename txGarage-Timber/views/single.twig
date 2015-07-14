@@ -1,0 +1,36 @@
+{% set category = function('catClass', post.categories) %}
+<script src="https://fb.me/react-0.13.3.min.js"></script>
+<script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+<?php // move scripts out of this page... for testing only ?>
+
+<div class="hero-wrap hero-wrap-{{category}} insta-box">
+	<div class="insta-box__wrapper">
+		<div id="instafeed"></div>
+		<div class="insta-box__{{category}}"></div>
+	</div>
+</div>
+
+<section class="content-wrapper">
+  <div class="full-wrapper">
+    <div class="title-wrap">
+      <h1 class="tab-color">{{post.post_title}}</h1>
+        <div class="meta">
+            <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+            by {{post.author.name}}
+        </div>
+      </div>
+
+      {% if post.thumbnail %}
+        {% set large_image_url = function('get_large_thumb') %}
+        <div id="post-hero" class="post-hero" data-img="{{large_image_url}}">
+          <div style="max-width: 420px; margin: 0 auto;">
+            <img src="{{large_image_url}}" width="100%" alt="{{post.thumbnail.title}}" />
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="post-wrapper">
+        {{post.content}}
+      </div>
+  </div>
+</section>
