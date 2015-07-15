@@ -21,11 +21,11 @@
 		<a href="#" class="btn btn--dim">View More</a>
 	</section>
 
-	<aside class="sidebar--homepage">
+	<aside class="sidebar sidebar--homepage">
 		<?php dynamic_sidebar('global'); ?>
 	</aside>
 
-	<aside class="sidebar--ads">
+	<aside class="sidebar sidebar--ads">
 		<?php dynamic_sidebar('ads'); ?>
 	</aside>
 

@@ -343,7 +343,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #ccc;
+  background: #e2e2e2;
   font-family: 'Raleway', sans-serif;
   color: #565656;
   overflow-x: hidden; }
@@ -579,6 +579,7 @@ img {
 
 .hero-wrap {
   position: relative;
+  padding: 0;
   overflow: hidden;
   min-height: 140px;
   border-bottom: 5px solid #1E537B; }
@@ -590,16 +591,6 @@ img {
     color: white;
     padding: 1.5em 2em;
     text-shadow: 1px 1px 1px #333; }
-  .hero-wrap .meta {
-    position: absolute;
-    bottom: 0;
-    right: 2em;
-    z-index: 100;
-    background-color: #852729;
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 0 5px 0 0;
-    box-shadow: 1px -1px 5px #333; }
 
 .hero-wrap-reviews {
   border-bottom: 5px solid #1E537B; }
@@ -919,6 +910,19 @@ img {
 .hero-centerimg {
   width: 100% !important; }
 
+.single-post .hero-wrap {
+  padding: 3em 0; }
+  .single-post .hero-wrap .meta {
+    position: absolute;
+    bottom: 0;
+    right: 2em;
+    z-index: 100;
+    background-color: #852729;
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 0 5px 0 0;
+    box-shadow: 1px -1px 5px #333; }
+
 .archive-wrapper {
   min-height: 15em; }
   .archive-wrapper img {
@@ -1010,26 +1014,21 @@ img {
     max-width: 300px;
     margin: 2em;
     color: #555; }
-  .sidebar--homepage .tagcloud a {
-    color: #cc8400;
-    text-decoration: none;
-    transition: 0.3s all ease; }
-    .sidebar--homepage .tagcloud a:hover {
-      color: gray; }
-  .sidebar--homepage blockquote {
-    color: #666;
-    text-align: justify;
-    background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
-    text-indent: 2em;
-    padding-top: 0.5em;
-    margin: 0; }
-
-.hero-wrap {
-  background: #1E537B;
-  padding: 1em 0; }
-  @media (min-width: 37.5em) {
-    .hero-wrap {
-      padding: 5em 0; } }
+.sidebar--post .sidebar-widget {
+  margin: 2em auto 4em; }
+.sidebar .tagcloud a {
+  color: #cc8400;
+  text-decoration: none;
+  transition: 0.3s all ease; }
+  .sidebar .tagcloud a:hover {
+    color: gray; }
+.sidebar blockquote {
+  color: #666;
+  text-align: justify;
+  background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
+  text-indent: 2em;
+  padding-top: 0.5em;
+  margin: 0; }
 
 .hero-wrap-homepage {
   border-bottom: 8px solid #2d7cb9; }

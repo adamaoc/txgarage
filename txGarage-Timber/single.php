@@ -6,6 +6,7 @@ $post = Timber::query_post();
 $context['post'] = $post;
 
 $context['global_sidebar'] = Timber::get_widgets('global');
+$context['ads_sidebar'] = Timber::get_widgets('ads');
 
 
 // var_dump($post->author());
