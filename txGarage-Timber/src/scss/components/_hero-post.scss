@@ -12,7 +12,7 @@
 
 .hero-wrap {
 	position: relative;
-	padding: 0 !important;
+	// padding: 0 !important;
 	overflow: hidden;
   min-height: 140px;
   border-bottom: 5px solid $blue;
@@ -24,8 +24,19 @@
 		z-index: 100;
 	  position: relative;
 	  color: white;
-	  padding-top: 1.5em;
-	  padding-left: 2em;
+		padding: 1.5em 2em;
+		text-shadow: 1px 1px 1px #333;
+	}
+	.meta {
+		position: absolute;
+	  bottom: 0;
+	  right: 2em;
+	  z-index: 100;
+	  background-color: $red;
+	  color: #fff;
+	  padding: 0.5em 1em;
+	  border-radius: 0 5px 0 0;
+		box-shadow: 1px -1px 5px #333;
 	}
 }
 

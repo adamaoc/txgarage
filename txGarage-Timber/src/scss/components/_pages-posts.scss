@@ -20,7 +20,7 @@
 
 
 	& div {
-		
+
 		// width: 100%;
 		// overflow: hidden;
 	}
@@ -37,14 +37,19 @@
 	& h1.reviews, h2.reviews {
 		color: $blue;
 	}
-	
+
  }
 
  .post-wrapper {
- 	// @include flexsize(7);
  	max-width: 600px;
  	margin: 0 auto;
- 	
+	padding: 0 0.8em;
+	@include bp(md) {
+		padding: 0 1em;
+	}
+	@include bp(lg) {
+		padding: 0;
+	}
  	& .meta {
  		margin-top: 1em;
  		background: $light-gray;

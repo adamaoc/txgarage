@@ -4,6 +4,10 @@
 $context = Timber::get_context();
 $post = Timber::query_post();
 $context['post'] = $post;
+
+$context['global_sidebar'] = Timber::get_widgets('global');
+
+
 // var_dump($post->author());
 // $context['wp_title'] .= ' - ' . $post->title();
 // $context['comment_form'] = TimberHelper::get_comment_form();
