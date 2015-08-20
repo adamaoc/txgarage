@@ -14,6 +14,7 @@
 // import components
 @import "components/header";
 @import "components/footer";
+@import "components/global-sidebar";
 @import "components/hero-post";
 @import "components/post-block";
 @import "components/post-block--expanded";
@@ -26,3 +27,4 @@
 // import pages
 @import "layouts/homepage";
 @import "layouts/single";
+@import "layouts/pagenotfound";

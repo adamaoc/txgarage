@@ -76,7 +76,9 @@ if (!function_exists('txG_widgets_init')) {
   function txG_widgets_init() {
     global $options;
     register_sidebar(array('name' => __('ads', 'txG'), 'id' => 'ads', 'description' => __('Sidebar of advertising', 'txG'), 'before_widget' => '<div class="ads-widget">', 'after_widget' => '</div>', 'before_title' => '', 'after_title' => ''));
+    register_sidebar(array('name' => __('homepage', 'txG'), 'id' => 'homepage', 'description' => __('homepage Sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
     register_sidebar(array('name' => __('global', 'txG'), 'id' => 'global-sidebar', 'description' => __('Global sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
+
   }
 }
 add_action('widgets_init', 'txG_widgets_init');

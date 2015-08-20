@@ -22,7 +22,7 @@
 	</section>
 
 	<aside class="sidebar sidebar--homepage">
-		<?php dynamic_sidebar('global'); ?>
+		<?php dynamic_sidebar('homepage'); ?>
 	</aside>
 
 	<aside class="sidebar sidebar--ads">
