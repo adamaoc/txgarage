@@ -8,16 +8,19 @@
 		width: auto;
 	}
 
-	p a {
-		display: inline-block;
-		background: white;
-		padding: .5em 1em;
-		text-decoration: none;
-		margin: 0 .3em;
+	.post-wrapper {
 
-		&:hover {
-			background: $pri-color;
-			color: white;
-		}
+		> p a {
+			display: inline-block;
+			background: white;
+			padding: .5em 1em;
+			text-decoration: none;
+			margin: 0 .3em;
+
+			&:hover {
+				background: $pri-color;
+				color: white;
+			}
+		}	
 	}
 }

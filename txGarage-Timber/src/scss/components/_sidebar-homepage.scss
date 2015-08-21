@@ -3,11 +3,26 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      background: $bg-color;
 
       .sidebar-widget {
-        max-width: 300px;
         margin: 2em;
         color: #555;
+
+        &:first-child {
+          max-width: 700px;
+        }
+
+        &:last-child {
+          max-width: 300px;
+        }
+      }
+
+      & h3 {
+        padding: 0;
+        background: none;
+        color: $black;
+        font-size: 1.8em;
       }
     }
 

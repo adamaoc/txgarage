@@ -18,8 +18,15 @@
 
 	<section class="post-list">
 		<?php Timber::render('blog-list.twig', $context); ?>
-		<a href="#" class="btn btn--dim">View More</a>
+		<a href="#" class="btn btn--dim">View More
+		<svg class="icon">
+			<use xlink:href="#icon-arrow-right">
+		</svg>
+		</a>
 	</section>
+
+	<?php Timber::render('components/prefered-box.twig', $context); ?>
+	
 
 	<aside class="sidebar sidebar--homepage">
 		<?php dynamic_sidebar('homepage'); ?>
@@ -29,6 +36,5 @@
 		<?php dynamic_sidebar('ads'); ?>
 	</aside>
 
-	<?php Timber::render('components/prefered-box.twig', $context); ?>
 
 <?php get_footer(); ?>

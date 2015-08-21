@@ -1,10 +1,11 @@
 .prefered-box {
 	border-top: 5px solid $light-blue;
-	// border-bottom: 10px solid $light-blue;
+	border-bottom: 5px solid $light-blue;
 
 	// background: lighten($bg-color, 5%);
 	background: url("../../theme_images/prefered_bg.jpg") center no-repeat;
 	background-size: cover;
+	box-shadow: inset 0px 0px 4px $black;
 }
 
 .prefered-wrapp {
@@ -21,10 +22,10 @@
 		display: flex;
 		align-items: stretch;
 		width: 16em;
-		border: 3px solid $sec-color;
-		background: white;
+		border-bottom: 5px solid $dark-orange;
+		background: $orange;
 		text-decoration: none;
-		color: #333;
+		color: white;
 		overflow: hidden;
 		margin-bottom: 1em;
 		transition: 0.3s all ease-out;
@@ -45,7 +46,7 @@
 
 	&--icon {
 		width: 4em;
-		background: $sec-color;
+		// background: $sec-color;
 		margin: 0;
 		text-align: center;
 		> .icon {

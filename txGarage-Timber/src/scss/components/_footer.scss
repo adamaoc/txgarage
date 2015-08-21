@@ -51,12 +51,13 @@
 			text-decoration: none;
 			display: block;
 			overflow: hidden;
-			padding-left: 8em;
+			padding-right: 2em;
+			float: right;
 
 			span {
 				position: absolute;
-				top: 1.8em;
-				left: 2em;
+				top: 1.5em;
+				right: 9em;
 			}
 
 			img {

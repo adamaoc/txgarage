@@ -11,6 +11,7 @@
     // echo '</pre>';
     $context['title'] = "404 Page Not Found";
     $context['global_sidebar'] = Timber::get_widgets('global');
+    $context['ads_sidebar'] = Timber::get_widgets('ads');
 
 
 

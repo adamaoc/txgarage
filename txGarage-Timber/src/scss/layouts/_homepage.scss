@@ -9,7 +9,7 @@
 }
 
 .hero-wrap-homepage {
-	border-bottom: 8px solid $light-blue;
+	border-bottom: 5px solid $light-blue;
 }
 
 .blog-slogan {
@@ -35,8 +35,19 @@
 	> .btn {
 		clear: both;
 		display: block;
-		margin: 0 auto;
+		margin: 1em auto 2em;
 		width: 12em;
 		height: auto;
+		background: $pri-color;
+		border-bottom: 4px solid $dark-red;
+
+		&:hover {
+			background: $dark-red;
+
+		}
+
+		> svg {
+			float: right;
+		}
 	}
 }
