@@ -1,0 +1,65 @@
+.social-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 488px;
+  margin: 2em auto 0;
+
+  h3 {
+    display: none;
+  }
+
+
+
+  & .social-widgets {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    min-width: 9%;
+    background: $orange;
+    bottom: 0;
+    position: relative;
+    margin: 0 auto;
+
+    &:first-child {
+      // margin: 0;
+      // background: $blue;
+      // position: relative;
+      // bottom: 0;
+      // display: none;
+      // @include bp(sm) {
+      //   display: none;
+    	// }
+      //
+      // & h3 {
+      //   display: block;
+      //   padding: 1em 2em;
+      //   line-height: 0;
+      //   color: white;
+      //
+      // }
+      // > div {
+      //   display: none;
+      // }
+
+
+    }
+
+
+    .textwidget {
+      padding: 1em 2em;
+    }
+
+    .icon {
+      fill: white;
+      width: 2.1em;
+      height: 2.1em;
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background: $light-blue;
+    }
+  }
+}

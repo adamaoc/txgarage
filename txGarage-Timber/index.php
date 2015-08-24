@@ -10,8 +10,14 @@
 		<?php Timber::render('homepage-hero.twig', $context);  ?>
 		<div class="insta-box__wrapper">
 			<div id="instafeed"></div>
-			<div class="insta-box__filter insta-box__default"></div>
+			<div class="insta-box__filter insta-box__default">
+				<div class="social-wrapper">
+					
+					<?php dynamic_sidebar('social'); ?>
+				</div>
+			</div>
 		</div>
+
 	</div>
 
 	<?php Timber::render('components/blog-slogan.twig', $context); ?>
@@ -26,7 +32,7 @@
 	</section>
 
 	<?php Timber::render('components/prefered-box.twig', $context); ?>
-	
+
 
 	<aside class="sidebar sidebar--homepage">
 		<?php dynamic_sidebar('homepage'); ?>

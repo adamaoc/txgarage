@@ -603,6 +603,37 @@ a {
     margin-right: 1em;
     color: #d9d9d9; }
 
+.social-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 488px;
+  margin: 2em auto 0; }
+  .social-wrapper h3 {
+    display: none; }
+  .social-wrapper .social-widgets {
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-width: 9%;
+    background: #FFA500;
+    bottom: 0;
+    position: relative;
+    margin: 0 auto; }
+    .social-wrapper .social-widgets .textwidget {
+      padding: 1em 2em; }
+    .social-wrapper .social-widgets .icon {
+      fill: white;
+      width: 2.1em;
+      height: 2.1em;
+      margin: 0 auto; }
+    .social-wrapper .social-widgets:hover {
+      background: #2d7cb9; }
+
 .hero {
   max-width: 1080px;
   width: 90%;
@@ -612,6 +643,12 @@ a {
   @media (min-width: 50em) {
     .hero {
       margin: 6em auto; } }
+
+.home .hero {
+  margin: 2em auto 13em; }
+  @media (min-width: 50em) {
+    .home .hero {
+      margin: 6em auto 8em; } }
 
 .hero-wrap {
   position: relative;

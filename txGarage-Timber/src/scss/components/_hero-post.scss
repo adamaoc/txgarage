@@ -10,6 +10,16 @@
 	}
 }
 
+.home {
+	.hero {
+		margin: 2em auto 13em;
+
+		@include bp(md) {
+			margin: 6em auto 8em;
+		}
+	}
+}
+
 .hero-wrap {
 	position: relative;
 	padding: 0;
