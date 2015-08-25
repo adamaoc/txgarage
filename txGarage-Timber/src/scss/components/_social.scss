@@ -1,53 +1,23 @@
 .social-wrapper {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  max-width: 488px;
-  margin: 2em auto 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 
   h3 {
     display: none;
   }
 
-
-
   & .social-widgets {
-
-    display: inline-flex;
-    flex-wrap: wrap;
-    min-width: 9%;
+    width: 6em;
+    min-width: 5em;
     background: $orange;
-    bottom: 0;
-    position: relative;
-    margin: 0 auto;
+    flex: 1;
+    overflow: hidden;
 
-    &:first-child {
-      // margin: 0;
-      // background: $blue;
-      // position: relative;
-      // bottom: 0;
-      // display: none;
-      // @include bp(sm) {
-      //   display: none;
-    	// }
-      //
-      // & h3 {
-      //   display: block;
-      //   padding: 1em 2em;
-      //   line-height: 0;
-      //   color: white;
-      //
-      // }
-      // > div {
-      //   display: none;
-      // }
-
-
-    }
-
-
-    .textwidget {
+    .textwidget a {
+      display: block;
       padding: 1em 2em;
     }
 
