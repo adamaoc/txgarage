@@ -613,7 +613,7 @@ a {
   display: -ms-flexbox;
   display: flex; }
   .social-wrapper h3 {
-    text-indent: -999em; }
+    display: none; }
   .social-wrapper .social-widgets {
     width: 6em;
     min-width: 5em;
