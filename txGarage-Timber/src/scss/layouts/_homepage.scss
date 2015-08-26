@@ -28,9 +28,18 @@
 
 .post-list {
 	overflow: hidden;
-	max-width: 1080px;
+	// max-width: 1080px;
 	width: 90%;
 	margin: 2em auto;
+
+	& img {
+
+		transform: none !important;
+
+		@include bp(xl) {
+			transform: translateY(-20%) !important;
+		}
+	}
 
 	> .btn {
 		clear: both;
