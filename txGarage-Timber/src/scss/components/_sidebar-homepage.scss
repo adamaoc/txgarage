@@ -10,11 +10,17 @@
         color: #555;
 
         &:first-child {
-          max-width: 70%;
+          max-width: 60%;
+          @include bp(mobileonly) {
+      			max-width: 100%;
+      		}
         }
 
         &:last-child {
-          max-width: 300px;
+          max-width: 24%;
+          @include bp(mobileonly) {
+      			max-width: 100%;
+      		}
         }
       }
 

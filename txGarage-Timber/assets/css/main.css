@@ -1090,9 +1090,15 @@ a {
     margin: 2em;
     color: #555; }
     .sidebar--homepage .sidebar-widget:first-child {
-      max-width: 70%; }
+      max-width: 60%; }
+      @media (max-width: 37.5em) {
+        .sidebar--homepage .sidebar-widget:first-child {
+          max-width: 100%; } }
     .sidebar--homepage .sidebar-widget:last-child {
-      max-width: 300px; }
+      max-width: 24%; }
+      @media (max-width: 37.5em) {
+        .sidebar--homepage .sidebar-widget:last-child {
+          max-width: 100%; } }
   .sidebar--homepage h3 {
     padding: 0;
     background: none;
