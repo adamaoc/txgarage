@@ -508,7 +508,7 @@ a {
     @media (min-width: 50em) {
       .site-nav li a {
         padding: 0 1em;
-        line-height: 3.5em; } }
+        line-height: 3.8em; } }
     @media (min-width: 64em) {
       .site-nav li a {
         padding: 0 2em; } }
