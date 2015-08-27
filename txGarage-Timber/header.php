@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/main.css">
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        
+
         <!-- linkup Favicon and apple icons -->
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,13 +23,20 @@
 	</head>
 	<body <?php body_class(); ?>>
 	<?php require_once "assets/SVGSprite.php"; ?>
-	<header class="site-header">
-        <span class="logo"><a href="<?php echo get_option('home'); ?>"><?php bloginfo('name'); ?></a></span>
-		<nav class="site-nav">
-			<button class="menu-toggle"><span></span><span></span><span></span></button>
-            <?php wp_nav_menu( array('menu' => 'main-menu')); ?>
-		</nav>
+	<header class="site-header--wrapper">
+		<div class="site-header">
+			<span class="logo">
+				<a href="<?php echo get_option('home'); ?>"><?php //bloginfo('name'); ?>
+					<svg class="icon-logo">
+						<use xlink:href="#icon-txgarage-logo">
+					</svg>
+				</a>
+			</span>
+			<nav class="site-nav">
+				<button class="menu-toggle"><span></span><span></span><span></span></button>
+							<?php wp_nav_menu( array('menu' => 'main-menu')); ?>
+			</nav>
+		</div>
 	</header>
 
 	<main class="main-warp" role="main">
-
