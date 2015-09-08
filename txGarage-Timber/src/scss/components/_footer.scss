@@ -6,7 +6,7 @@
 	border-top: 5px solid $light-blue;
 	&--nav {
 		width: 100%;
-		@include bp(sm) {
+		@include bp(md) {
 			max-width: 60%;
 			float: left;
 		}
@@ -42,7 +42,7 @@
 	&--tawa {
 		width: 100%;
 		position: relative;
-		@include bp(sm) {
+		@include bp(md) {
 			width: 30%;
 			float: right;
 		}
@@ -68,6 +68,7 @@
 	}
 
 	.copyright {
+		padding: 0 2em;
 		clear: both;
 		width: 100%;
 		text-align: center;

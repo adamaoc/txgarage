@@ -521,7 +521,7 @@ a {
   border-top: 5px solid #2d7cb9; }
   .footer--nav {
     width: 100%; }
-    @media (min-width: 37.5em) {
+    @media (min-width: 50em) {
       .footer--nav {
         max-width: 60%;
         float: left; } }
@@ -556,7 +556,7 @@ a {
   .footer--tawa {
     width: 100%;
     position: relative; }
-    @media (min-width: 37.5em) {
+    @media (min-width: 50em) {
       .footer--tawa {
         width: 30%;
         float: right; } }
@@ -575,6 +575,7 @@ a {
         max-width: 100%;
         width: 8em; }
   .footer .copyright {
+    padding: 0 2em;
     clear: both;
     width: 100%;
     text-align: center;
@@ -614,23 +615,40 @@ a {
 
 .social-wrapper {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (min-width: 37.5em) {
+    .social-wrapper {
+      width: auto;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; } }
   .social-wrapper h3 {
     display: none; }
   .social-wrapper .social-widgets {
-    width: 6em;
-    min-width: 5em;
+    -webkit-flex: 33%;
+    -ms-flex: 33%;
+    flex: 33%;
+    text-align: center;
     background: #FFA500;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     overflow: hidden; }
+    @media (min-width: 37.5em) {
+      .social-wrapper .social-widgets {
+        width: 6em;
+        min-width: 5em;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
     .social-wrapper .social-widgets .textwidget a {
       display: block;
       padding: 1em 2em; }
@@ -1105,12 +1123,11 @@ a {
   .sidebar .tagcloud a:hover {
     color: gray; }
 .sidebar blockquote {
-  color: #666;
+  color: #8A8989;
   text-align: justify;
-  background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
-  text-indent: 2em;
   padding-top: 0.5em;
-  margin: 0; }
+  margin: 0;
+  position: relative; }
 
 .hero-wrap-homepage {
   border-bottom: 5px solid #2d7cb9; }

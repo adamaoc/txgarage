@@ -1,20 +1,34 @@
 .social-wrapper {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  flex-wrap: wrap;
+
+  @include bp(sm) {
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: nowrap;
+  }
+
 
   h3 {
     display: none;
   }
 
   & .social-widgets {
-    width: 6em;
-    min-width: 5em;
+    flex: 33%;
+    text-align: center;
     background: $orange;
-    flex: 1;
     overflow: hidden;
+
+    @include bp(sm) {
+      width: 6em;
+      min-width: 5em;
+      flex: 1;
+    }
 
     .textwidget a {
       display: block;
