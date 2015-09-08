@@ -24,6 +24,8 @@ function catClass($data) {
       return "news";
     }elseif($category->name == "Car Reviews") {
       return "car-reviews";
+    }else{
+      return "default";
     }
   }
 }

@@ -1174,8 +1174,6 @@ a {
 
 .single .content-wrapper {
   max-width: 100%; }
-.single .post-wrapper {
-  text-align: justify; }
 .single .post-hero {
   margin: 0 0 2em; }
 .single .title-wrap {
@@ -1196,6 +1194,45 @@ a {
       -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse; } }
+
+.post-wrapper {
+  font-size: 1.1em; }
+  .post-wrapper p {
+    letter-spacing: 1px;
+    line-height: 1.5; }
+  .post-wrapper p, .post-wrapper h1, .post-wrapper h2, .post-wrapper h3, .post-wrapper h4, .post-wrapper ol, .post-wrapper ul {
+    max-width: 700px;
+    margin: 1.1em auto; }
+  .post-wrapper strong {
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-weight: 700; }
+  .post-wrapper blockquote p, .post-wrapper .pull-quote {
+    line-height: 1.4;
+    text-align: center;
+    font-size: 24px;
+    margin: 48px -10px;
+    border: none;
+    padding: 0;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 100;
+    font-style: italic;
+    max-width: 100%; }
+  .post-wrapper .dropcap {
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 155px;
+    line-height: 0.83;
+    padding-top: 0;
+    margin-bottom: -0.08em;
+    margin-left: -12px;
+    margin-right: 14px;
+    letter-spacing: -0.04em;
+    display: block;
+    position: relative;
+    float: left; }
 
 .error404 .content-wrapper {
   max-width: 100%; }
