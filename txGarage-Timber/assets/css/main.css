@@ -1217,6 +1217,8 @@ a {
     color: #868484; }
   .post-wrapper h2 + p, .post-wrapper h3 + p, .post-wrapper h4 + p {
     margin-top: 0.3em; }
+  .post-wrapper img {
+    height: auto; }
   .post-wrapper strong {
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-weight: 700; }
@@ -1298,6 +1300,27 @@ a {
     left: -999em; }
   .post-wrapper .gallery img {
     height: auto; }
+  .post-wrapper .img-by-three {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #852729;
+    padding: 1em 0.3em; }
+    @media (min-width: 37.5em) {
+      .post-wrapper .img-by-three {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    .post-wrapper .img-by-three a {
+      display: block; }
+      @media (min-width: 37.5em) {
+        .post-wrapper .img-by-three a {
+          -webkit-flex: 33%;
+          -ms-flex: 33%;
+          flex: 33%; } }
 
 .error404 .content-wrapper {
   max-width: 100%; }

@@ -20,6 +20,10 @@
   h2 + p, h3 + p, h4 + p {
     margin-top: 0.3em;
   }
+
+  img {
+    height: auto;
+  }
   strong {
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-weight: 700;
@@ -102,6 +106,21 @@
     }
     img {
       height: auto;
+    }
+  }
+  .img-by-three {
+    display: flex;
+    flex-direction: column;
+    background-color: $red;
+    padding: 1em 0.3em;
+    @include bp(sm) {
+      flex-direction: row;
+    }
+    a {
+      display: block;
+      @include bp(sm) {
+        flex: 33%;
+      }
     }
   }
 }

@@ -48,6 +48,11 @@ function highlightp($atts, $content = null) {
   return '<p class="highlightp">' . do_shortcode($content) . '</p>';
 }
 add_shortcode('highlightp', 'highlightp');
+
+function imgbythree($atts, $content = null) {
+  return '<div class="img-by-three">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('imgbythree', 'imgbythree');
 /***** Gallery *****/
 
 // remove_shortcode('gallery', 'gallery_shortcode');
