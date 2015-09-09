@@ -44,4 +44,40 @@
     position: relative;
     float: left;
   }
+
+  .wp-caption {
+    width: 100% !important;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    a {
+      flex: 1;
+    }
+    img {
+      display: block;
+      height: auto !important;
+      width: 100%;
+    }
+    .wp-caption-text {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 1em;
+      color: #fff;
+      background: $red;
+    }
+    &.alignleft {
+      @include bp(sm) {
+        flex-direction: row;
+      }
+    }
+    &.alignright {
+      @include bp(sm) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
 }
