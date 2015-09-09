@@ -44,6 +44,10 @@ function dropcap($atts, $content = null) {
 }
 add_shortcode('dropcap', 'dropcap');
 
+function highlightp($atts, $content = null) {
+  return '<p class="highlightp">' . do_shortcode($content) . '</p>';
+}
+add_shortcode('highlightp', 'highlightp');
 /***** Gallery *****/
 
 // remove_shortcode('gallery', 'gallery_shortcode');

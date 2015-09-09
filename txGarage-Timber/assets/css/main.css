@@ -1093,6 +1093,12 @@ a {
     .sidebar--ads .ads-widget a {
       display: block; }
 
+.sidebar--post .ads-widget {
+  max-width: 18.75em;
+  margin: 0.5em auto; }
+  .sidebar--post .ads-widget a {
+    display: block; }
+
 .sidebar--homepage {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1200,9 +1206,17 @@ a {
   .post-wrapper p {
     letter-spacing: 1px;
     line-height: 1.5; }
+    .post-wrapper p.highlightp {
+      text-align: justify;
+      font-size: 1.14; }
   .post-wrapper p, .post-wrapper h1, .post-wrapper h2, .post-wrapper h3, .post-wrapper h4, .post-wrapper ol, .post-wrapper ul {
     max-width: 700px;
     margin: 1.1em auto; }
+  .post-wrapper h2, .post-wrapper h3, .post-wrapper h4 {
+    margin-bottom: 0.3em;
+    color: #868484; }
+  .post-wrapper h2 + p, .post-wrapper h3 + p, .post-wrapper h4 + p {
+    margin-top: 0.3em; }
   .post-wrapper strong {
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-weight: 700; }
@@ -1276,6 +1290,14 @@ a {
         -webkit-flex-direction: row-reverse;
         -ms-flex-direction: row-reverse;
         flex-direction: row-reverse; } }
+  .post-wrapper .gallery .gallery-item {
+    position: relative;
+    overflow: hidden; }
+  .post-wrapper .gallery .gallery-caption {
+    position: absolute;
+    left: -999em; }
+  .post-wrapper .gallery img {
+    height: auto; }
 
 .error404 .content-wrapper {
   max-width: 100%; }
