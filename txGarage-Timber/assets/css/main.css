@@ -585,16 +585,15 @@ a {
       color: #84b9e1; }
 
 .sidebar--post {
-  background: #333;
+  background: #D6D6D6;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
   min-width: 21em;
-  padding: 1em;
-  box-shadow: inset 0 1px 8px #666; }
+  padding: 1em; }
   .sidebar--post .sidebar-widget {
     margin: 2em auto 3em;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 1px solid #ADADA9;
     padding-bottom: 3em; }
   .sidebar--post a {
     color: #FFA500;
@@ -603,7 +602,7 @@ a {
     padding: 1em; }
 .sidebar h3 {
   padding: .8em;
-  color: #d9d9d9; }
+  color: #696965; }
 .sidebar ul {
   list-style: none;
   margin: 0;
@@ -1140,6 +1139,32 @@ a {
   padding-top: 0.5em;
   margin: 0;
   position: relative; }
+
+.author-byline {
+  margin: 1em auto;
+  background: #bfbfbf;
+  background: linear-gradient(45deg, #bfbfbf 0%, #cfcfcf 62%, rgba(208, 208, 208, 0.7) 68%, rgba(216, 216, 216, 0) 100%);
+  border-left: 10px solid #852729;
+  padding: 1em 2em;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px; }
+.author__photo {
+  min-width: 96px; }
+.author__bio {
+  padding: 0 1em; }
+  .author__bio p {
+    margin: 0.5em 0; }
+.author__title {
+  margin: 0;
+  font-size: 1.8em; }
+  .author__title span {
+    display: block;
+    font-size: 0.5em;
+    letter-spacing: 2px; }
+.author__meta {
+  font-size: 0.8em; }
 
 .hero-wrap-homepage {
   border-bottom: 5px solid #2d7cb9; }

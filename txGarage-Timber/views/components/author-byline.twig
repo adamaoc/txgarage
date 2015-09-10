@@ -1,0 +1,17 @@
+<div class="author-byline">
+  <div class="author__photo">
+    <img src="{{theauthor.basic_user_avatar.96}}" alt="{{ theauthor.display_name }} - author at txGarage" />
+  </div>
+  <div class="author__bio">
+    <h3 class="author__title">
+      <span>written by:</span>
+    {% if theauthor.first_name %}
+      {{theauthor.first_name}} {{theauthor.last_name}}
+    {% else %}
+      {{ theauthor.display_name }}
+    {% endif %}
+    </h3>
+    <a href="/author/{{ theauthor.name }}" class="author__meta">all {{theauthor.name}}'s posts</a>
+    <p>{{theauthor.description}}</p>
+  </div>
+</div>

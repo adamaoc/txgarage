@@ -1,15 +1,15 @@
 .sidebar {
 	&--post {
-		background: $black;
+		background: #D6D6D6;
 		flex: 1;
 		// max-width: 27em;
 		min-width: 21em;
 		padding: 1em;
-		box-shadow: inset 0 1px 8px #666;
+		// box-shadow: inset 0 1px 8px #666;
 
       .sidebar-widget {
         margin: 2em auto 3em;
-				border-bottom: 2px solid $light-gray;
+				border-bottom: 1px solid #ADADA9;
 				padding-bottom: 3em;
       }
 
@@ -26,7 +26,7 @@
     h3 {
     	// background: $pri-color;
     	padding: .8em;
-    	color: $light-gray;
+    	color: #696965;
 			// border-bottom: 5px solid $dark-gray;
     }
 
