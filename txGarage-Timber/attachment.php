@@ -1,12 +1,19 @@
-<?php get_header(); ?>
+<?php get_header();
 
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
-      <img src="<?php echo $post->guid; ?>" alt="<?php the_title(); ?>" />
-      <h2 style="text-align: center"><?php the_title(); ?></h2> 
-      <p class="tags"><?php the_tags( 'Tags: ', ', ', ''); ?></p>
-    </article>
-  <?php endwhile; endif; ?>
+$context = Timber::get_context();
+$posts = Timber::get_posts();
+$context['post'] = $posts[0];
+
+Timber::render('attachment.twig', $context); ?>
+
+<?php Timber::render('components/prefered-box.twig', $context); ?>
+
+<aside class="sidebar sidebar--homepage">
+  <?php dynamic_sidebar('homepage'); ?>
+</aside>
+
+<aside class="sidebar sidebar--ads">
+  <?php dynamic_sidebar('ads'); ?>
+</aside>
 
 <?php get_footer(); ?>
-

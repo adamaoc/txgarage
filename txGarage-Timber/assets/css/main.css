@@ -1361,3 +1361,14 @@ a {
   .error404 .post-wrapper > p a:hover {
     background: #852729;
     color: white; }
+
+.attachment.single .attachment {
+  width: 85%;
+  margin: 2em auto; }
+  .attachment.single .attachment img {
+    display: block; }
+.attachment.single .attachment-desc {
+  background: #852729;
+  color: #fff;
+  padding: 1em 2em;
+  margin: 0; }
