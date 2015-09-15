@@ -1,8 +1,8 @@
 <div class="post-block--expanded post-block--{{post.ID}}">
-  <a href="{{post.get_path}}" rel="bookmark" class="post-img-wrap" title="Permanent Link to {{post.get_title}}">
+  <a href="{{post.get_path}}" rel="bookmark" class="post-img-wrap" title="Permanent Link to {{post.get_title}}" style="background-image:url( {{post.thumbnail.src}} );">
     <div class="post-block--hero {{category}}">
       {% if post.thumbnail %}
-        <img src="{{post.thumbnail.src}}" class="attachment-post-thumbnail post-image" alt="{{post.thumbnail.title}}">
+        <!-- <img src="{{post.thumbnail.src}}" class="attachment-post-thumbnail post-image" alt="{{post.thumbnail.title}}"> -->
       {% endif %}
       {% include "components/cat-icons.twig" %}
     </div>

@@ -1,13 +1,15 @@
 .menu-toggle {
 	display: block;
-	width: 2em;
-	height: 2em;
+	width: 3.5em;
+	height: 3.1em;
 	border: none;
 	background: none;
-
 	position: absolute;
 	top: 0.3em;
-	left: -2.5em;
+	left: -3.5em;
+	transition: all 1s ease-in-out;
+	padding: 0.2em 1em;
+	background-color: $dark-blue;
 
 	transition: all 1s ease-in-out;
 
@@ -55,17 +57,22 @@
 .site-nav {
 	width: 80%;
 	right: -80%;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	background: #333;
 	z-index: 100;
 	transition: .5s all ease-in-out;
+	@include bp(sm) {
+		width: 40%;
+		right: -40%;
+	}
 
 	@include bp(md) {
 		position: relative;
 		height: 3em;
 		left: 0;
+		width: 80%;
 		float: right;
 		background: none;
 	}

@@ -1,8 +1,14 @@
 .post-block {
   &--expanded {
     display: flex;
+    background: $blue;
     margin-bottom: 2em;
     box-shadow: 1px 3px 8px #888;
+    flex-direction: column;
+    @include bp(sm) {
+      flex-direction: row;
+      align-items: stretch;
+    }
 
     a {
       color: $blue;
@@ -17,12 +23,31 @@
 
     .post-img-wrap {
       display: block;
-      min-width: 22em;
-      max-width: 22em;
-      width: 22em;
+      background-size: cover;
+      background-position: center center;
+      min-height: 11em;
+      flex: 33%;
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      // min-width: 22em;
+      // max-width: 22em;
+      // width: 22em;
+      // width: 100%;
+      @include bp(sm) {
+        min-height: auto;
+        // min-width: 22em;
+      }
+    }
+    .post-block--hero {
+      position: relative;
+      max-height: 13em;
+      height: 3em;
+      width: 9em;
     }
   }
   &--excerpt {
+    flex: 67%;
     background-color: #fff;
     padding: 1em;
 

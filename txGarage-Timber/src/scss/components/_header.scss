@@ -14,7 +14,8 @@
 	&--wrapper {
 		background: $dark-blue;
 		border-bottom: 5px solid $light-blue;
-
+		position: relative;
+		z-index: 1000;
 	}
 
 	.logo {

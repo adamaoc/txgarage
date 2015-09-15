@@ -22,19 +22,19 @@ function txGad($atts, $content = null) {
   }
 
   $build = '';
-  $build .= '<li id="'.$tag.'" class="'.implode(' ', $classList).'">';
+  $build .= '<div id="'.$tag.'" class="'.implode(' ', $classList).'">';
   $build .= '<div class="ad-item__bg">';
   $build .= do_shortcode($content);
   if($link) {
-    $build .= '<a href="'.$link.'" target="_blank" class="ad-item__link"></a>';  
+    $build .= '<a href="'.$link.'" target="_blank" class="ad-item__link"></a>';
   }
   $build .= '</div>';
-  $build .= '</li>';
-  
+  $build .= '</div>';
+
   if($showAd) {
-    return $build;  
+    return $build;
   }
-  
+
   return false;
 }
 add_shortcode('txGad', 'txGad');

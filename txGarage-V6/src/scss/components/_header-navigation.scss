@@ -55,7 +55,8 @@
 .site-nav {
 	width: 80%;
 	right: -80%;
-	position: absolute;
+	position: fixed;
+
 	top: 0;
 	bottom: 0;
 	background: #333;

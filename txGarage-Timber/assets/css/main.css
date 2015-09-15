@@ -397,7 +397,9 @@ a {
       justify-content: space-between; } }
   .site-header--wrapper {
     background: #143752;
-    border-bottom: 5px solid #2d7cb9; }
+    border-bottom: 5px solid #2d7cb9;
+    position: relative;
+    z-index: 1000; }
   .site-header .logo {
     background: #2d7cb9;
     display: block;
@@ -422,13 +424,16 @@ a {
 
 .menu-toggle {
   display: block;
-  width: 2em;
-  height: 2em;
+  width: 3.5em;
+  height: 3.1em;
   border: none;
   background: none;
   position: absolute;
   top: 0.3em;
-  left: -2.5em;
+  left: -3.5em;
+  transition: all 1s ease-in-out;
+  padding: 0.2em 1em;
+  background-color: #143752;
   transition: all 1s ease-in-out; }
   .admin-bar .menu-toggle {
     top: 3.3em; }
@@ -460,17 +465,22 @@ a {
 .site-nav {
   width: 80%;
   right: -80%;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   background: #333;
   z-index: 100;
   transition: .5s all ease-in-out; }
+  @media (min-width: 37.5em) {
+    .site-nav {
+      width: 40%;
+      right: -40%; } }
   @media (min-width: 50em) {
     .site-nav {
       position: relative;
       height: 3em;
       left: 0;
+      width: 80%;
       float: right;
       background: none; } }
   .admin-bar .site-nav {
@@ -885,8 +895,20 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  background: #1E537B;
   margin-bottom: 2em;
-  box-shadow: 1px 3px 8px #888; }
+  box-shadow: 1px 3px 8px #888;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (min-width: 37.5em) {
+    .post-block--expanded {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
   .post-block--expanded a {
     color: #1E537B;
     text-decoration: none; }
@@ -896,10 +918,33 @@ a {
     margin-bottom: 1em; }
   .post-block--expanded .post-img-wrap {
     display: block;
-    min-width: 22em;
-    max-width: 22em;
-    width: 22em; }
+    background-size: cover;
+    background-position: center center;
+    min-height: 11em;
+    -webkit-flex: 33%;
+    -ms-flex: 33%;
+    flex: 33%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    @media (min-width: 37.5em) {
+      .post-block--expanded .post-img-wrap {
+        min-height: auto; } }
+  .post-block--expanded .post-block--hero {
+    position: relative;
+    max-height: 13em;
+    height: 3em;
+    width: 9em; }
 .post-block--excerpt {
+  -webkit-flex: 67%;
+  -ms-flex: 67%;
+  flex: 67%;
   background-color: #fff;
   padding: 1em; }
   .post-block--excerpt.car-reviews {
@@ -1166,6 +1211,44 @@ a {
 .author__meta {
   font-size: 0.8em; }
 
+.preferred-ads {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 700px;
+  margin: 1em auto;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .preferred-ads br {
+    display: none; }
+  .preferred-ads .txGad {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex: 1 0 260px;
+    -ms-flex: 1 0 260px;
+    flex: 1 0 260px;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    background-color: gray;
+    padding: 1em;
+    position: relative; }
+  .preferred-ads .ad-item__link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10; }
+
 .hero-wrap-homepage {
   border-bottom: 5px solid #2d7cb9; }
 
@@ -1225,6 +1308,9 @@ a {
       -webkit-flex-direction: row-reverse;
       -ms-flex-direction: row-reverse;
       flex-direction: row-reverse; } }
+
+.page .content-wrapper {
+  max-width: 100%; }
 
 .post-wrapper {
   font-size: 1.1em; }

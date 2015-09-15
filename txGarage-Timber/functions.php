@@ -105,3 +105,4 @@ add_action('widgets_init', 'register_txG_widgets');
 require_once('includes/ads-widget.php');
 
 require_once('includes/shortcodes.php');
+require_once('includes/shortcodes/shortcode-ads.php');
