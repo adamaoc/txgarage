@@ -1336,6 +1336,8 @@ a {
 
 .post-wrapper {
   font-size: 1.1em; }
+  .post-wrapper a {
+    word-break: break-word; }
   .post-wrapper p {
     letter-spacing: 1px;
     line-height: 1.5; }

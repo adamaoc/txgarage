@@ -1,6 +1,8 @@
 .post-wrapper {
   font-size: 1.1em;
-
+  a {
+    word-break: break-word;
+  }
   p {
     letter-spacing: 1px;
     line-height: 1.5;
