@@ -910,17 +910,16 @@ a {
       padding: .3em 1em; }
 
 .post-block--expanded {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   background: #1E537B;
   margin-bottom: 2em;
   box-shadow: 1px 3px 8px #888;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  height: auto; }
   @media (min-width: 37.5em) {
     .post-block--expanded {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
       -webkit-flex-direction: row;
       -ms-flex-direction: row;
       flex-direction: row;
@@ -964,7 +963,8 @@ a {
   -ms-flex: 67%;
   flex: 67%;
   background-color: #fff;
-  padding: 1em; }
+  padding: 1em;
+  min-height: 5em; }
   .post-block--excerpt.car-reviews {
     border-bottom: 5px solid #2d7cb9; }
   .post-block--excerpt.news {

@@ -1,11 +1,13 @@
 .post-block {
   &--expanded {
-    display: flex;
+    display: block;
     background: $blue;
     margin-bottom: 2em;
     box-shadow: 1px 3px 8px #888;
-    flex-direction: column;
+    // flex-direction: column;
+    height: auto;
     @include bp(sm) {
+      display: flex;
       flex-direction: row;
       align-items: stretch;
     }
@@ -30,13 +32,8 @@
       display: flex;
       justify-content: flex-end;
       flex-direction: column;
-      // min-width: 22em;
-      // max-width: 22em;
-      // width: 22em;
-      // width: 100%;
       @include bp(sm) {
         min-height: auto;
-        // min-width: 22em;
       }
     }
     .post-block--hero {
@@ -50,6 +47,7 @@
     flex: 67%;
     background-color: #fff;
     padding: 1em;
+    min-height: 5em;
 
     &.car-reviews {
       border-bottom: 5px solid $light-blue;
