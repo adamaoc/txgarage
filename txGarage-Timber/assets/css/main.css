@@ -757,7 +757,7 @@ a {
   position: relative;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   border-bottom: 5px solid #852729;
   box-shadow: -2px -3px 8px #333; }
