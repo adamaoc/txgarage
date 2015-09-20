@@ -77,9 +77,9 @@
     background: rgba($light-blue, 0.9);
 }
 
-.insta-box__videos {
+.insta-box__videos, .insta-box__video {
   @extend .insta-box__filter;
-    background: rgba($black, 0.9);
+    background: rgba($black, 0.7);
 }
 
 .insta-box__events {
