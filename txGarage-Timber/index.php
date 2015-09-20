@@ -12,7 +12,7 @@
 			<div id="instafeed"></div>
 			<div class="insta-box__filter insta-box__default">
 				<div class="social-wrapper">
-					
+
 					<?php dynamic_sidebar('social'); ?>
 				</div>
 			</div>
@@ -24,11 +24,11 @@
 
 	<section class="post-list">
 		<?php Timber::render('blog-list.twig', $context); ?>
-		<a href="#" class="btn btn--dim">View More
+		<!-- <a href="#" class="btn btn--dim">View More
 		<svg class="icon">
 			<use xlink:href="#icon-arrow-right">
 		</svg>
-		</a>
+		</a> -->
 	</section>
 
 	<?php Timber::render('components/prefered-box.twig', $context); ?>
