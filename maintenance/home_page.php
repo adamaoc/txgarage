@@ -1,9 +1,4 @@
-<?php /*
-Template Name: home_template
-*/
+<?php
+	$context = Timber::get_context();
+  Timber::render('main.twig', $context);
 ?>
-
-<?php //get_header(); ?>
-
-
-<?php //get_footer(); ?>

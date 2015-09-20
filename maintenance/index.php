@@ -1,4 +1,3 @@
-<body>
 <?php
 	// Timber Setup
 	$context = Timber::get_context();
@@ -7,4 +6,3 @@
 	// print_r($context);
 	// echo "</pre>";
 ?>
-</body>
