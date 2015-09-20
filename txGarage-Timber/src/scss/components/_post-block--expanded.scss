@@ -57,5 +57,11 @@
     &.news {
       border-bottom: 5px solid $orange;
     }
+    &.videos {
+      border-bottom: 5px solid $black;
+    }
+    &.events {
+      border-bottom: 5px solid $dark-red;
+    }
   }
 }

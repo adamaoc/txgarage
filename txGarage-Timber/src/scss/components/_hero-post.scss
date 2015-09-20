@@ -46,7 +46,12 @@
 .hero-wrap-news {
   border-bottom: 5px solid $dark-orange;
 }
-
+.hero-wrap-video {
+  border-bottom: 5px solid $black;
+}
+.hero-wrap-events {
+  border-bottom: 5px solid $dark-red;
+}
 .insta-box__filter {
 	position: absolute;
 	top: 0;
@@ -70,6 +75,16 @@
 .insta-box__car-reviews {
   @extend .insta-box__filter;
     background: rgba($light-blue, 0.9);
+}
+
+.insta-box__videos {
+  @extend .insta-box__filter;
+    background: rgba($black, 0.9);
+}
+
+.insta-box__events {
+  @extend .insta-box__filter;
+    background: rgba($dark-red, 0.9);
 }
 
 #instafeed {

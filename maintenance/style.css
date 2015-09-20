@@ -1,0 +1,66 @@
+/*
+	Theme Name: TXGarage In Maintenance
+	Theme URI: http://txgarage.com
+	Description: This is built as an in maitenance screen while swapping themes
+	Version: 1.0
+	Author: Adam Moore
+	Author URI: http://ampnetmedia.com
+	Tags: txgarage, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+body {
+	background: #f1f1f1;
+	font-size: 16px;
+}
+
+.icon-logo {
+	max-width: 320px;
+	fill: #1E537B;
+}
+
+.wrapper {
+	width: 320px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+body {
+    font-family: 'Droid Serif', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-size: 2.1rem;
+		color: #555;
+}
+
+a {
+    color: #4a4a4a;
+    transition: color ease 0.3s;
+}
+
+a:hover {
+    color: #1E537B;
+}
+
+p, ul, ol {
+    margin: 1.6em 0;
+}

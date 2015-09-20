@@ -24,8 +24,10 @@ function catClass($data) {
       return "news";
     }elseif($category->name == "Car Reviews") {
       return "car-reviews";
-    }else{
-      return "default";
+    }elseif($category->name == "Events") {
+      return "events";
+    }elseif($category->name == "Video") {
+      return "video";
     }
   }
 }
@@ -36,6 +38,8 @@ function pageCatClass($title) {
     return "car-reviews";
   }elseif($title == "Video") {
     return "videos";
+  }elseif($title == "Events") {
+    return "events";
   }else{
     return "default";
   }

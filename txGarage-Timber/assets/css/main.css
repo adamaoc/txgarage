@@ -705,7 +705,13 @@ a {
 .hero-wrap-news {
   border-bottom: 5px solid #cc8400; }
 
-.insta-box__filter, .insta-box__default, .insta-box__news, .insta-box__car-reviews {
+.hero-wrap-video {
+  border-bottom: 5px solid #333; }
+
+.hero-wrap-events {
+  border-bottom: 5px solid #5e1b1d; }
+
+.insta-box__filter, .insta-box__default, .insta-box__news, .insta-box__car-reviews, .insta-box__videos, .insta-box__events {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -721,6 +727,12 @@ a {
 
 .insta-box__car-reviews {
   background: rgba(45, 124, 185, 0.9); }
+
+.insta-box__videos {
+  background: rgba(51, 51, 51, 0.9); }
+
+.insta-box__events {
+  background: rgba(94, 27, 29, 0.9); }
 
 #instafeed {
   position: absolute;
@@ -881,9 +893,15 @@ a {
       .post-block--hero.car-reviews span {
         background: #2d7cb9; }
     .post-block--hero.video {
+      background: #333;
       border-bottom: 5px solid #333; }
       .post-block--hero.video span {
         background: #333; }
+    .post-block--hero.events {
+      background: #5e1b1d;
+      border-bottom: 5px solid #5e1b1d; }
+      .post-block--hero.events span {
+        background: #5e1b1d; }
     .post-block--hero span {
       position: absolute;
       bottom: 0;
@@ -951,6 +969,10 @@ a {
     border-bottom: 5px solid #2d7cb9; }
   .post-block--excerpt.news {
     border-bottom: 5px solid #FFA500; }
+  .post-block--excerpt.videos {
+    border-bottom: 5px solid #333; }
+  .post-block--excerpt.events {
+    border-bottom: 5px solid #5e1b1d; }
 
 .prefered-box {
   border-top: 5px solid #2d7cb9;

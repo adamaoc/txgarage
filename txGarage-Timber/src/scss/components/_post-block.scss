@@ -61,7 +61,7 @@
 			opacity: 1;
 			transition: all .3s ease-in-out;
 		}
-		
+
 		&.news {
 			background: $orange;
 			border-bottom: 5px solid $orange;
@@ -79,9 +79,18 @@
 		}
 
 		&.video {
+			background: $black;
 			border-bottom: 5px solid $black;
 			span {
 				background: $black;
+			}
+		}
+
+		&.events {
+			background: $dark-red;
+			border-bottom: 5px solid $dark-red;
+			span {
+				background: $dark-red;
 			}
 		}
 
