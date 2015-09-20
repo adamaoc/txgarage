@@ -46,6 +46,14 @@ function pageCatClass($title) {
 }
 
 
+// limit excerpt //
+
+function limit_words($string, $word_limit) {
+
+	$words = explode(' ', $string);
+	return implode(' ', array_slice($words, 0, $word_limit));
+}
+
 /* getting large thumbnail */
 function get_large_thumb() {
   $heroThumb = wp_get_attachment_image_src( get_post_thumbnail_id(), 'hero-thumb' );
@@ -92,8 +100,13 @@ function my_widget_tag_cloud_args( $args ) {
 	$args['unit'] = 'em';
 	return $args;
 }
-//
-// function register_txG_widgets() {
-//   register_widget('txG_advertising_widget');
-// }
-// add_action('widgets_init', 'register_txG_widgets');
+
+function register_txG_widgets() {
+  register_widget('txG_advertising_widget');
+}
+add_action('widgets_init', 'register_txG_widgets');
+
+require_once('includes/ads-widget.php');
+
+require_once('includes/shortcodes.php');
+require_once('includes/shortcodes/shortcode-ads.php');
