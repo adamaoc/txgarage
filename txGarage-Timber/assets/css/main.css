@@ -1444,6 +1444,8 @@ a {
     flex-direction: column;
     background-color: #852729;
     padding: 1em 0.3em; }
+    .post-wrapper .img-by-three img {
+      width: 100%; }
     @media (min-width: 37.5em) {
       .post-wrapper .img-by-three {
         -webkit-flex-direction: row;

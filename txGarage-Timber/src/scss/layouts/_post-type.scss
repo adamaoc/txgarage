@@ -115,6 +115,9 @@
     flex-direction: column;
     background-color: $red;
     padding: 1em 0.3em;
+    img {
+      width: 100%;
+    }
     @include bp(sm) {
       flex-direction: row;
     }
