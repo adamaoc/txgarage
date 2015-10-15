@@ -683,6 +683,10 @@ a {
       height: 1rem;
       fill: #fff; }
 
+.sharedaddy {
+  max-width: 700px;
+  margin: 0 auto; }
+
 .hero {
   width: 90%;
   margin: 2em auto;
