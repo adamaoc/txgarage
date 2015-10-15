@@ -1,15 +1,10 @@
 .social-wrapper {
-  position: absolute;
   display: flex;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   flex-wrap: wrap;
+  max-width: 700px;
+  margin: 1em auto;
 
   @include bp(sm) {
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
     flex-wrap: nowrap;
   }
 
@@ -44,6 +39,31 @@
 
     &:hover {
       background: $light-blue;
+    }
+  }
+}
+.social-footer {
+  overflow: hidden;
+  margin-right: 2em;
+  .social-widgets {
+    float: right;
+    h3 {
+      display: none;
+    }
+    a {
+      display: block;
+      background: $red;
+      padding: 0.5em;
+      margin: 0.8em;
+      border-radius: 15%;
+      &:hover {
+        background: darken($red, 15%);
+      }
+    }
+    .icon {
+      width: 1rem;
+      height: 1rem;
+      fill: $white;
     }
   }
 }

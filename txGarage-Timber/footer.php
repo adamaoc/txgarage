@@ -4,10 +4,13 @@
 				<nav class="footer--nav">
             		<?php wp_nav_menu( array('menu' => 'footer-menu')); ?>
 				</nav>
+				<div class="social-footer">
+					<?php dynamic_sidebar('social'); ?>
+				</div>
 				<div class="footer--tawa">
-					<a href="http://texasautowriters.org" target="_blank">
+					<a href="http://texasautowriters.org#txgarage" target="_blank">
 						<span class="tawa-txt">Proud Member:</span>
-						<img src="http://txgarage.com/images/2014/10/TAWA-State-Logo.png" alt="Texas Auto Writers Association" />
+						<img src="http://txgarage.com/images/2014/10/TAWA-State-Logo.png" data-ad="tawaFooter" class="ad-item__link" alt="Texas Auto Writers Association" />
 					</a>
 				</div>
 				<!-- copyright -->
