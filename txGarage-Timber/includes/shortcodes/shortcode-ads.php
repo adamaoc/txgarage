@@ -26,7 +26,7 @@ function txGad($atts, $content = null) {
   $build .= '<div class="ad-item__bg">';
   $build .= do_shortcode($content);
   if($link) {
-    $build .= '<a href="'.$link.'" target="_blank" class="ad-item__link"></a>';
+    $build .= '<a href="'.$link.'" data-ad="'.$tag.'" target="_blank" class="ad-item__link"></a>';
   }
   $build .= '</div>';
   $build .= '</div>';
