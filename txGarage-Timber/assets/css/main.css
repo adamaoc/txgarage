@@ -1453,6 +1453,29 @@ a {
     left: -999em; }
   .post-wrapper .gallery img {
     height: auto; }
+  .post-wrapper .img-by-two {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #852729;
+    padding: 1em 0.3em; }
+    .post-wrapper .img-by-two img {
+      width: 100%; }
+    @media (min-width: 37.5em) {
+      .post-wrapper .img-by-two {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    .post-wrapper .img-by-two a {
+      display: block; }
+      @media (min-width: 37.5em) {
+        .post-wrapper .img-by-two a {
+          -webkit-flex: 50%;
+          -ms-flex: 50%;
+          flex: 50%; } }
   .post-wrapper .img-by-three {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1476,6 +1499,52 @@ a {
           -webkit-flex: 33%;
           -ms-flex: 33%;
           flex: 33%; } }
+  .post-wrapper .img-by-four {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #852729;
+    padding: 1em 0.3em; }
+    .post-wrapper .img-by-four img {
+      width: 100%; }
+    @media (min-width: 37.5em) {
+      .post-wrapper .img-by-four {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    .post-wrapper .img-by-four a {
+      display: block; }
+      @media (min-width: 37.5em) {
+        .post-wrapper .img-by-four a {
+          -webkit-flex: 25%;
+          -ms-flex: 25%;
+          flex: 25%; } }
+  .post-wrapper .img-by-five {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #852729;
+    padding: 1em 0.3em; }
+    .post-wrapper .img-by-five img {
+      width: 100%; }
+    @media (min-width: 37.5em) {
+      .post-wrapper .img-by-five {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row; } }
+    .post-wrapper .img-by-five a {
+      display: block; }
+      @media (min-width: 37.5em) {
+        .post-wrapper .img-by-five a {
+          -webkit-flex: 20%;
+          -ms-flex: 20%;
+          flex: 20%; } }
 
 .error404 .content-wrapper {
   max-width: 100%; }
