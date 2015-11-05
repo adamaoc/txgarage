@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/main.css">
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
+		<meta name="google-site-verification" content="snTnNu_9--HnI9ISHZ7j-Pa8X3LWQEPljfrUnpAVDn0" />
 
         <!-- linkup Favicon and apple icons -->
 		<link rel="apple-touch-icon" sizes="57x57" href="<?= get_template_directory_uri(); ?>/assets/favicons/apple-touch-icon-57x57.png">
