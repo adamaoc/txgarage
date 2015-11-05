@@ -697,10 +697,10 @@ a {
       margin: 6em auto; } }
 
 .home .hero {
-  margin: 2em auto 13em; }
+  margin: 2em auto; }
   @media (min-width: 50em) {
     .home .hero {
-      margin: 6em auto 8em; } }
+      margin: 6em auto; } }
 
 .hero-wrap {
   position: relative;
@@ -1234,7 +1234,15 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-width: 700px; }
+  max-width: 700px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  @media (min-width: 37.5em) {
+    .author-byline {
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
 .author__photo {
   min-width: 96px; }
 .author__bio {

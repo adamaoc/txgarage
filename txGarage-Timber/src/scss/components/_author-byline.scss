@@ -8,6 +8,11 @@
     padding: 1em 2em;
     display: flex;
     max-width: 700px;
+    flex-direction: column;
+    
+    @include bp(sm) {
+      flex-direction: row;
+    }
   }
 
   &__photo {

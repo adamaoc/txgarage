@@ -12,10 +12,10 @@
 
 .home {
 	.hero {
-		margin: 2em auto 13em;
+		margin: 2em auto;
 
 		@include bp(md) {
-			margin: 6em auto 8em;
+			margin: 6em auto;
 		}
 	}
 }
