@@ -112,6 +112,7 @@
   }
   .img-by-two {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: $red;
     padding: 1em 0.3em;
@@ -130,6 +131,7 @@
   }
   .img-by-three {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: $red;
     padding: 1em 0.3em;
@@ -148,6 +150,7 @@
   }
   .img-by-four {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: $red;
     padding: 1em 0.3em;
@@ -166,6 +169,7 @@
   }
   .img-by-five {
     display: flex;
+    align-items: center;
     flex-direction: column;
     background-color: $red;
     padding: 1em 0.3em;

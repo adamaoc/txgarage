@@ -1,29 +1,35 @@
 	</main>
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+		<!-- footer -->
+		<footer class="footer" role="contentinfo">
+			<div class="footer__nav-wrap">
 				<nav class="footer--nav">
             		<?php wp_nav_menu( array('menu' => 'footer-menu')); ?>
 				</nav>
-				<div class="social-footer">
-					<?php dynamic_sidebar('social'); ?>
-				</div>
-				<div class="footer--tawa">
-					<a href="http://texasautowriters.org#txgarage" target="_blank">
-						<span class="tawa-txt">Proud Member:</span>
-						<img src="http://txgarage.com/images/2014/10/TAWA-State-Logo.png" data-ad="tawaFooter" class="ad-item__link" alt="Texas Auto Writers Association" />
-					</a>
-				</div>
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> &amp; <a href="http://jkwcreated.com">JKW Created</a> - all rights reserved
-				</p>
-				<!-- /copyright -->
 
-			</footer>
-			<!-- /footer -->
+				<div class="footer-col-3">
+					<div class="social-footer">
+						<?php dynamic_sidebar('social'); ?>
+					</div>
+					<div class="footer--tawa">
+						<a href="http://texasautowriters.org#txgarage" target="_blank">
+							<span class="tawa-txt">Proud Member:</span>
+							<img src="http://txgarage.com/images/2014/10/TAWA-State-Logo.png" data-ad="tawaFooter" class="ad-item__link" alt="Texas Auto Writers Association" />
+						</a>
+					</div>
+				</div>
+			</div>
 
-		</div>
-		<!-- /wrapper -->
+			<!-- copyright -->
+			<p class="copyright">
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> &amp; <a href="http://jkwcreated.com">JKW Created</a> - all rights reserved
+			</p>
+			<!-- /copyright -->
+
+		</footer>
+		<!-- /footer -->
+
+	</div>
+	<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
 

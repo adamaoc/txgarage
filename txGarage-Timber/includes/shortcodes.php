@@ -48,11 +48,22 @@ function highlightp($atts, $content = null) {
   return '<p class="highlightp">' . do_shortcode($content) . '</p>';
 }
 add_shortcode('highlightp', 'highlightp');
-
+function imgbytwo($atts, $content = null) {
+  return '<div class="img-by-two">' . do_shortcode($content) . '</div>';
+}
 function imgbythree($atts, $content = null) {
   return '<div class="img-by-three">' . do_shortcode($content) . '</div>';
 }
+function imgbyfour($atts, $content = null) {
+  return '<div class="img-by-four">' . do_shortcode($content) . '</div>';
+}
+function imgbyfive($atts, $content = null) {
+  return '<div class="img-by-five">' . do_shortcode($content) . '</div>';
+}
+add_shortcode('imgbytwo', 'imgbytwo');
 add_shortcode('imgbythree', 'imgbythree');
+add_shortcode('imgbyfour', 'imgbyfour');
+add_shortcode('imgbyfive', 'imgbyfive');
 /***** Gallery *****/
 
 // remove_shortcode('gallery', 'gallery_shortcode');
