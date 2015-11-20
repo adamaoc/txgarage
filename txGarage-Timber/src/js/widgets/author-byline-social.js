@@ -16,11 +16,11 @@
     },
     authorContext: function() {
       var wasKnownAuthor = false;
-      if(this.authorName === 'adamaoc' || this.authorName === 'admin') {
+      if(this.authorName === 'Adam') {
         wasKnownAuthor = true;
         this.buildAdamsSocial();
       }
-      if(this.authorName === 'JustinWegner') {
+      if(this.authorName === 'Justin') {
         wasKnownAuthor = true;
         this.buildJustinsSocial();
       }
