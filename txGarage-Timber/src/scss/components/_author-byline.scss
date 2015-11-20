@@ -4,19 +4,25 @@
     position: relative;
     margin: 1em auto;
     border-left: 10px solid $red;
-    display: flex;
-    max-width: 700px;
-    flex-direction: column;
+      display: flex;
+      max-width: 700px;
+      flex-direction: column;
 
-    @include bp(sm) {
-      flex-direction: row;
-    }
 
     &__wrap {
       padding: 1em 2em;
       background: darken($light-gray, 10%);
       background: linear-gradient(45deg, rgba(191,191,191,1) 0%,rgba(207,207,207,1) 62%,rgba(208,208,208,0.7) 68%,rgba(216,216,216,0) 100%);
       z-index: 5;
+      > div {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+
+        @include bp(sm) {
+          flex-direction: row;
+        }
+      }
     }
   }
 

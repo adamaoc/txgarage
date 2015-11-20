@@ -1237,16 +1237,24 @@ a {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
-  @media (min-width: 37.5em) {
-    .author-byline {
-      -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-      flex-direction: row; } }
   .author-byline__wrap {
     padding: 1em 2em;
     background: #bfbfbf;
     background: linear-gradient(45deg, #bfbfbf 0%, #cfcfcf 62%, rgba(208, 208, 208, 0.7) 68%, rgba(216, 216, 216, 0) 100%);
     z-index: 5; }
+    .author-byline__wrap > div {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 700px;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      @media (min-width: 37.5em) {
+        .author-byline__wrap > div {
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row; } }
 .author__photo {
   min-width: 96px; }
 .author__bio {
