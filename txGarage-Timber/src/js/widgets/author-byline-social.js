@@ -20,13 +20,32 @@
         wasKnownAuthor = true;
         this.buildAdamsSocial();
       }
-      if(this.authorName === '') {
+      if(this.authorName === 'JustinWegner') {
         wasKnownAuthor = true;
         this.buildJustinsSocial();
       }
       if(wasKnownAuthor) {
         this.addSocial();
       }
+    },
+    buildJustinsSocial: function() {
+      this.socialHash = [
+        {
+          'network': 'facebook',
+          'link': 'http://facebook.com/justin.wegner',
+          'icon': 'icon-facebook2'
+        },
+        {
+          'network': 'instagram',
+          'link': 'http://instagram.com/justinwegner',
+          'icon': 'icon-instagram'
+        },
+        {
+          'network': 'twitter',
+          'link': 'http://twitter.com/jkwcreated',
+          'icon': 'icon-twitter'
+        }
+      ];
     },
     buildAdamsSocial: function() {
       this.socialHash = [
