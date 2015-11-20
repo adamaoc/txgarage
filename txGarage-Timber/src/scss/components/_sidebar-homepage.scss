@@ -1,27 +1,14 @@
 .sidebar {
     &--homepage {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       flex-wrap: wrap;
       background: $bg-color;
 
       .sidebar-widget {
-        margin: 2em;
+        margin: 2em 0.5em;
         color: #555;
-
-        &:first-child {
-          max-width: 60%;
-          @include bp(mobileonly) {
-      			max-width: 100%;
-      		}
-        }
-
-        &:last-child {
-          max-width: 24%;
-          @include bp(mobileonly) {
-      			max-width: 100%;
-      		}
-        }
+        flex-basis: 260px;
       }
 
       & h3 {
@@ -46,8 +33,6 @@
     blockquote {
       color: #8A8989;
       text-align: justify;
-      // background: url(http://txgarage.com/wp-content/themes/txGarage_v5_1/_/img/quote.png) no-repeat;
-      // text-indent: 2em;
       padding-top: 0.5em;
       margin: 0;
       position: relative;

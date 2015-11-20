@@ -9,16 +9,19 @@ function txGad($atts, $content = null) {
   $type   = $atts['type'];
   $tag    = $atts['tag'];
   $today  = date('n/d/Y');
+  $thisMonth = date('n');
   $classList = array('txGad', 'ad-item', $type);
 
   $showAd = true;
-  if($today < $start) {
-    // echo "not time to show the ad";
+
+  $endMonth = explode('/', $end);
+  // TODO: Fix Fix Fix //
+  if($thisMonth < $endMonth[0]) {
     if(is_user_logged_in()) {
       array_push($classList, 'admin');
-    }else{
-      $showAd = false;
     }
+  }else{
+    $showAd = false;
   }
 
   $build = '';

@@ -13,12 +13,11 @@
   .txGad {
     display: flex;
     justify-content: center;
-    flex: 1 0 260px;
-    // min-width: 260px;
+    flex-basis: 280px;
     margin-bottom: 1em;
     margin-right: 1em;
     background-color: $dark-gray;
-    padding: 1em;
+    padding: 10px;
     position: relative;
   }
 
