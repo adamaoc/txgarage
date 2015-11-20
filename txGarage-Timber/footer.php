@@ -36,6 +36,7 @@
 		<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/src/js/instafeed.js"></script>
 		<script src="<?php bloginfo('template_directory'); ?>/src/js/fitvids.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/author-byline-social.js"></script>
 		<script>
 		  $(document).ready(function(){
 		    // Target your .container, .wrapper, .post, etc.
