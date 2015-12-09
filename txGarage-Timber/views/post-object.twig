@@ -1,0 +1,17 @@
+{% set category = function('postCat', post.categories) %}
+<script>
+window.txGPostObject = {
+  post: {
+    title: '{{post.post_title}}}',
+    date: '{{post.display_date}}',
+    author: '{{post.author.name}}',
+    category: '{{category}}',
+    tldr: '{{post.tldr}}'
+  },
+  author: {
+    social: {
+      googleplus: '{{theauthor.googleplus}}'
+    }
+  }
+}
+</script>

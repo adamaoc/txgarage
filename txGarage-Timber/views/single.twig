@@ -5,7 +5,13 @@
 		<div id="instafeed"></div>
 		<div class="insta-box__{{category}}"></div>
 	</div>
-	<h1 class="tab-color">{{post.post_title}}</h1>
+	<h1 class="tab-color">
+		{{post.post_title}}
+		<span class="post-date">
+			Published: {{post.display_date}}
+		</span>
+	</h1>
+
 	<div class="meta">
 			<svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
 			by {{post.author.name}}
@@ -15,14 +21,6 @@
 <section class="content-wrapper content--post">
   <div class="full-wrapper">
 
-      {% if post.thumbnail %}
-        {% set large_image_url = function('get_large_thumb') %}
-        <div id="post-hero" class="post-hero">
-          <div style="height: 0; width: 0; position: absolute; left: -999em;">
-            <img src="{{large_image_url}}" width="100%" alt="{{post.thumbnail.title}}" />
-          </div>
-        </div>
-      {% endif %}
 
       <div class="post-wrapper">
         {{post.content}}
@@ -31,6 +29,7 @@
   </div>
 
 	<aside class="sidebar sidebar--post">
+
 		{{global_sidebar}}
 
 		{{ads_sidebar}}

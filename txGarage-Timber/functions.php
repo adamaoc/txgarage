@@ -48,8 +48,28 @@ function pageCatClass($title) {
     return "default";
   }
 }
+function postCat($data) {
+	$catArr = $data;
+  foreach ($catArr as $category) {
+    if($category->name == "News") {
+      return "News";
+    }elseif($category->name == "Car Reviews") {
+      return "Review";
+    }elseif($category->name == "Reviews") {
+      return "Review";
+    }elseif($category->name == "Events") {
+      return "Event";
+    }elseif($category->name == "Video") {
+      return "Video";
+    }
+  }
+}
 
-
+function showme($var) {
+  echo "<pre>";
+  print_r($var);
+  echo "</pre>";
+}
 // limit excerpt //
 
 function limit_words($string, $word_limit) {

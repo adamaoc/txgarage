@@ -1229,14 +1229,16 @@ a {
 .author-byline {
   position: relative;
   margin: 1em auto;
-  border-left: 10px solid #852729;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   max-width: 700px;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column; }
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse; }
+  @media (min-width: 50em) {
+    .author-byline {
+      border-left: 10px solid #852729; } }
   .author-byline__wrap {
     padding: 1em 2em;
     background: #bfbfbf;
@@ -1273,29 +1275,40 @@ a {
 
 #author-byline-social {
   background: #852729;
-  width: 80px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
   transition: all 200ms ease;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 1em 0; }
+  @media (min-width: 50em) {
+    #author-byline-social {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 80px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1; } }
   #author-byline-social > a {
     color: white; }
     #author-byline-social > a svg {
       width: 30px;
-      height: 60px;
+      height: 30px;
       fill: #c0383b; }
+      @media (min-width: 50em) {
+        #author-byline-social > a svg {
+          display: block; } }
     #author-byline-social > a:hover svg {
       fill: white; }
 
@@ -1382,6 +1395,11 @@ a {
   max-width: 1080px;
   margin: 0 auto;
   padding: 1em; }
+.single .post-date {
+  display: block;
+  padding-top: 10px;
+  font-style: italic;
+  font-size: 12px; }
 
 .content--post {
   -webkit-flex-direction: column;
