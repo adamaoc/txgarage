@@ -5,7 +5,7 @@ $context = Timber::get_context();
 $post = Timber::query_post();
 $context['post'] = $post;
 $context['theauthor'] = $post->author();
-$context['authorJson'] = json_encode($post->author());
+// $context['authorJson'] = json_encode($post->author());
 // echo "<pre>";
 // print_r($context['theauthor']);
 // echo "</pre>";
