@@ -18,13 +18,6 @@
 	max-width: 1080px;
 	margin: 0 auto;
 
-
-	& div {
-
-		// width: 100%;
-		// overflow: hidden;
-	}
-
 	& h1 {
 		margin-top: 1.5em;
 		margin-bottom: 0 !important;
@@ -41,15 +34,9 @@
  }
 
  .post-wrapper {
- 	// max-width: 600px;
  	margin: 0 auto;
 	padding: 0 1.5em;
-	@include bp(md) {
-		// padding: 0 1em;
-	}
-	@include bp(lg) {
-		// padding: 0;
-	}
+
  	& .meta {
  		margin-top: 1em;
  		background: $light-gray;
@@ -57,15 +44,10 @@
  	}
  }
 
- // #sidebar {
- // 	@include flexsize(3);
- // }
-
  .hero-center {
  	&img {
  		width: 100% !important;
  	}
- 	// width: 100%;
  }
 
 .single-post {

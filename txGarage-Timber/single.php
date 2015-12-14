@@ -24,4 +24,6 @@ if (post_password_required($post->ID)){
 <?php
 //<script src="-php- echo get_template_directory_uri(); - - /src/js/widgets/hero-gallery.js" type="text/jsx"></script>
 ?>
+	<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/header-menu.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/author-byline-social.js"></script>
 <?php get_footer(); ?>

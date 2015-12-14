@@ -1,21 +1,27 @@
 {% set hero = hero[0] %}
 {% set category = function('catClass', hero.categories) %}
-<section class="hero">
-  <div class="img-wrap {{category}}" style="background-image: url({{hero.thumbnail.src}});">
-    <div class="aspectbox"></div>
-    <div class="cat-tab">
-      {% include "components/cat-icons.twig" %}
+{% set instaBG =  '/theme_images/hero-insta-bg.png' %}
+<div class="homepage-hero" style="background-image: url({{theme.path}}/{{instaBG}})">
+  <section class="homepage-hero__wrap">
+
+    <div class="homepage-hero__img-wrap {{category}}" style="background-image: url({{hero.thumbnail.src}});">
+      <div class="aspectbox"></div>
+      <div class="cat-tab">
+        {% include "components/cat-icons.twig" %}
+      </div>
+    </div><div class="homepage-hero__content-card {{category}}">
+      <div class="homepage-hero__content-card__topbox">
+        <h2>{{hero.get_title}}</h2>
+        <div class="homepage-hero__content-card__meta">
+          <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+          by {{hero.get_author}}</div>
+      </div>
+      <div class="homepage-hero__content-card__excerpt">
+        <p>{{ hero.get_preview(35) }}</p>
+        <a href="{{hero.get_path}}" rel="bookmark" class="readmorebtn" title="Permanent Link to {{hero.get_title}}">Read More</a>
+      </div>
     </div>
-  </div><div class="content-card {{category}}">
-    <div class="topbox">
-      <h2>{{hero.get_title}}</h2>
-      <div class="meta">
-        <svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-        by {{hero.get_author}}</div>
-    </div>
-    <div class="excerpt">
-      <p>{{ hero.get_preview(35) }}</p>
-      <a href="{{hero.get_path}}" rel="bookmark" class="readmorebtn" title="Permanent Link to {{hero.get_title}}">Read More</a>
-    </div>
-  </div>
-</section>
+
+  </section>
+  <div class="homepage-hero__bg-cover"></div>
+</div>

@@ -1,231 +1,118 @@
-.hero {
-	// max-width: 1080px;
-	width: 90%;
-	margin: 2em auto;
-	z-index: 10;
-	position: relative;
-
-	@include bp(md) {
-		margin: 6em auto;
-	}
-}
-
-.home {
-	.hero {
-		margin: 2em auto;
-
-		@include bp(md) {
-			margin: 6em auto;
-		}
-	}
-}
-
-.hero-wrap {
-	position: relative;
-	padding: 0;
-	overflow: hidden;
-  min-height: 140px;
-  border-bottom: 5px solid $blue;
-
-	&--inner {
-		margin-bottom: 2em;
-	}
-	h1 {
-		z-index: 100;
-	  position: relative;
-	  color: white;
-		padding: 1.5em 2em;
-		text-shadow: 1px 1px 1px #333;
-	}
-}
-
-.hero-wrap-reviews {
-  border-bottom: 5px solid $blue;
-}
-
-.hero-wrap-news {
-  border-bottom: 5px solid $dark-orange;
-}
-.hero-wrap-video {
-  border-bottom: 5px solid $black;
-}
-.hero-wrap-events {
-  border-bottom: 5px solid $dark-red;
-}
-.insta-box__filter {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	// background: rgba($dark-blue, 0.7);
-	z-index: 2;
-}
-
-.insta-box__default {
-  @extend .insta-box__filter;
-    background: rgba($dark-blue, 0.7);
-}
-
-.insta-box__news {
-  @extend .insta-box__filter;
-    background: rgba($dark-orange, 0.8);
-}
-
-.insta-box__car-reviews {
-  @extend .insta-box__filter;
-    background: rgba($light-blue, 0.9);
-}
-
-.insta-box__videos, .insta-box__video {
-  @extend .insta-box__filter;
-    background: rgba($black, 0.7);
-}
-
-.insta-box__events {
-  @extend .insta-box__filter;
-    background: rgba($dark-red, 0.9);
-}
-
-#instafeed {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 1;
-}
-.insta-box__wrapper {
-	clear: both;
-	img {
-		width: 20%;
-		display: block;
-		float: left;
+.post-hero {
+	&--wrap {
+		position: relative;
+		background-size: 90%;
+		background-repeat: repeat;
+		background-color: $blue;
+		display: flex;
+		flex-direction: column;
 		@include bp(sm) {
-			width: 12.5%
+			flex-direction: row;
+		}
+		&-car-reviews {
+			.post-hero__bg-cover {
+				background-color: rgba($blue, 0.6);
+			}
+		}
+		&-news {
+			.post-hero__bg-cover {
+				background-color: rgba($orange, 0.6);
+			}
+		}
+		&-videos {
+			.post-hero__bg-cover {
+				background-color: rgba($black, 0.8);
+			}
+		}
+		&-events {
+			.post-hero__bg-cover {
+				background-color: rgba($red, 0.7);
+			}
+
+		}
+		&-garage {
+			.post-hero__bg-cover {
+				background-color: rgba($green, 0.6);
+			}
 		}
 	}
-}
-
-
-
-.img-wrap {
-
-	&.news {
-		$news-color: $orange;
-  		border-bottom: 5px solid $news-color;
-  		.cat-tab {
-			background: $news-color;
-			border-left: 5px solid darken($news-color, 15%);
-  		}
+	&__title {
+		flex: 2;
+		display: flex;
+		align-items: center;
+		z-index: 100;
+		padding: 1.5em 0.5em;
+		@include bp(sm) {
+			padding: 3em 2em;
+		}
+		h1 {
+		  position: relative;
+		  color: white;
+			text-shadow: 1px 1px 1px #333;
+			font-weight: 100;
+		}
+	}
+	&__date {
+		display: block;
+		font-size: 0.75rem;
+		font-style: italic;
+		font-weight: 100;
 	}
 
-	&.reviews {
-		$review-color: $light-blue;
-  		border-bottom: 5px solid $review-color;
-  		.cat-tab {
-			background: $review-color;
-			border-left: 5px solid darken($review-color, 15%);
-  		}
+	&__menu {
+		background: $red;
+		display: flex;
+		flex-direction: column-reverse;
+		z-index: 100;
+		@include bp(sm) {
+			flex-basis: 150px;
+			max-height: 45px;
+			align-self: flex-end;
+		}
+		@include bp(sm) {
+			&--open {
+				animation: 600ms bounce ease-in-out;
+				margin-right: 2em;
+				max-height: none;
+				align-self: initial;
+			}
+		}
+
+		&__btn {
+			color: #fff;
+			background: $red;
+			min-height: 45px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 1px solid lighten($red, 5%);
+			border-top: 1px solid lighten($red, 5%);
+			text-decoration: none;
+			cursor: pointer;
+			&:hover {
+				background: lighten($red, 5%);
+			}
+		}
 	}
 
-
-	display: block;
-	position: relative;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-
-	border-bottom: 5px solid $red;
-	box-shadow: -2px -3px 8px #333;
-
-  @include bp(sm) {
-    width: 80%;
-    margin: 0 auto;
-  }
-  @include bp(md) {
-    display: inline-block;
-    width: 70%;
-    margin: 0;
-  }
-
-	.aspectbox {
-    	padding-top: 55%;
-	}
-	.cat-tab {
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        background: $red;
-        color: #fff;
-        padding: .5em 1.5em;
-        border-left: 5px solid $dark-red;
+	&__bg-cover {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($blue, 0.6);
+		z-index: 10;
 	}
 }
-
-.content-card {
-  vertical-align: top;
-  display: block;
-  width: 100%;
-  background: #eee;
-  border-bottom: 5px solid $red;
-
-  &.news {
-    $news-color: $orange;
-    border-bottom: 5px solid $news-color;
-  }
-
-  &.reviews {
-    $review-color: $light-blue;
-    border-bottom: 5px solid $review-color;
-  }
-
-  @include bp(sm) {
-    width: 80%;
-    margin: 0 auto;
-  }
-  @include bp(md) {
-    width: 30%;
-  	display: inline-block;
-    margin: 0;
-  }
-
-  .topbox {
-    background: white;
-    padding: .5em;
-  }
-  h2 {
-    margin: 0;
-    padding-bottom: .5em;
-		font-size: 1.5em;
-  }
-}
-
-.excerpt {
-  padding: 0.5em;
-
-  .read-more {
-    display: none;
-  }
-}
-
-.readmorebtn {
-  display: inline-block;
-  background: $red;
-  color: $white;
-  text-decoration: none;
-  font-size: .9em;
-  padding: .5em 1.5em;
-  border-left: 5px solid $dark-red;
-}
-
-.icon-bubble {
-  fill: white;
-}
-
-.icon {
-  width: 1em;
-  height: 1em;
-  margin-top: .2em;
+@keyframes bounce {
+	0% {
+		margin-right: 0;
+	}
+	75% {
+		margin-right: 3em;
+	}
+	100% {
+		margin-right: 2em;
+	}
 }

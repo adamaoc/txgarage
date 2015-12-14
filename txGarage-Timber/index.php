@@ -4,16 +4,12 @@
 	$context = Timber::get_context();
 	$context['hero'] = Timber::get_posts('posts_per_page=1');
 	$context['posts'] = Timber::get_posts('offset=1');
+	$context['theme'] = $context['site']->theme;
 ?>
 
-	<div class="hero-wrap hero-wrap-homepage insta-box">
-		<?php Timber::render('homepage-hero.twig', $context);  ?>
-		<div class="insta-box__wrapper">
-			<div id="instafeed"></div>
-			<div class="insta-box__filter insta-box__default"></div>
-		</div>
 
-	</div>
+	<?php Timber::render('homepage-hero.twig', $context);  ?>
+
 
 	<?php Timber::render('components/blog-slogan.twig', $context); ?>
 

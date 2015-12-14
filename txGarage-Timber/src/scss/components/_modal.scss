@@ -1,0 +1,38 @@
+.modal-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  width: 100%;
+  max-width: 700px;
+  line-height: 1.7;
+  position: relative;
+  padding: 0 0.5em 2em 0.5em;
+
+  @include bp(sm) {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 3px 8px #333;
+    padding: 0 2em 2em 2em;
+    margin-top: 0 !important;
+  }
+}
+
+.modal-closer {
+  color: $red;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: sans-serif;
+}

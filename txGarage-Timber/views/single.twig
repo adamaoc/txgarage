@@ -1,22 +1,4 @@
-{% set category = function('catClass', post.categories) %}
-
-<div class="hero-wrap hero-wrap-{{category}} insta-box">
-	<div class="insta-box__wrapper">
-		<div id="instafeed"></div>
-		<div class="insta-box__{{category}}"></div>
-	</div>
-	<h1 class="tab-color">
-		{{post.post_title}}
-		<span class="post-date">
-			Published: {{post.display_date}}
-		</span>
-	</h1>
-
-	<div class="meta">
-			<svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
-			by {{post.author.name}}
-	</div>
-</div>
+{% include "components/post-hero-wrap.twig" %}
 
 <section class="content-wrapper content--post">
   <div class="full-wrapper">

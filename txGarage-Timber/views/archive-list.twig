@@ -1,11 +1,10 @@
 {% set category = function('pageCatClass', wp_title) %}
-
-<div class="hero-wrap hero-wrap--inner insta-box">
-	<div class="insta-box__wrapper">
-		<div id="instafeed"></div>
-		<div class="insta-box__{{category}}"></div>
+{% set instaBG =  '/theme_images/hero-insta-bg.png' %}
+<div class="post-hero--wrap post-hero--wrap-{{category}}" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>{{ wp_title }}</h1>
 	</div>
-	<h1>{{ wp_title }}</h1>
+	<div class="post-hero__bg-cover"></div>
 </div>
 
 <section class="post-list--expanded limit-wrapper">
