@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<main class="main-warp" role="main">
+
 <?php
 global $wp_query;
 
@@ -14,5 +16,6 @@ if (isset($wp_query->query_vars['author'])){
 Timber::render(array('author.twig', 'archive-list.twig'), $context);
 ?>
 
+</main>
 
 <?php get_footer(); ?>

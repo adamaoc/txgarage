@@ -51,7 +51,7 @@
     closeModal: function(e) {
       var target = e.target;
       if(target.id === 'modal-closer' || target.id === 'site-modal') {
-        this.modal.removeEventListener();
+        this.modal.removeEventListener('click', this.openModal.bind(this), false);
         this.modal.remove();
       }
       return true;

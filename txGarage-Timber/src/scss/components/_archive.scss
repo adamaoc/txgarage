@@ -1,5 +1,6 @@
+
 .archive-wrapper {
-	
+
 	min-height: 15em;
 
 	& img {
@@ -17,3 +18,6 @@
 	@extend .archive-title;
 }
 
+.main-wrap--archive {
+	background: $light-gray;
+}

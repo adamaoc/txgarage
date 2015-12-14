@@ -1,3 +1,6 @@
+.main-wrap--homepage {
+	background: $light-gray;
+}
 .blog-slogan {
 	h2 {
 		text-align: center;
@@ -14,7 +17,6 @@
 
 .post-list {
 	overflow: hidden;
-	// max-width: 1080px;
 	width: 90%;
 	margin: 2em auto;
 

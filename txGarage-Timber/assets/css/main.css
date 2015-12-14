@@ -346,7 +346,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #e2e2e2;
+  background: #ffffff;
   font-family: 'Raleway', sans-serif;
   color: #565656;
   overflow-x: hidden; }
@@ -603,7 +603,7 @@ a {
       color: #84b9e1; }
 
 .sidebar--post {
-  background: #D6D6D6;
+  background: #f1f1f1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -628,7 +628,7 @@ a {
   .sidebar ul li:before {
     content: "- ";
     margin-right: 1em;
-    color: #d9d9d9; }
+    color: #f1f1f1; }
 
 .social-wrapper {
   display: -webkit-flex;
@@ -715,7 +715,7 @@ a {
     background-color: rgba(30, 83, 123, 0.6); }
   .post-hero--wrap-news .post-hero__bg-cover {
     background-color: rgba(255, 165, 0, 0.6); }
-  .post-hero--wrap-videos .post-hero__bg-cover {
+  .post-hero--wrap-videos .post-hero__bg-cover, .post-hero--wrap-video .post-hero__bg-cover {
     background-color: rgba(51, 51, 51, 0.8); }
   .post-hero--wrap-events .post-hero__bg-cover {
     background-color: rgba(133, 39, 41, 0.7); }
@@ -736,6 +736,9 @@ a {
   @media (min-width: 37.5em) {
     .post-hero__title {
       padding: 3em 2em; } }
+  @media (min-width: 50em) {
+    .post-hero__title {
+      padding: 5em 2em; } }
   .post-hero__title h1 {
     position: relative;
     color: white;
@@ -1149,7 +1152,7 @@ a {
   padding: 0 1.5em; }
   .post-wrapper .meta {
     margin-top: 1em;
-    background: #d9d9d9;
+    background: #f1f1f1;
     padding: .5em; }
 
 .hero-centerimg {
@@ -1177,6 +1180,9 @@ a {
 
 .archive-title, .link-title {
   text-decoration: none; }
+
+.main-wrap--archive {
+  background: #f1f1f1; }
 
 .full-wrapper {
   width: 100%; }
@@ -1261,7 +1267,7 @@ a {
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #e2e2e2; }
+  background: #f1f1f1; }
   .sidebar--homepage .sidebar-widget {
     margin: 2em 0.5em;
     color: #555;
@@ -1301,8 +1307,7 @@ a {
       border-left: 10px solid #852729; } }
   .author-byline__wrap {
     padding: 1em 2em;
-    background: #bfbfbf;
-    background: linear-gradient(45deg, #bfbfbf 0%, #cfcfcf 62%, rgba(208, 208, 208, 0.7) 68%, rgba(216, 216, 216, 0) 100%);
+    background: #f1f1f1;
     z-index: 5; }
     .author-byline__wrap > div {
       display: -webkit-flex;
@@ -1445,6 +1450,9 @@ a {
   cursor: pointer;
   font-weight: bold;
   font-family: sans-serif; }
+
+.main-wrap--homepage {
+  background: #f1f1f1; }
 
 .blog-slogan h2 {
   text-align: center;

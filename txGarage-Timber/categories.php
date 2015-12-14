@@ -3,6 +3,9 @@ Template Name: categories
 */
 ?>
 <?php get_header(); ?>
+
+<main class="main-warp" role="main">
+
 <?php
   // Timber Setup
   $context = array();
@@ -43,5 +46,5 @@ Template Name: categories
   <aside class="sidebar sidebar--ads">
     <?php dynamic_sidebar('ads'); ?>
   </aside>
-
+</main>
 <?php get_footer(); ?>

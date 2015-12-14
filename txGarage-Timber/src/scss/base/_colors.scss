@@ -14,14 +14,16 @@ $white: #fff;
 
 $gray: #ccc;
 $dark-gray: darken($gray, 30%);
-$light-gray: lighten($gray, 5%);
+// $light-gray: lighten($gray, 5%);
+$light-gray: #f1f1f1;
 
 $green: green;
 
 $pri-color: $red;
 $sec-color: $blue;
-// $bg-color: $gray;
-$bg-color: #e2e2e2;
+
+// $bg-color: #e2e2e2;
+$bg-color: #ffffff;
 
 
 $profiles: (

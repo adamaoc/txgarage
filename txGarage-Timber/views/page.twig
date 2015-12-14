@@ -1,9 +1,9 @@
-<div class="hero-wrap hero-wrap-default insta-box">
-	<div class="insta-box__wrapper">
-		<div id="instafeed"></div>
-		<div class="insta-box__default"></div>
+{% set instaBG =  '/theme_images/hero-insta-bg.png' %}
+<div class="post-hero--wrap" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>{{post.post_title}}</h1>
 	</div>
-	<h1 class="tab-color">{{post.post_title}}</h1>
+	<div class="post-hero__bg-cover"></div>
 </div>
 
 <section class="content-wrapper content--post">

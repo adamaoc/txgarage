@@ -23,7 +23,7 @@
 		// array_unshift($templates, 'archive-'.get_post_type().'.twig');
 	}
 ?>
-
+<main class="main-warp main-wrap--archive" role="main">
   <?php Timber::render('archive-list.twig', $context); ?>
 
   <?php Timber::render('components/prefered-box.twig', $context); ?>
@@ -35,5 +35,5 @@
   <aside class="sidebar sidebar--ads">
     <?php dynamic_sidebar('ads'); ?>
   </aside>
-
+</main>
 <?php get_footer(); ?>

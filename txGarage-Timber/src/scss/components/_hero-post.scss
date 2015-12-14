@@ -19,7 +19,7 @@
 				background-color: rgba($orange, 0.6);
 			}
 		}
-		&-videos {
+		&-videos, &-video {
 			.post-hero__bg-cover {
 				background-color: rgba($black, 0.8);
 			}
@@ -44,6 +44,9 @@
 		padding: 1.5em 0.5em;
 		@include bp(sm) {
 			padding: 3em 2em;
+		}
+		@include bp(md) {
+			padding: 5em 2em;
 		}
 		h1 {
 		  position: relative;

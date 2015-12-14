@@ -7,7 +7,7 @@
 	$context['theme'] = $context['site']->theme;
 ?>
 
-
+<main class="main-warp main-wrap--homepage" role="main">
 	<?php Timber::render('homepage-hero.twig', $context);  ?>
 
 
@@ -37,5 +37,5 @@
 		<?php dynamic_sidebar('ads'); ?>
 	</aside>
 
-
+</main>
 <?php get_footer(); ?>
