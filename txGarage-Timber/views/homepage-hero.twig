@@ -1,6 +1,21 @@
 {% set hero = hero[0] %}
 {% set category = function('catClass', hero.categories) %}
 {% set instaBG =  '/theme_images/Optimized-hero-insta-bg.png' %}
+<!-- Christmas Theme... -->
+<style>
+  .homepage-hero {
+    border-bottom: 33px solid #AF2125;
+    border-image-source: url(http://txgarage.com/images/2015/12/christmas_tree.png);
+    border-image-slice: 79 6;
+    border-image-repeat: round;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+  .homepage-hero__bg-cover {
+    background-color: rgba(24, 86, 9, 0.6);
+  }
+</style>
 <div class="homepage-hero" style="background-image: url({{theme.path}}/{{instaBG}})">
   <section class="homepage-hero__wrap">
 
