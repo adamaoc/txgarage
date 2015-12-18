@@ -1750,3 +1750,6 @@ a {
   color: #fff;
   padding: 1em 2em;
   margin: 0; }
+
+.search-results .main-warp {
+  background-color: #f1f1f1; }
