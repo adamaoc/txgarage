@@ -2,7 +2,12 @@
 
 $context = Timber::get_context();
 $posts = Timber::get_posts();
-$context['post'] = $posts[0]; ?>
+$context['post'] = $posts[0];
+$context['imgWidth'] = '100%';
+if($context['post']->_wp_attachment_metadata['width'] < 700) {
+  $context['imgWidth'] = $context['post']->_wp_attachment_metadata['width'] . 'px';
+}
+?>
 
 <main class="main-warp" role="main">
 

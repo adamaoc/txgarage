@@ -24,9 +24,35 @@
         wasKnownAuthor = true;
         this.buildJustinsSocial();
       }
+      if(this.authorName === 'Jesus') {
+        wasKnownAuthor = true;
+        this.buildJesusSocial();
+      }
+      if(this.authorName === 'David') {
+        wasKnownAuthor = true;
+        this.buildDavidsSocial();
+      }
       if(wasKnownAuthor) {
         this.addSocial();
       }
+    },
+    buildJesusSocial: function() {
+      this.socialHash = [
+        {
+          'network': 'twitter',
+          'link': 'http://twitter.com/jesusgreaser',
+          'icon': 'icon-twitter'
+        }
+      ];
+    },
+    buildDavidsSocial: function() {
+      this.socialHash = [
+        {
+          'network': 'twitter',
+          'link': 'http://twitter.com/davidboldttx',
+          'icon': 'icon-twitter'
+        }
+      ];
     },
     buildJustinsSocial: function() {
       this.socialHash = [

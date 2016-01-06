@@ -1,11 +1,29 @@
-<div class="hero-wrap hero-wrap-default insta-box">
-	<div class="insta-box__wrapper">
-		<div id="instafeed"></div>
-		<div class="insta-box__default"></div>
+{% set instaBG =  '/theme_images/Optimized-hero-insta-bg.png' %}
+
+<div class="post-hero--wrap" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>{{post.post_title}}</h1>
 	</div>
-	<h1 class="tab-color">{{post.post_title}}</h1>
+	<div class="post-hero__bg-cover"></div>
 </div>
+
 <article class="{{ post.class }}">
-  <img src="{{post.guid}}" alt="{{post._wp_attachment_image_alt}}" />
-  <p class="attachment-desc">{{post.post_content}}</p>
+	<div id="attchWrap" class="attachment-wrapper" style="margin: 0 auto; width: {{imgWidth}};">
+	  <img src="{{post.guid}}" alt="{{post._wp_attachment_image_alt}}" />
+	  <p class="attachment-desc">{{post.post_excerpt}}</p>
+	</div>
+	<div style="margin-top: 1em;">{{post.post_content}}</div>
 </article>
+
+<script>
+(function() {
+	var attachmentWidth = '{{imgWidth}}';
+	var windWidth = window.innerWidth;
+	var attchWrap = document.getElementById('attchWrap');
+	if(attachmentWidth !== '100%') {
+		if(parseInt(attachmentWidth, 10) > windWidth) {
+			attchWrap.style.width = '100%';
+		}
+	}
+}());
+</script>
