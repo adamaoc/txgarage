@@ -1,11 +1,11 @@
 {% set category = function('pageCatClass', wp_title) %}
+{% set instaBG =  '/theme_images/Optimized-hero-insta-bg.png' %}
 
-<div class="hero-wrap hero-wrap--inner insta-box">
-	<div class="insta-box__wrapper">
-		<div id="instafeed"></div>
-		<div class="insta-box__{{category}}"></div>
+<div class="post-hero--wrap" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>{{ title }}</h1>
 	</div>
-	<h1>{{ title }}</h1>
+	<div class="post-hero__bg-cover"></div>
 </div>
 
 {% include "components/author-byline.twig" %}

@@ -28,6 +28,10 @@
         wasKnownAuthor = true;
         this.buildJesusSocial();
       }
+      if(this.authorName === 'Chris') {
+        wasKnownAuthor = true;
+        this.buildChrisSocial();
+      }
       if(this.authorName === 'David') {
         wasKnownAuthor = true;
         this.buildDavidsSocial();
@@ -35,6 +39,15 @@
       if(wasKnownAuthor) {
         this.addSocial();
       }
+    },
+    buildChrisSocial: function() {
+      this.socialHash = [
+        {
+          'network': 'twitter',
+          'link': 'http://twitter.com/1ChrisRuck/',
+          'icon': 'icon-twitter'
+        }
+      ];
     },
     buildJesusSocial: function() {
       this.socialHash = [

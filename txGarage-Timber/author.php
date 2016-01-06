@@ -17,5 +17,5 @@ Timber::render(array('author.twig', 'archive-list.twig'), $context);
 ?>
 
 </main>
-
+<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/author-byline-social.js"></script>
 <?php get_footer(); ?>
