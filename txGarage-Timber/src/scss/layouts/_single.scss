@@ -26,7 +26,7 @@
     flex: 2;
   }
   @include bp(md) {
-    flex-direction: row-reverse;
+    flex-direction: row;
 	}
 }
 .page .content-wrapper {
