@@ -1,0 +1,124 @@
+
+<style>
+	.post-gallery--wrapper {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.5);
+		z-index: 9000;
+	}
+	.post-gallery--image {
+		position: fixed;
+		maxHeight: 80vh;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		maxWidth: 90%;
+		background: white;
+		padding: 1em 1em 3em;
+		box-shadow: 1px 2px 3px #222;
+	}
+	.post-gallery--image img {
+		border: 3px solid #444;
+	}
+	.post-gallery--closer-wrap {
+		position: fixed;
+		top: 2em;
+		right: 1em;
+		background: transparent;
+		border: none;
+		color: white;
+		font-weight: bold;
+	}
+	.post-gallery--closer {
+		fill: white;
+	}
+	.post-gallery--next-wrap {
+		background: transparent;
+		border: none;
+		position: fixed;
+		top: 50%;
+		right: 1em;
+		transform: translateY(-50%);
+	}
+	.post-gallery--prev-wrap {
+		background: transparent;
+		border: none;
+		position: fixed;
+		top: 50%;
+		left: 1em;
+		transform: translateY(-50%);
+	}
+	.post-gallery--prev-wrap:focus,
+	.post-gallery--next-wrap:focus,
+	.post-gallery--closer-wrap {
+		outline: none;
+	}
+	.post-gallery--next, .post-gallery--prev {
+		fill: #fff;
+	}
+	.post-gallery--image__toolbox {
+		overflow: hidden;
+	}
+	.image-toolbox--count {
+		color: #444;
+		font-size: 12px;
+		font-style: italic;
+	}
+	.image-toolbox--download--wrap {
+		color: #444;
+		cursor: pointer;
+		float: right;
+	}
+	.image-toolbox--download {
+		fill: #444;
+	}
+	.image-toolbox--attachment--wrap {
+		color: #444;
+		float: right;
+		margin-left: 1em;
+	}
+	.image-toolbox--attachment {
+		fill: #444;
+	}
+</style>
+<div style="display: none;" class="post-gallery--wrapper">
+	<div class="post-gallery--image">
+		<img src="" alt="" />
+		<div class="post-gallery--image__toolbox">
+			<span class="image-toolbox--count"></span>
+			<span class="image-toolbox--attachment--wrap">
+				<a href="#" target="_blank" class="image-toolbox--attachment__link">
+					<svg class="image-toolbox--attachment" width="18" height="18" viewBox="0 0 32 32">
+						<path class="image-toolbox--attachment" d="M8 20c0 0 1.838-6 12-6v6l12-8-12-8v6c-8 0-12 4.99-12 10zM22 24h-18v-12h3.934c0.315-0.372 0.654-0.729 1.015-1.068 1.374-1.287 3.018-2.27 4.879-2.932h-13.827v20h26v-8.395l-4 2.667v1.728z"></path>
+					</svg>
+				</a>
+			</span>
+			<span class="image-toolbox--download--wrap">
+				<a href="#" download="" class="image-toolbox--download">
+					<svg class="image-toolbox--download" width="18" height="18" viewBox="0 0 32 32">
+						<path class="image-toolbox--download" d="M18 8l-4-4h-14v26h32v-22h-14zM16 27l-7-7h5v-8h4v8h5l-7 7z"></path>
+					</svg>
+				</a>
+			</span>
+		</div>
+		<div class="post-gallery--image__cap"></div>
+	</div>
+	<button class="post-gallery--closer-wrap">
+		<svg width="32" height="32" viewBox="0 0 32 32" class="post-gallery--closer">
+			<path class="post-gallery--closer" d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"></path>
+		</svg>
+	</button>
+	<button class="post-gallery--next-wrap">
+		<svg class="post-gallery--next" width="28" height="64" viewBox="0 0 14 32">
+			<path class="post-gallery--next" d="M4 6l-4 4 6 6-6 6 4 4 10-10-10-10z"></path>
+		</svg>
+	</button>
+	<button class="post-gallery--prev-wrap">
+		<svg width="28" height="64" viewBox="0 0 14 32" class="post-gallery--prev">
+			<path class="post-gallery--prev" d="M14 10l-4-4-10 10 10 10 4-4-6-6 6-6z"></path>
+		</svg>
+	</button>
+</div>

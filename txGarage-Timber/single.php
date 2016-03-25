@@ -1,7 +1,9 @@
-<?php get_header(); ?>
+<?php
+$dir = get_bloginfo('template_directory');
+get_header(); ?>
 
 <main class="main-warp" role="main">
-	
+
 <?php
 $context = Timber::get_context();
 $post = Timber::query_post();
@@ -19,7 +21,17 @@ if (post_password_required($post->ID)){
 }
 ?>
 
-	<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/header-menu.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/src/js/widgets/author-byline-social.js"></script>
 </main>
+
+<?php Timber::render('/components/post-img-gallery.twig'); ?>
+
+<script src="<?= $dir ?>/src/js/widgets/pubsub.js"></script>
+<script src="<?= $dir ?>/src/js/widgets/header-menu.js"></script>
+<script src="<?= $dir ?>/src/js/widgets/author-byline-social.js"></script>
+
+<script src="<?= $dir ?>/src/js/widgets/img-gallery/build-galleries.js"></script>
+<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery-state.js"></script>
+<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery.js"></script>
+<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery-events.js"></script>
+
 <?php get_footer(); ?>
