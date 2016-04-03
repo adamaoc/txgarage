@@ -34,13 +34,13 @@
       if (className === this.galleryBox.className) {
         events.emit('closeGallery');
       }
-      if (className === 'post-gallery--closer' || className.animVal === 'post-gallery--closer') {
+      if (className === 'post-gallery--closer-wrap' || className.animVal === 'post-gallery--closer') {
         events.emit('closeGallery');
       }
-      if (className === 'post-gallery--next' || className.animVal === 'post-gallery--next') {
+      if (className === 'post-gallery--next-wrap' || className.animVal === 'post-gallery--next') {
         events.emit('nextImg');
       }
-      if (className === 'post-gallery--prev' || className.animVal === 'post-gallery--prev') {
+      if (className === 'post-gallery--prev-wrap' || className.animVal === 'post-gallery--prev') {
         events.emit('prevImg');
       }
     }
