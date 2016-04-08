@@ -3,6 +3,7 @@
     init: function() {
       this.galleries = null;
       this.galleryHash = {};
+      this.galleryArray = [];
       this.getDOM();
       this.parseGalleries();
       this.setGallery();
@@ -28,13 +29,15 @@
         img.dataset.imgID = 'img' + i;
         img.dataset.galleryID = gallery.id;
         hash.size = (i + 1);
-        hash[hashName] = {
+        var imgObj = {
           imgID: i,
           imgURL: this.getURL(img),
           imgCap: this.getCaption(item),
           alink: item.querySelector('a').href,
           galleryID: gallery.id
-        }
+        };
+        this.galleryArray.push(imgObj);
+        hash[hashName] = imgObj;
       }
     },
     getURL: function(img) {

@@ -23,15 +23,9 @@ if (post_password_required($post->ID)){
 
 </main>
 
-<?php Timber::render('/components/post-img-gallery.twig'); ?>
+<?php //Timber::render('/components/post-img-gallery.twig'); ?>
 
-<script src="<?= $dir ?>/src/js/widgets/pubsub.js"></script>
 <script src="<?= $dir ?>/src/js/widgets/header-menu.js"></script>
 <script src="<?= $dir ?>/src/js/widgets/author-byline-social.js"></script>
-
-<script src="<?= $dir ?>/src/js/widgets/img-gallery/build-galleries.js"></script>
-<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery-state.js"></script>
-<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery.js"></script>
-<script src="<?= $dir ?>/src/js/widgets/img-gallery/gallery-events.js"></script>
 
 <?php get_footer(); ?>
