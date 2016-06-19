@@ -62,6 +62,14 @@
 			transition: all .3s ease-in-out;
 		}
 
+		&.garage {
+			background: #333;
+			border-bottom: 5px solid #333;
+			span {
+				background: #333;
+			}
+		}
+
 		&.news {
 			background: $orange;
 			border-bottom: 5px solid $orange;

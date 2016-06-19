@@ -30,6 +30,8 @@ function catClass($data) {
       return "events";
     }elseif($category->name == "Video") {
       return "video";
+    }elseif($category->name == "Garage") {
+      return "garage";
     }
   }
 }
@@ -61,6 +63,8 @@ function postCat($data) {
       return "Event";
     }elseif($category->name == "Video") {
       return "Video";
+    }elseif($category->name == "Garage") {
+      return "Garage";
     }
   }
 }

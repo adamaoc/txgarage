@@ -21,7 +21,7 @@
 
 			<!-- copyright -->
 			<p class="copyright">
-				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com">ampnet(media)</a> &amp; <a href="http://jkwcreated.com">JKW Created</a> - all rights reserved
+				&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?> - established 2007 - <?php bloginfo('description'); ?> - site designed and developed by <a href="http://ampnetmedia.com" target="_blank">ampnet(media)</a> &amp; <a href="http://jkwcreated.com" target="_blank">JKW Created</a> - all rights reserved
 			</p>
 			<!-- /copyright -->
 
@@ -34,31 +34,11 @@
 		<?php wp_footer(); ?>
 
 		<script src="<?php bloginfo('template_directory'); ?>/assets/js/main.js"></script>
-<?php //		<script src="<?php bloginfo('template_directory'); /src/js/instafeed.js"></script> ?>
 		<script src="<?php bloginfo('template_directory'); ?>/src/js/fitvids.js"></script>
 		<script>
 		  $(document).ready(function(){
-		    // Target your .container, .wrapper, .post, etc.
 		    $(".post-wrapper").fitVids();
 		  });
-		</script>
-		<script>
-			// var extras = "";
-			// var feed = new Instafeed({
-			// 	get: "tagged",
-			// 	tagName: "txgarage",
-			// 	limit: 32,
-			// 	resolution: "thumbnail",
-			// 	clientId: "c2e26464fcc944c4af803e1b64650871",
-			// 	template: '<img src="{{image}}" class="insta-img" alt="{{caption}}" />',
-			// 	sortBy: "most-recent",
-			// 	after: function() {
-			// 		extras = "<div class='insta-extras'>" + $('#instafeed').html() + "</div>";
-			// 		$('#instafeed').append(extras);
-			// 	}
-			// });
-			//
-			// feed.run();
 		</script>
 
 		<!-- refactor out extra js files -->
@@ -72,7 +52,6 @@
 
 		  ga('create', 'UA-9674179-1', 'auto');
 		  ga('send', 'pageview');
-
 		</script>
 
 	</body>

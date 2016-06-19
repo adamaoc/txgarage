@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
 
-		<?php // Title tag must follow specific SEO rules ?>
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
 
 		<link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/assets/css/main.css">
@@ -34,8 +33,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<?php // Description tag must follow specific SEO rules ?>
 		<meta name="description" content="<?php bloginfo('description'); ?>">
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,300italic' rel='stylesheet' type='text/css'>
 
 		<?php wp_head(); ?>
 
@@ -45,7 +44,7 @@
 	<header class="site-header--wrapper">
 		<div class="site-header">
 			<span class="logo">
-				<a href="<?php echo get_option('home'); ?>"><?php //bloginfo('name'); ?>
+				<a href="<?php echo get_option('home'); ?>">
 					<svg class="icon-logo">
 						<use xlink:href="#icon-txgarage-logo">
 					</svg>
@@ -57,5 +56,3 @@
 			</nav>
 		</div>
 	</header>
-
-	<!-- <main class="main-warp" role="main"> -->
