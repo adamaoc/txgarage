@@ -1,14 +1,14 @@
 .social-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 700px;
-  margin: 1em auto;
+  max-width: 400px;
+  margin: 0 auto;
+  &__inner-wrap {
+    display: flex;
+    flex-wrap: wrap;
 
-  @include bp(sm) {
-    flex-wrap: nowrap;
+    @include bp(md) {
+      flex-wrap: nowrap;
+    }
   }
-
-
   h3 {
     display: none;
   }
@@ -27,13 +27,13 @@
 
     .textwidget a {
       display: block;
-      padding: 1em 2em;
+      padding: 1em;
     }
 
     .icon {
       fill: white;
-      width: 2.1em;
-      height: 2.1em;
+      width: 1.4em;
+      height: 1.4em;
       margin: 0 auto;
     }
 
