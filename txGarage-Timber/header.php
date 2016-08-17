@@ -41,6 +41,17 @@
 	</head>
 	<body <?php body_class(); ?>>
 	<?php require_once "assets/SVGSprite.php"; ?>
+	<nav class="txG-header-nav">
+		<div class="txG-header-nav__logo">
+			<a href="/" class="logo--wrap">
+				<span class="logo__txsvg"><?php require_once "assets/tx-logo.php"; ?></span>
+				<span class="logo__text"><span>tx</span>Garage</span>
+			</a>
+		</div>
+		<?php wp_nav_menu( array('menu' => 'main-menu')); ?>
+	</nav>
+
+<? /*
 	<header class="site-header--wrapper">
 		<div class="site-header">
 			<span class="logo">
@@ -56,3 +67,4 @@
 			</nav>
 		</div>
 	</header>
+*/ ?>
