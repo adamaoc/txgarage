@@ -1,28 +1,18 @@
 <?php get_header(); ?>
 <main class="main-warp" role="main">
-<?php
-  $context = array();
-  $context['posts'] = Timber::get_posts();
-?>
-  <div class="hero-wrap hero-wrap-review insta-box">
-    <div class="insta-box__wrapper">
-      <div id="instafeed"></div>
-      <div class="insta-box__filter insta-box__default"></div>
-    </div>
-  </div>
+  <?php
+    $context = array();
+    $context = Timber::get_context();
+    $context['posts'] = Timber::get_posts();
+    $context['search_term'] = $s;
+    Timber::render(array('archive-list.twig'), $context);
+    Timber::render('components/prefered-box.twig', $context);
+  ?>
+  <aside class="sidebar sidebar--homepage">
+    <?php dynamic_sidebar('homepage'); ?>
+  </aside>
 
-  <section class="content-wrapper">
-      <div class="limit-wrapper">
-        <h2>Seach for: <span><?= $s ?></span></h2>
-      </div>
-  </section>
-
-  <section class="post-list">
-    <?php
-        Timber::render('blog-list.twig', $context); ?>
-  </section>
-
-  <aside class="sidebar--ads">
+  <aside class="sidebar sidebar--ads">
     <?php dynamic_sidebar('ads'); ?>
   </aside>
 </main>

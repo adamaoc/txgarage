@@ -10,13 +10,6 @@
 	text-transform: uppercase;
 }
 
-// %button {
-// 	text-decoration: none;
-// 	padding: 1em 2em;
-// 	text-align: center;
-// 	text-transform: uppercase;
-// }
-
 .btn {
 	display: inline-block;
 	&--dim {
@@ -25,9 +18,11 @@
 
 	&.prev {
 		border-left: 5px solid $light-blue;
+		margin-right: auto;
 	}
 	&.next {
 		border-right: 5px solid $light-blue;
+		margin-left: auto;
 	}
 }
 
