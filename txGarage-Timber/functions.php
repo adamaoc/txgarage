@@ -1,5 +1,6 @@
 <?php
 
+
 if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
@@ -16,6 +17,9 @@ function img_theme_setup() {
   add_image_size( 'category-thumb', 400 );
   add_image_size( 'hero-thumb', 700, 525, true ); // (cropped)
 }
+
+// Add support for a variety of post formats
+add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image', 'video' ) );
 
 function catClass($data) {
 	$catArr = $data;
@@ -111,6 +115,7 @@ if (!function_exists('txG_widgets_init')) {
     global $options;
     register_sidebar(array('name' => __('ads', 'txG'), 'id' => 'ads', 'description' => __('Sidebar of advertising', 'txG'), 'before_widget' => '<div class="ads-widget">', 'after_widget' => '</div>', 'before_title' => '', 'after_title' => ''));
     register_sidebar(array('name' => __('homepage', 'txG'), 'id' => 'homepage', 'description' => __('homepage Sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
+    register_sidebar(array('name' => __('txgEvents', 'txG'), 'id' => 'txgEvetns', 'description' => __('txG Events Sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
     register_sidebar(array('name' => __('global', 'txG'), 'id' => 'global-sidebar', 'description' => __('Global sidebar', 'txG'), 'before_widget' => '<div class="sidebar-widget">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
     register_sidebar(array('name' => __('social', 'txG'), 'id' => 'social', 'description' => __('Social sidebar', 'txG'), 'before_widget' => '<div class="social-widgets">', 'after_widget' => '</div>', 'before_title' => '<h3>', 'after_title' => '</h3>'));
 

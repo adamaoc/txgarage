@@ -11,13 +11,15 @@ $context['post'] = $post;
 $context['theauthor'] = $post->author();
 $context['global_sidebar'] = Timber::get_widgets('global');
 $context['ads_sidebar'] = Timber::get_widgets('ads');
+$context['txgEvents'] = Timber::get_widgets('txgEvents');
+$format = get_post_format();
 
 Timber::render('post-object.twig', $context);
 
 if (post_password_required($post->ID)){
 	Timber::render('single-password.twig', $context);
 } else {
-	Timber::render(array('single-' . $post->ID . '.twig', 'single-' . $post->post_type . '.twig', 'single.twig'), $context);
+	Timber::render(array('single-' . $post->ID . '.twig', 'single-' . $post->post_type . '.twig', 'single-' . $format . '.twig', 'single.twig'), $context);
 }
 ?>
 
@@ -29,3 +31,15 @@ if (post_password_required($post->ID)){
 <script src="<?= $dir ?>/src/js/widgets/author-byline-social.js"></script>
 
 <?php get_footer(); ?>
+
+<?php
+echo "<pre>";
+var_dump(get_post_format());
+echo "<hr>";
+print_r($context['post']->thumbnail->src);
+echo "<hr>";
+print_r($context['post']->thumbnail->sizes['large']['file']);
+echo "<hr>";
+print_r($context['post']->thumbnail);
+echo "</pre>";
+ ?>

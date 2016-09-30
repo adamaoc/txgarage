@@ -768,9 +768,6 @@ a {
   z-index: 100; }
   @media (min-width: 37.5em) {
     .post-hero__menu {
-      -webkit-flex-basis: 150px;
-      -ms-flex-preferred-size: 150px;
-      flex-basis: 150px;
       max-height: 45px;
       -webkit-align-self: flex-end;
       -ms-flex-item-align: end;
@@ -800,7 +797,8 @@ a {
     border-bottom: 1px solid #992d2f;
     border-top: 1px solid #992d2f;
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    padding: 0 1em; }
     .post-hero__menu__btn:hover {
       background: #992d2f; }
 .post-hero__bg-cover {
@@ -1361,7 +1359,7 @@ a {
   .sidebar--post .ads-widget a {
     display: block; }
 
-.sidebar--homepage {
+.sidebar--homepage, .sidebar--bottom-page {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1372,13 +1370,13 @@ a {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background: #f1f1f1; }
-  .sidebar--homepage .sidebar-widget {
+  .sidebar--homepage .sidebar-widget, .sidebar--bottom-page .sidebar-widget {
     margin: 2em 0.5em;
     color: #555;
     -webkit-flex-basis: 260px;
     -ms-flex-preferred-size: 260px;
     flex-basis: 260px; }
-  .sidebar--homepage h3 {
+  .sidebar--homepage h3, .sidebar--bottom-page h3 {
     padding: 0;
     background: none;
     color: #333;

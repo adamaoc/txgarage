@@ -1,0 +1,21 @@
+{% include "components/post-hero-wrap.twig" %}
+
+<section class="content-wrapper content--post">
+  <div class="full-wrapper">
+      <div class="post-wrapper">
+        <div class="post-thumbnail-wrap" style="max-width:700px; margin: 0 auto;">
+          <!-- <img src="{{post.thumbnail.src}}" alt="{{post.title}}" width="100%" /> -->
+        </div>
+        {{post.content}}
+      </div>
+			{% include "components/author-byline.twig" %}
+  </div>
+
+	<aside class="sidebar sidebar--post">
+		{{ads_sidebar}}
+	</aside>
+</section>
+
+<aside class="sidebar sidebar--bottom-page">
+  {{global_sidebar}}
+</aside>

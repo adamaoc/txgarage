@@ -1,0 +1,22 @@
+{% include "components/post-hero-wrap.twig" %}
+
+<section class="content-wrapper content--post">
+  <div class="full-wrapper">
+      <div class="post-wrapper">
+        <h1>- Aside - </h1>
+        {{post.content}}
+      </div>
+			{% include "components/author-byline.twig" %}
+  </div>
+
+	<aside class="sidebar sidebar--post">
+
+		{{global_sidebar}}
+
+		{{ads_sidebar}}
+	</aside>
+
+</section>
+<aside class="sidebar sidebar--bottom-page">
+  {{txgEvents}}
+</aside>

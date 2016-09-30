@@ -1,5 +1,6 @@
 .sidebar {
-    &--homepage {
+    &--homepage,
+    &--bottom-page {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;

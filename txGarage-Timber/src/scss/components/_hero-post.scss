@@ -71,7 +71,7 @@
 		flex-direction: column-reverse;
 		z-index: 100;
 		@include bp(sm) {
-			flex-basis: 150px;
+			// flex-basis: 150px;
 			max-height: 45px;
 			align-self: flex-end;
 		}
@@ -95,6 +95,7 @@
 			border-top: 1px solid lighten($red, 5%);
 			text-decoration: none;
 			cursor: pointer;
+			padding: 0 1em;
 			&:hover {
 				background: lighten($red, 5%);
 			}
