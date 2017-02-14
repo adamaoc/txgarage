@@ -1,0 +1,743 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Click Mag 1.06.0\n"
+"POT-Creation-Date: 2017-01-23 17:55-0500\n"
+"PO-Revision-Date: 2017-01-23 17:55-0500\n"
+"Last-Translator: \n"
+"Language-Team: mvpthemes@gmail.com\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;_n;__;esc_html_e;esc_html__;"
+"_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:3
+msgid "Error"
+msgstr ""
+
+#: 404.php:4
+msgid "The page you requested does not exist or has moved."
+msgstr ""
+
+#: admin/theme-settings.php:58
+msgid "General"
+msgstr ""
+
+#: admin/theme-settings.php:62
+msgid "Logo Location"
+msgstr ""
+
+#: admin/theme-settings.php:63
+msgid "Set the location of your logo."
+msgstr ""
+
+#: admin/theme-settings.php:70
+msgid "Logo"
+msgstr ""
+
+#: admin/theme-settings.php:71
+msgid ""
+"If you are using the Large logo layout, select a file to appear as your logo "
+"that will appear above the navigation and will replace the default \"Click "
+"Mag\" logo. There are no maximum recommended dimensions for this logo size."
+msgstr ""
+
+#: admin/theme-settings.php:76
+msgid "Logo in Navigation"
+msgstr ""
+
+#: admin/theme-settings.php:77
+msgid ""
+"Select a file that will appear in your navigation. The recommended maximum "
+"dimensions for this logo are 250x60."
+msgstr ""
+
+#: admin/theme-settings.php:82
+msgid "Custom Favicon"
+msgstr ""
+
+#: admin/theme-settings.php:83
+msgid ""
+"Upload a 16x16px PNG/GIF image that will represent your website's favicon."
+msgstr ""
+
+#: admin/theme-settings.php:88
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/theme-settings.php:94
+msgid "Toggle Responsiveness"
+msgstr ""
+
+#: admin/theme-settings.php:100
+msgid "Toggle Infinite Scroll"
+msgstr ""
+
+#: admin/theme-settings.php:108
+msgid "Colors"
+msgstr ""
+
+#: admin/theme-settings.php:111
+msgid "Primary Theme Color"
+msgstr ""
+
+#: admin/theme-settings.php:112
+msgid "Primary color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:117
+msgid "Top Navigation Background Color"
+msgstr ""
+
+#: admin/theme-settings.php:118
+msgid "The background color of the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:123
+msgid "Top Navigation Text Color"
+msgstr ""
+
+#: admin/theme-settings.php:124
+msgid "The text color of the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:129
+msgid "Top Navigation Text Hover Color"
+msgstr ""
+
+#: admin/theme-settings.php:130
+msgid "The text color when you mouse over the top navigation."
+msgstr ""
+
+#: admin/theme-settings.php:135
+msgid "Main Headlines Link Color"
+msgstr ""
+
+#: admin/theme-settings.php:136
+msgid "The text color of the headline links."
+msgstr ""
+
+#: admin/theme-settings.php:141
+msgid "Primary Link Color"
+msgstr ""
+
+#: admin/theme-settings.php:142
+msgid "Primary link color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:147
+msgid "Link Hover Color"
+msgstr ""
+
+#: admin/theme-settings.php:148
+msgid "Link hover color for the site."
+msgstr ""
+
+#: admin/theme-settings.php:154
+msgid "Fonts"
+msgstr ""
+
+#: admin/theme-settings.php:157
+msgid "General Content Font"
+msgstr ""
+
+#: admin/theme-settings.php:158
+msgid "Enter the font name for the general font for the content on all pages."
+msgstr ""
+
+#: admin/theme-settings.php:163
+msgid "Fly-Out Menu/Top Navigation Font"
+msgstr ""
+
+#: admin/theme-settings.php:169
+msgid "Featured Posts/Article Headline Font"
+msgstr ""
+
+#: admin/theme-settings.php:175
+msgid "General Headline Font"
+msgstr ""
+
+#: admin/theme-settings.php:181
+msgid "General Heading Font"
+msgstr ""
+
+#: admin/theme-settings.php:189
+msgid "Homepage Settings"
+msgstr ""
+
+#: admin/theme-settings.php:192 admin/theme-settings.php:330
+#: admin/theme-settings.php:418
+msgid "Attention"
+msgstr ""
+
+#: admin/theme-settings.php:198
+msgid "Show Featured Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:205 admin/theme-settings.php:343
+msgid "Featured Posts Layout"
+msgstr ""
+
+#: admin/theme-settings.php:206
+msgid "Select the layout of your Featured Posts section on the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:213
+msgid "Featured Posts Tag Slug"
+msgstr ""
+
+#: admin/theme-settings.php:214
+msgid ""
+"Enter the Tag Slug of the Tag you want associated with the Featured Posts "
+"section. Posts with this Tag will be displayed in the Featured Slider at the "
+"top of the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:220
+msgid "Homepage Blog Layout"
+msgstr ""
+
+#: admin/theme-settings.php:221
+msgid "Select the layout for the blog section of the homepage."
+msgstr ""
+
+#: admin/theme-settings.php:228
+msgid "Number of posts per page"
+msgstr ""
+
+#: admin/theme-settings.php:236
+msgid "Popular Posts Settings"
+msgstr ""
+
+#: admin/theme-settings.php:239
+msgid "Number of Popular Posts"
+msgstr ""
+
+#: admin/theme-settings.php:245
+msgid "Popular Posts Days"
+msgstr ""
+
+#: admin/theme-settings.php:253
+msgid "Article Settings"
+msgstr ""
+
+#: admin/theme-settings.php:257
+msgid "Default Post Template"
+msgstr ""
+
+#: admin/theme-settings.php:258
+msgid "Select the default Post Template layout for your articles."
+msgstr ""
+
+#: admin/theme-settings.php:265
+msgid "Show Featured Image In Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:266
+msgid ""
+"Uncheck this box if you would like to remove the featured image thumbnail "
+"from all posts."
+msgstr ""
+
+#: admin/theme-settings.php:271
+msgid "Show Social Sharing Buttons?"
+msgstr ""
+
+#: admin/theme-settings.php:277
+msgid "Show Author Info?"
+msgstr ""
+
+#: admin/theme-settings.php:283
+msgid "Show Author Email?"
+msgstr ""
+
+#: admin/theme-settings.php:289
+msgid "Show Related Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:295
+msgid "Show More Posts?"
+msgstr ""
+
+#: admin/theme-settings.php:301
+msgid "Show Previous/Next Post Links?"
+msgstr ""
+
+#: admin/theme-settings.php:307
+msgid "Use Continue Reading Button On Mobile?"
+msgstr ""
+
+#: admin/theme-settings.php:313
+msgid "Disqus Forum Shortname"
+msgstr ""
+
+#: admin/theme-settings.php:319
+msgid "Article Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:327
+msgid "Category Pages"
+msgstr ""
+
+#: admin/theme-settings.php:336
+msgid "Show Featured Posts"
+msgstr ""
+
+#: admin/theme-settings.php:344
+msgid "Select the layout of your Featured Posts section on the category pages."
+msgstr ""
+
+#: admin/theme-settings.php:352
+msgid "Archive Blog Layout"
+msgstr ""
+
+#: admin/theme-settings.php:353
+msgid ""
+"Select the layout for the blog section of your category and archive pages."
+msgstr ""
+
+#: admin/theme-settings.php:362
+msgid "Social Media"
+msgstr ""
+
+#: admin/theme-settings.php:365
+msgid "Facebook"
+msgstr ""
+
+#: admin/theme-settings.php:371
+msgid "Twitter"
+msgstr ""
+
+#: admin/theme-settings.php:377
+msgid "Pinterest"
+msgstr ""
+
+#: admin/theme-settings.php:383
+msgid "Instagram"
+msgstr ""
+
+#: admin/theme-settings.php:389
+msgid "Google Plus"
+msgstr ""
+
+#: admin/theme-settings.php:395
+msgid "Youtube"
+msgstr ""
+
+#: admin/theme-settings.php:401
+msgid "Linkedin"
+msgstr ""
+
+#: admin/theme-settings.php:407
+msgid "Tumblr"
+msgstr ""
+
+#: admin/theme-settings.php:415
+msgid "Ad Management"
+msgstr ""
+
+#: admin/theme-settings.php:424
+msgid "Header Leaderboard Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:430
+msgid "Footer Leaderboard Ad Code"
+msgstr ""
+
+#: admin/theme-settings.php:436
+msgid "Wallpaper Ad Image URL"
+msgstr ""
+
+#: admin/theme-settings.php:442
+msgid "Wallpaper Ad Click-Through URL"
+msgstr ""
+
+#: admin/theme-settings.php:450
+msgid "Footer Info"
+msgstr ""
+
+#: admin/theme-settings.php:453
+msgid "Copyright Text"
+msgstr ""
+
+#: archive.php:6
+msgid "All posts tagged"
+msgstr ""
+
+#: archive.php:30 archive.php:78 archive.php:97 author.php:67 author.php:115
+#: author.php:134 category.php:34 category.php:62 category.php:94
+#: category.php:128 category.php:168 category.php:202 category.php:251
+#: category.php:269 category.php:308 category.php:326 index.php:32 index.php:80
+#: index.php:99 page-home.php:37 page-home.php:66 page-home.php:98
+#: page-home.php:132 page-home.php:191 page-home.php:227 page-home.php:274
+#: page-home.php:310 page-home.php:351 page-home.php:387 page-home.php:428
+#: page-home.php:464 page-home.php:508 page-home.php:527 page-home.php:567
+#: page-home.php:586 page-home.php:637 page-home.php:656 page-home.php:696
+#: page-home.php:715 page-home.php:761 page-home.php:780 page-home.php:820
+#: page-home.php:839 page-home.php:886 page-home.php:905 page-home.php:945
+#: page-home.php:964 page-latest.php:37 page-latest.php:85 page-latest.php:104
+#: search.php:30 search.php:78 search.php:97 single.php:139 single.php:351
+#: widgets/widget-catlist.php:75 widgets/widget-taglist.php:72
+msgid "By"
+msgstr ""
+
+#: archive.php:45 archive.php:114 author.php:82 author.php:151 category.php:218
+#: category.php:344 index.php:47 index.php:116 page-home.php:243
+#: page-home.php:604 page-latest.php:52 page-latest.php:121 search.php:45
+#: search.php:114
+msgid "More Posts"
+msgstr ""
+
+#: attachment.php:23 header.php:139 page-fullwidth.php:18 page.php:17
+#: single.php:151
+msgid "Share on Facebook"
+msgstr ""
+
+#: attachment.php:25 header.php:141 page-fullwidth.php:20 page.php:19
+#: single.php:153
+msgid "Share"
+msgstr ""
+
+#: attachment.php:28 header.php:144 page-fullwidth.php:23 page.php:22
+#: single.php:156
+msgid "Tweet This Post"
+msgstr ""
+
+#: attachment.php:30 header.php:146 page-fullwidth.php:25 page.php:24
+#: single.php:158
+msgid "Tweet"
+msgstr ""
+
+#: attachment.php:38 header.php:154 page-fullwidth.php:33 page.php:32
+#: single.php:166
+msgid "Pin This Post"
+msgstr ""
+
+#: attachment.php:43 header.php:159 page-fullwidth.php:38 page.php:37
+#: single.php:171
+msgid ""
+"I found this article interesting and thought of sharing it with you. Check "
+"it out:"
+msgstr ""
+
+#: author-list.php:31
+msgid "Latest from"
+msgstr ""
+
+#: author.php:43
+msgid "Stories By"
+msgstr ""
+
+#: comments.php:3
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: comments.php:18 page-fullwidth.php:53 page-fullwidth.php:87 page.php:52
+#: page.php:86 single.php:186 single.php:309
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:24 comments.php:35
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:25 comments.php:36
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:50
+msgid "You must be logged in to post a comment"
+msgstr ""
+
+#: comments.php:52
+msgid "Login"
+msgstr ""
+
+#: comments.php:61 comments.php:62
+msgid "Leave a Reply"
+msgstr ""
+
+#: fly-menu.php:27
+msgid "Connect with us"
+msgstr ""
+
+#: footer.php:64
+msgid "To Top"
+msgstr ""
+
+#: functions.php:42
+msgid "on"
+msgstr ""
+
+#: functions.php:952
+msgid "Homepage Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:961
+msgid "Default Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:970
+msgid "Post/Page Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:979
+msgid "WooCommerce Sidebar Widget Area"
+msgstr ""
+
+#: functions.php:1006
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:1007
+msgid "Fly-Out Menu"
+msgstr ""
+
+#: functions.php:1008
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:1133
+msgid "Video/Audio Embed"
+msgstr ""
+
+#: functions.php:1142
+msgid "Featured Headline"
+msgstr ""
+
+#: functions.php:1151
+msgid "Featured Image Caption"
+msgstr ""
+
+#: functions.php:1160
+msgid "Post Template"
+msgstr ""
+
+#: functions.php:1169
+msgid "Post Width"
+msgstr ""
+
+#: functions.php:1178
+msgid "Featured Image Location"
+msgstr ""
+
+#: functions.php:1187
+msgid "Featured Image Show/Hide"
+msgstr ""
+
+#: functions.php:1196
+msgid "Post Gallery Show/Hide"
+msgstr ""
+
+#: functions.php:1212
+msgid ""
+"Add a custom featured headline that will be displayed in the featured slider."
+msgstr ""
+
+#: functions.php:1227
+msgid "Enter your video or audio embed code."
+msgstr ""
+
+#: functions.php:1242
+msgid "Add a caption and/or photo credit information for the featured image."
+msgstr ""
+
+#: functions.php:1257
+msgid "Select a template for your post."
+msgstr ""
+
+#: functions.php:1283
+msgid "Select the width of your posts between Default and Full-Width."
+msgstr ""
+
+#: functions.php:1300
+msgid "Select the location of your Featured Image between Large and Small."
+msgstr ""
+
+#: functions.php:1317
+msgid ""
+"Select to show or hide the featured image from automatically displaying in "
+"this post."
+msgstr ""
+
+#: functions.php:1334
+msgid "Select to show or hide the built-in gallery feature for this post."
+msgstr ""
+
+#: functions.php:1658
+#, php-format
+msgid "%s "
+msgstr ""
+
+#: functions.php:1661
+msgid "at"
+msgstr ""
+
+#: functions.php:1662 functions.php:1683
+msgid "Edit"
+msgstr ""
+
+#: functions.php:1667
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: functions.php:1683
+msgid "Pingback:"
+msgstr ""
+
+#: functions.php:1851
+msgid "Page"
+msgstr ""
+
+#: functions.php:1851
+msgid "of"
+msgstr ""
+
+#: functions.php:1852
+msgid "First"
+msgstr ""
+
+#: functions.php:1853
+msgid "Previous"
+msgstr ""
+
+#: functions.php:1863
+msgid "Next"
+msgstr ""
+
+#: functions.php:1864
+msgid "Last"
+msgstr ""
+
+#: index.php:8
+msgid "Latest News"
+msgstr ""
+
+#: page-fullwidth.php:47 page-fullwidth.php:53 page.php:46 page.php:52
+#: single.php:180 single.php:186
+msgid "Comment"
+msgstr ""
+
+#: page-fullwidth.php:53 page-fullwidth.php:87 page.php:52 page.php:86
+#: single.php:186 single.php:309
+msgid "% Comments"
+msgstr ""
+
+#: page-fullwidth.php:81 page.php:80 single.php:303
+msgid "Comments"
+msgstr ""
+
+#: page-fullwidth.php:87 page.php:86 single.php:309
+msgid "Click to comment"
+msgstr ""
+
+#: page-home.php:148
+msgid "Latest"
+msgstr ""
+
+#: page-home.php:151
+msgid "Trending"
+msgstr ""
+
+#: page-home.php:155
+msgid "Videos"
+msgstr ""
+
+#: page-home.php:160
+msgid "Galleries"
+msgstr ""
+
+#: search.php:6
+msgid "Search results for"
+msgstr ""
+
+#: searchform.php:2
+msgid "Search"
+msgstr ""
+
+#: single.php:142
+msgid "Published on"
+msgstr ""
+
+#: single.php:224
+msgid "Continue Reading"
+msgstr ""
+
+#: single.php:236
+msgid "You may also like..."
+msgstr ""
+
+#: single.php:245
+msgid "Related Topics:"
+msgstr ""
+
+#: single.php:323
+msgid "More in"
+msgstr ""
+
+#: widgets/widget-ad.php:19
+msgid "A widget that displays an ad of any size."
+msgstr ""
+
+#: widgets/widget-ad.php:25
+msgid "Click Mag: Ad Widget"
+msgstr ""
+
+#: widgets/widget-authors.php:19
+msgid ""
+"A widget that displays a list of contributors and their most recently "
+"published post."
+msgstr ""
+
+#: widgets/widget-authors.php:25
+msgid "Click Mag: Contributors Widget"
+msgstr ""
+
+#: widgets/widget-catlist.php:19
+msgid "A widget that displays a list of posts from a category of your choice."
+msgstr ""
+
+#: widgets/widget-catlist.php:25
+msgid "Click Mag: Category List Widget"
+msgstr ""
+
+#: widgets/widget-facebook.php:19
+msgid "A widget that displays a Facebook Like Box."
+msgstr ""
+
+#: widgets/widget-facebook.php:25
+msgid "Click Mag: Facebook Widget"
+msgstr ""
+
+#: widgets/widget-pop.php:19
+msgid ""
+"A widget that displays a list of popular posts within a time period of your "
+"choice."
+msgstr ""
+
+#: widgets/widget-pop.php:25
+msgid "Click Mag: Popular Posts Widget"
+msgstr ""
+
+#: widgets/widget-taglist.php:19
+msgid "A widget that displays a list of posts from a tag of your choice."
+msgstr ""
+
+#: widgets/widget-taglist.php:25
+msgid "Click Mag: Tag List Widget"
+msgstr ""
+
+#: widgets/widget-tags.php:19
+msgid "A custom Tag Cloud widget."
+msgstr ""
+
+#: widgets/widget-tags.php:25
+msgid "Click Mag: Tag Cloud Widget"
+msgstr ""

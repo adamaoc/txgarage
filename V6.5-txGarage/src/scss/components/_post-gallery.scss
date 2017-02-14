@@ -1,0 +1,136 @@
+@mixin arrows() {
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    width: 2em;
+    height: 3em;
+    transform: translateY(-50%);
+    background: #d6d6d6;
+    font-family: Open-sans;
+    padding: 0.8em;
+    border: 2px solid darken(#d6d6d6, 10%);
+    cursor: pointer;
+}
+
+.full-wrapper {
+  width: 100%;
+  flex: 2;
+}
+
+.post-hero--list {
+  overflow: hidden;
+  > div {
+    width: 33.333%;
+    float: left;
+    opacity: 0.5;
+  }
+  .post-hero--img {
+    position: relative;
+    opacity: 1;
+    box-shadow: 0 0 22px #333;
+    z-index: 100;
+  }
+  .img--prev {
+    @include arrows;
+    left: -2em;
+    border-right: none;
+  }
+  .img--next {
+    @include arrows;
+    right: -2em;
+    border-left: none;
+  }
+}
+
+
+/// gallery modal --
+
+
+.post-gallery--wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 9000;
+}
+.post-gallery--image {
+  width: 300px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 1em 1em 3em;
+	box-shadow: 1px 2px 3px #222;
+  @include bp(sm) {
+      width: 450px;
+  }
+  &__cap {
+    font-size: 0.9em;
+  }
+}
+.post-gallery--image img {
+	border: 3px solid #444;
+}
+.post-gallery--closer-wrap {
+	position: fixed;
+	top: 2em;
+	right: 1em;
+	background: transparent;
+	border: none;
+	color: white;
+	font-weight: bold;
+}
+.post-gallery--closer {
+	fill: white;
+}
+.post-gallery--next-wrap {
+	background: transparent;
+	border: none;
+	position: fixed;
+	top: 50%;
+	right: 1em;
+	transform: translateY(-50%);
+}
+.post-gallery--prev-wrap {
+	background: transparent;
+	border: none;
+	position: fixed;
+	top: 50%;
+	left: 1em;
+	transform: translateY(-50%);
+}
+.post-gallery--prev-wrap:focus,
+.post-gallery--next-wrap:focus,
+.post-gallery--closer-wrap {
+	outline: none;
+}
+.post-gallery--next, .post-gallery--prev {
+	fill: #fff;
+}
+.post-gallery--image__toolbox {
+	overflow: hidden;
+}
+.image-toolbox--count {
+	color: #444;
+	font-size: 12px;
+	font-style: italic;
+}
+.image-toolbox--download--wrap {
+	color: #444;
+	cursor: pointer;
+	float: right;
+}
+.image-toolbox--download {
+	fill: #444;
+}
+.image-toolbox--attachment--wrap {
+	color: #444;
+	float: right;
+	margin-left: 1em;
+}
+.image-toolbox--attachment {
+	fill: #444;
+}

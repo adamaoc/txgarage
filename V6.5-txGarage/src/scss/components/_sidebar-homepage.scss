@@ -1,0 +1,40 @@
+.sidebar {
+    &--homepage {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: $light-gray;
+
+      .sidebar-widget {
+        margin: 2em 0.5em;
+        color: #555;
+        flex-basis: 260px;
+      }
+
+      & h3 {
+        padding: 0;
+        background: none;
+        color: $black;
+        font-size: 1.8em;
+      }
+    }
+
+    .tagcloud {
+      a {
+        color: $dark-orange;
+        text-decoration: none;
+        transition: 0.3s all ease;
+        &:hover {
+          color: $dark-gray;
+        }
+      }
+    }
+
+    blockquote {
+      color: #8A8989;
+      text-align: justify;
+      padding-top: 0.5em;
+      margin: 0;
+      position: relative;
+    }
+}

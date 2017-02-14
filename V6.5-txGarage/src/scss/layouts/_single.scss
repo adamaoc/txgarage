@@ -1,0 +1,34 @@
+.single {
+  .content-wrapper {
+    max-width: 100%;
+  }
+
+  .post-hero {
+    margin: 0 0 2em;
+  }
+
+  .title-wrap {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .post-date {
+    display: block;
+    padding-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+
+.content--post {
+  flex-direction: column;
+  .full-wrap {
+    flex: 2;
+  }
+  @include bp(md) {
+    flex-direction: row;
+	}
+}
+.page .content-wrapper {
+  max-width: 100%;
+}

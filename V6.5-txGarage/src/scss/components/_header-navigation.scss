@@ -1,0 +1,131 @@
+.menu-toggle {
+	display: block;
+	width: 3.5em;
+	height: 3.1em;
+	border: none;
+	background: none;
+	position: absolute;
+	top: 0.3em;
+	left: -3.5em;
+	transition: all 1s ease-in-out;
+	padding: 0.2em 1em;
+	background-color: $dark-blue;
+
+	transition: all 1s ease-in-out;
+
+	.admin-bar & {
+		top: 3.3em;
+
+		@include bp(wpadminbar) {
+			top: 2.3em;
+		}
+	}
+
+	span {
+		width: 100%;
+		height: 2px;
+		background: #fff;
+		display: block;
+		margin-top: 0.4em;
+
+		transition: all .4s ease-in-out;
+
+		.open & {
+			&:nth-child(2) {
+				display: none;
+			}
+			&:nth-child(1) {
+				transform: rotate(-50deg) translateX(-5px);
+			}
+			&:nth-child(3) {
+				transform: rotate(50deg) translateX(-5px);
+			}
+		}
+	}
+
+	&:active, &:focus {
+		border: none;
+		outline: none;
+	}
+
+	@include bp(md) {
+		display: none;
+	}
+
+}
+
+.site-nav {
+	width: 80%;
+	right: -80%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	background: #333;
+	z-index: 100;
+	transition: .5s all ease-in-out;
+	@include bp(sm) {
+		width: 40%;
+		right: -40%;
+	}
+
+	@include bp(md) {
+		position: relative;
+		height: 3em;
+		left: 0;
+		width: 80%;
+		float: right;
+		background: none;
+	}
+
+	.admin-bar & {
+		padding-top: 3em;
+
+		@include bp(wpadminbar) {
+			padding-top: 2.3em;
+		}
+
+		@include bp(md) {
+			padding-top: 0;
+		}
+	}
+
+	&.open {
+		right: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		@include bp(md) {
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+	li {
+		a {
+			display: block;
+			width: 100%;
+			line-height: 3em;
+			color: $white;
+			text-decoration: none;
+			padding: 0.5em 2em;
+			text-transform: uppercase;
+
+			&:hover {
+				background: $blue;
+			}
+
+			@include bp(md) {
+				padding: 0 1em;
+				line-height: 3.8em;
+			}
+			@include bp(lg) {
+				padding: 0 2em;
+			}
+		}
+	}
+
+
+}

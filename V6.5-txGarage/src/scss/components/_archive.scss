@@ -1,0 +1,23 @@
+
+.archive-wrapper {
+
+	min-height: 15em;
+
+	& img {
+		max-width: 150px;
+		height: auto;
+		float: left;
+	}
+}
+
+.archive-title {
+	text-decoration: none;
+}
+
+.link-title {
+	@extend .archive-title;
+}
+
+.main-wrap--archive {
+	background: $light-gray;
+}

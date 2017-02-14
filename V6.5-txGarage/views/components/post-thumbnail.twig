@@ -1,0 +1,8 @@
+{% if post.thumbnail %}
+  {% set large_image_url = function('get_large_thumb') %}
+  <div id="post-hero" class="post-hero">
+    <div style="height: 0; width: 0; position: absolute; left: -999em;">
+      <img src="{{large_image_url}}" width="100%" alt="{{post.thumbnail.title}}" />
+    </div>
+  </div>
+{% endif %}

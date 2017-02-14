@@ -1,0 +1,13 @@
+<section class="prefered-box">
+  <div class="prefered-wrapp">
+  {% for item in preferred.get_items %}
+  {% set category = item.attr_title %}
+    <a href="{{item.get_link}}" class="{{item.classes | join(' ')}}">
+      <div class="prefered--icon">{% include "components/cat-icons.twig" %}</div>
+      <div class="prefered--txt">
+        {{item.title}}
+      </div>
+    </a>
+  {% endfor %}
+  </div>
+</section>

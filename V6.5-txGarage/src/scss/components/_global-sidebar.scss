@@ -1,0 +1,45 @@
+.sidebar {
+	&--post {
+		background: lighten($light-gray, 3%);
+		flex: 1;
+		min-width: 21em;
+		padding: 1em;
+		@include bp(md) {
+			max-width: 22.2em;
+		}
+
+      .sidebar-widget {
+        margin: 2em auto 3em;
+				border-bottom: 1px solid #ADADA9;
+				padding-bottom: 3em;
+      }
+
+      a {
+      	color: $orange;
+      	text-decoration: none;
+      }
+
+			img {
+				padding: 1em;
+			}
+    }
+
+    h3 {
+    	// background: $pri-color;
+    	padding: .8em;
+    	color: #696965;
+			// border-bottom: 5px solid $dark-gray;
+    }
+
+    ul {
+    	list-style: none;
+    	margin: 0;
+    	padding: 1em;
+
+    	li:before {
+			content: "- ";
+			margin-right: 1em;
+			color: $light-gray;
+    	}
+    }
+}

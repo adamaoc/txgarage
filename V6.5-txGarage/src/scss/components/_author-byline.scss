@@ -1,0 +1,83 @@
+.author {
+  &-byline {
+    position: relative;
+    margin: 1em auto;
+    display: flex;
+    max-width: 700px;
+    flex-direction: column-reverse;
+    @include bp(xl) {
+      border-left: 10px solid $red;
+    }
+
+    &__wrap {
+      padding: 1em 2em;
+      background: $light-gray;
+      z-index: 5;
+      > div {
+        display: flex;
+        max-width: 700px;
+        flex-direction: column;
+        @include bp(sm) {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  &__photo {
+    min-width: 96px;
+  }
+  &__bio {
+    padding: 0 1em;
+    p {
+      margin: 0.5em 0;
+    }
+  }
+  &__title {
+    margin: 0;
+    font-size: 1.8em;
+    span {
+      display: block;
+      font-size: 0.5em;
+      letter-spacing: 2px;
+    }
+  }
+  &__meta {
+    font-size: 0.8em;
+  }
+
+}
+#author-byline-social {
+  background: $red;
+  transition: all 200ms ease;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+  @include bp(xl) {
+    flex-direction: column;
+    width: 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  > a {
+    color: white;
+    svg {
+      width: 30px;
+      height: 30px;
+      fill: lighten($red, 15%);
+      @include bp(md) {
+        display: block;
+      }
+    }
+    &:hover {
+      svg {
+        fill: white;
+      }
+    }
+  }
+}

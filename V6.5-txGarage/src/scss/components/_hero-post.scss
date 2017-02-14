@@ -1,0 +1,124 @@
+.post-hero {
+	&--wrap {
+		position: relative;
+		background-size: 90%;
+		background-repeat: repeat;
+		background-color: $blue;
+		display: flex;
+		flex-direction: column;
+		@include bp(sm) {
+			flex-direction: row;
+		}
+		&-car-reviews {
+			.post-hero__bg-cover {
+				background-color: rgba($blue, 0.6);
+			}
+		}
+		&-news {
+			.post-hero__bg-cover {
+				background-color: rgba($orange, 0.6);
+			}
+		}
+		&-videos, &-video {
+			.post-hero__bg-cover {
+				background-color: rgba($black, 0.8);
+			}
+		}
+		&-events {
+			.post-hero__bg-cover {
+				background-color: rgba($red, 0.7);
+			}
+
+		}
+		&-garage {
+			.post-hero__bg-cover {
+				background-color: rgba($blue, 0.6);
+			}
+		}
+	}
+	&__title {
+		flex: 2;
+		display: flex;
+		align-items: center;
+		z-index: 100;
+		padding: 1.5em 0.5em;
+		@include bp(sm) {
+			padding: 3em 2em;
+		}
+		@include bp(md) {
+			padding: 5em 2em;
+		}
+		h1 {
+		  position: relative;
+		  color: white;
+			text-shadow: 1px 1px 1px #333;
+			font-weight: 100;
+			@include bp(lg) {
+				font-size: 2.2rem;
+			}
+		}
+	}
+	&__date {
+		display: block;
+		font-size: 0.75rem;
+		font-style: italic;
+		font-weight: 100;
+	}
+
+	&__menu {
+		background: $red;
+		display: flex;
+		flex-direction: column-reverse;
+		z-index: 100;
+		@include bp(sm) {
+			flex-basis: 150px;
+			max-height: 45px;
+			align-self: flex-end;
+		}
+		@include bp(sm) {
+			&--open {
+				animation: 600ms bounce ease-in-out;
+				margin-right: 2em;
+				max-height: none;
+				align-self: initial;
+			}
+		}
+
+		&__btn {
+			color: #fff;
+			background: $red;
+			min-height: 45px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-bottom: 1px solid lighten($red, 5%);
+			border-top: 1px solid lighten($red, 5%);
+			text-decoration: none;
+			cursor: pointer;
+			&:hover {
+				background: lighten($red, 5%);
+			}
+		}
+	}
+
+	&__bg-cover {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba($blue, 0.6);
+		z-index: 10;
+	}
+}
+@keyframes bounce {
+	0% {
+		margin-right: 0;
+	}
+	75% {
+		margin-right: 3em;
+	}
+	100% {
+		margin-right: 2em;
+	}
+}

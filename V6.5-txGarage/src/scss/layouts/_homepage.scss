@@ -1,0 +1,110 @@
+.main-wrap {
+	&--homepage {
+		background: $light-gray;
+	}
+	&__top-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		max-width: 95%;
+		margin: 1em auto;
+		@include bp(md) {
+			flex-wrap: nowrap;
+		}
+		> div {
+			flex-basis: 100%;
+			flex-grow: 0;
+			flex-shrink: 0;
+			@include bp(md) {
+				flex-basis: 33%;
+			}
+		}
+		h4 {
+			margin-bottom: 0.5em;
+		}
+	}
+}
+.blog-slogan {
+	h2 {
+		color: #b1b1b1;
+		text-align: center;
+		font-family: serif;
+		font-style: italic;
+		font-weight: 100;
+		font-size: 1.1em;
+		padding: 1em;
+		@include bp(lg) {
+			font-size: 1.4em;
+		}
+		span {
+			display: block;
+		}
+	}
+}
+.calendar-wrapper {
+	.calendar-wrapper__inner-wrap {
+		max-width: 240px;
+		margin: 0 auto;
+		a {
+			display: block;
+			background: #366dab;
+			display: flex;
+			text-decoration: none;
+			justify-content: center;
+			transition: all 200ms ease-in-out;
+			&:hover {
+				background: rgba(#366dab, 0.9);
+			}
+		}
+	}
+	&__icon {
+		flex: 1;
+		background: #1c4a88;
+		text-align: center;
+		padding-top: 14px;
+		border-right: 2px solid #333;
+		svg {
+			fill: white;
+		}
+	}
+	&__text {
+		flex: 2;
+		color: white;
+		padding: 1em;
+	}
+}
+
+.post-list {
+	overflow: hidden;
+	width: 90%;
+	margin: 2em auto;
+
+	& img {
+
+		transform: none !important;
+
+		@include bp(xl) {
+			transform: translateY(-20%) !important;
+		}
+	}
+
+	> .btn {
+		clear: both;
+		display: block;
+		margin: 1em auto 2em;
+		width: 12em;
+		height: auto;
+		background: $pri-color;
+		border-bottom: 4px solid $dark-red;
+
+		&:hover {
+			background: $dark-red;
+
+		}
+
+		> svg {
+			float: right;
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{% set instaBG =  '/theme_images/Optimized-hero-insta-bg.png' %}
+<div class="post-hero--wrap" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>{{post.post_title}}</h1>
+	</div>
+	<div class="post-hero__bg-cover"></div>
+</div>
+
+<section class="content-wrapper content--post">
+  <div class="full-wrapper">
+      <div class="post-wrapper">
+        {{post.content}}
+      </div>
+  </div>
+
+</section>
+
+<aside class="sidebar sidebar--ads">
+	{{ads_sidebar}}
+</aside>
+
+{% include "components/prefered-box.twig" %}

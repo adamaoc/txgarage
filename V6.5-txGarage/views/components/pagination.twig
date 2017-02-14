@@ -1,0 +1,8 @@
+<div class="btn-wrapper">
+{% if pagination.prev %}
+  <a href="{{pagination.prev.link}}" class="prev btn btn--dim {{pagination.prev.link|length ? '' : 'invisible'}}">Prev</a>
+{% endif %}
+{% if pagination.next %}
+  <a href="{{pagination.next.link}}" class="next btn btn--dim {{pagination.next.link|length ? '' : 'invisible'}}">Next</a>
+{% endif %}
+</div>

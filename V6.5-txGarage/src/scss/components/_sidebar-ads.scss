@@ -1,0 +1,27 @@
+.sidebar--ads {
+  padding: 1em;
+  background: $black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: inset 1px 1px 20px #565;
+
+  .ads-widget {
+    max-width: 18.75em;
+    margin: 0.5em;
+    a {
+      display: block;
+    }
+  }
+}
+
+.sidebar--post {
+  .ads-widget {
+    max-width: 18.75em;
+    margin: 0.5em auto;
+    a {
+      display: block;
+    }
+  }
+}

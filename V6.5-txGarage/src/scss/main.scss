@@ -1,0 +1,38 @@
+/* ***
+** Main Style Sheet for txGarage v6
+** */
+
+// import variables
+@import "base/colors";
+@import "base/type";
+
+@import "base/bp-mixin";
+
+@import "base/base";
+@import "base/buttons";
+
+// import components
+@import "components/header";
+@import "components/footer";
+@import "components/global-sidebar";
+@import "components/social";
+@import "components/hero-post";
+@import "components/homepage-hero";
+@import "components/post-block";
+@import "components/post-block--expanded";
+@import "components/prefered-block";
+@import "components/pages-posts";
+@import "components/archive";
+@import "components/post-gallery";
+@import "components/sidebar-ads";
+@import "components/sidebar-homepage";
+@import "components/author-byline";
+@import "components/preferred-ads";
+@import "components/modal";
+// import pages
+@import "layouts/homepage";
+@import "layouts/single";
+@import "layouts/post-type";
+@import "layouts/pagenotfound";
+@import "layouts/attachment";
+@import "layouts/search-page";

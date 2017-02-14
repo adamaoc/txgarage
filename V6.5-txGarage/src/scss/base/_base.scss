@@ -1,0 +1,30 @@
+@import "normalize";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $bg-color;
+  font-family: 'Raleway', sans-serif;
+  color: #565656;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.limit-wrapper {
+  max-width: 1080px;
+  width: 90%;
+  margin: .5em auto;
+}
+
+a {
+  color: $pri-color;
+}

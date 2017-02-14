@@ -1,0 +1,21 @@
+{% set category = function('catClass', post.categories) %}
+{% set instaBG =  '/theme_images/Optimized-hero-insta-bg.png' %}
+<div class="post-hero--wrap post-hero--wrap-{{category}}" style="background-image: url({{theme.path}}/{{instaBG}})">
+	<div class="post-hero__title">
+		<h1>
+			{{post.post_title}}
+			<span class="post-hero__date">
+				Published: {{post.display_date}}
+			</span>
+		</h1>
+	</div>
+
+	<div class="post-hero__menu" id="header-menu">
+		<a href="#authorBox" class="post-hero__menu__btn" id="authorBtn">
+			<svg class="icon icon-user"><use xlink:href="#icon-user"></use></svg>
+			by {{post.author.name}}
+		</a>
+	</div>
+
+	<div class="post-hero__bg-cover"></div>
+</div>

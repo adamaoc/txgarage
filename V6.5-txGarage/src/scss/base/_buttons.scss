@@ -1,0 +1,32 @@
+@mixin button($color, $shade) {
+	@if($shade == "dark") {
+		color: $white;
+	}@else{
+		color: $black;
+	}
+	background: $color;
+	text-decoration: none;
+	padding: 1em 2em;
+	text-transform: uppercase;
+}
+
+.btn {
+	display: inline-block;
+	&--dim {
+		@include button($dark-gray, "dark");
+	}
+
+	&.prev {
+		border-left: 5px solid $light-blue;
+		margin-right: auto;
+	}
+	&.next {
+		border-right: 5px solid $light-blue;
+		margin-left: auto;
+	}
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: space-around;
+}

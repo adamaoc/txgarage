@@ -1,0 +1,40 @@
+{% if category == 'car-reviews' %}
+  <span>
+    <svg class="icon"><use xlink:href="#icon-bubble2"></use></svg> Reviews
+  </span>
+{% endif %}
+{% if category == 'garage' %}
+  <span>
+    <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> Garage
+  </span>
+{% endif %}
+{% if category == 'news' %}
+  <span>
+    <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> News
+  </span>
+{% endif %}
+{% if category == 'video' %}
+  <span>
+    <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> Video
+  </span>
+{% endif %}
+{% if category == 'events' %}
+  <span>
+    <svg class="icon"><use xlink:href="#icon-file-text2"></use></svg> Event
+  </span>
+{% endif %}
+
+{# preferred dealers #}
+{% if category == 'preferred-dealers' %}
+  <svg class="icon"><use xlink:href="#icon-check-box"></use></svg>
+{% endif %}
+
+{# preferred shops #}
+{% if category == 'preferred-shops' %}
+  <svg class="icon"><use xlink:href="#icon-gift"></use></svg>
+{% endif %}
+
+{# txgarage sponsors #}
+{% if category == 'txgarage-sponsors' %}
+  <svg class="icon"><use xlink:href="#icon-business"></use></svg>
+{% endif %}

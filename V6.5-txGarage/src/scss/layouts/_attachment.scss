@@ -1,0 +1,18 @@
+.attachment.single {
+
+  .attachment {
+    width: 85%;
+    margin: 2em auto;
+    img {
+      display: block;
+    }
+  }
+
+  .attachment-desc {
+    background: $red;
+    color: #fff;
+    padding: 1em 2em;
+    margin: 0;
+  }
+
+}
