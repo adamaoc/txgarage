@@ -4547,6 +4547,7 @@ a.mvp-inf-more-but:hover {
   flex-direction: column;
   background-color: #1E537B;
   padding: 1em 0.3em;
+	margin-bottom: 1em;
 }
 
 .img-by-two img {
@@ -4578,7 +4579,8 @@ a.mvp-inf-more-but:hover {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #1E537B;
-    padding: 1em 0.3em; }
+    padding: 1em 0.3em;
+		margin-bottom: 1em; }
     .img-by-three img {
       width: 100%; }
     @media (min-width: 37.5em) {
@@ -4604,7 +4606,8 @@ a.mvp-inf-more-but:hover {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #1E537B;
-    padding: 1em 0.3em; }
+    padding: 1em 0.3em;
+		margin-bottom: 1em; }
     .img-by-four img {
       width: 100%; }
     @media (min-width: 37.5em) {
@@ -4630,7 +4633,8 @@ a.mvp-inf-more-but:hover {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #1E537B;
-    padding: 1em 0.3em; }
+    padding: 1em 0.3em;
+		margin-bottom: 1em; }
     .img-by-five img {
       width: 100%; }
     @media (min-width: 37.5em) {
@@ -4645,3 +4649,10 @@ a.mvp-inf-more-but:hover {
           -webkit-flex: 20%;
           -ms-flex: 20%;
           flex: 20%; } }
+
+.gallery-item .gallery-caption {
+	visibility: hidden;
+  overflow: hidden;
+  height: 0;
+  margin: 0;
+}
