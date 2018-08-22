@@ -65,6 +65,15 @@
 </div><!--mvp-fly-top-->
 <div class="mvp-fly-fade mvp-fly-but-click">
 </div><!--mvp-fly-fade-->
+<script>
+  if (window.location.hash === '#autoplay') {
+    var vidEmbedContainer = document.getElementById('mvp-video-embed');
+    if (vidEmbedContainer) {
+      var vidIframe = vidEmbedContainer.getElementsByTagName('iframe')[0];
+      vidIframe.src = vidIframe.src + '?autoplay=true';
+    }
+  }
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>
